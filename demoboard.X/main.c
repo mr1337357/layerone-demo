@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     ANSF = 0x0000;
     ANSG = 0x0000;
     TRISB = 0x0000;
-
+    
     audio_setup();
     while(1);
     return (0);

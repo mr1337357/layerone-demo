@@ -5,6 +5,22 @@
 #define STILL_ALIVE
 #include "songs.h"
 
+unsigned short sin[] =
+{
+    0x80,0x98,0xb0,0xc6,0xda,0xea,0xf5,0xfd,
+    0xff,0xfd,0xf5,0xea,0xda,0xc6,0xb0,0x98,
+    0x80,0x67,0x4f,0x39,0x25,0x15,0x0a,0x02,
+    0x00,0x02,0x0a,0x15,0x25,0x39,0x4f,0x67,
+};
+
+unsigned short triangle[] = 
+{
+    0x80,0x8F,0x9F,0xaf,0xbf,0xcf,0xdf,0xef,
+    0xff,0xef,0xdf,0xcf,0xbf,0xaf,0x9f,0x8f,
+    0x80,0x70,0x60,0x50,0x40,0x30,0x20,0x10,
+    0x00,0x10,0x20,0x30,0x40,0x50,0x60,0x70,
+};
+
 void audio_setup() {
     PR1 = 256;
     _T1IP = 5;	// set interrupt priority
@@ -13,20 +29,17 @@ void audio_setup() {
     _T1IE = 1;	// turn on the timer1 interrupt
 }
 
-
+//CP: Channel Phase
+//CF: Channel Frequency
 static unsigned int notendx=-1;
-static unsigned short channdx1=0;
-static unsigned short channdx2=0;
-static unsigned short channdx3=0;
-static unsigned short channdx4=0;
+static unsigned short cp1=0;
+static unsigned short cp2=0;
+static unsigned short cp3=0;
+static unsigned short cp4=0;
 static unsigned short cf1=0;
-static unsigned short ca1=0;
 static unsigned short cf2=0;
-static unsigned short ca2=0;
 static unsigned short cf3=0;
-static unsigned short ca3=0;
 static unsigned short cf4=0;
-static unsigned short ca4=0;
 static unsigned short filt;
 
 static unsigned short samplendx=0;
@@ -35,69 +48,16 @@ void __attribute__((__interrupt__)) _T1Interrupt(void);
 void __attribute__((__interrupt__, auto_psv)) _T1Interrupt(void)
 {
     unsigned short sample=0;
-    unsigned short sample2;
-    if(cf1>channdx1<<1) {
-        sample=ca1;
-    }
-    if(filt&1&&samplendx>14000) {
-        sample=0;
-    }
-    if(filt&2&&samplendx&1024) {
-        sample>>=1;
-    }
-    if(cf2>channdx2<<1) {
-        sample2=ca2;
-    } else {
-        sample2=0;
-    }
-    if(filt&4&&samplendx>14000) {
-        sample2=0;
-    }
-    if(filt&8&&samplendx&1024) {
-        sample2>>=1;
-    }
-    sample+=sample2;
-    if(cf3>channdx3<<1) {
-        sample2=ca3;
-    } else {
-        sample2=0;
-    }
-    if(filt&16&&samplendx>14000) {
-        sample2=0;
-    }
-    if(filt&32&&samplendx&1024) {
-        sample2>>=1;
-    }
-    sample+=sample2;
-    if(cf4>channdx4<<1) {
-        sample2=ca4;
-    } else {
-        sample2=0;
-    }
-    if(filt&64&&samplendx>14000) {
-        sample2=0;
-    }
-    if(filt&128&&samplendx&1024) {
-        sample2>>=1;
-    }
-    sample+=sample2;
-    PORTB=(sample<<8);
-    channdx1++;
-    if(channdx1>cf1) {
-        channdx1=0;
-    }
-    channdx2++;
-    if(channdx2>cf2) {
-        channdx2=0;
-    }
-    channdx3++;
-    if(channdx3>cf3) {
-        channdx3=0;
-    }
-    channdx4++;
-    if(channdx4>cf4) {
-        channdx4=0;
-    }
+    sample = sin[cp1>>11];
+    sample+= sin[cp2>>11];
+    sample+= sin[cp3>>11];
+    sample+= triangle[cp4>>11];
+    //sample>>=2;
+    PORTB=(sample<<6);
+    cp1+=cf1;
+    cp2+=cf2;
+    cp3+=cf3;
+    cp4+=cf4;
     samplendx++;
     if(samplendx==16384) {
         samplendx=0;
@@ -107,13 +67,9 @@ void __attribute__((__interrupt__, auto_psv)) _T1Interrupt(void)
         }
         
         cf1=c1f[notendx];
-        ca1=c1a[notendx];
         cf2=c2f[notendx];
-        ca2=c2a[notendx];
         cf3=c3f[notendx];
-        ca3=c3a[notendx];
         cf4=c4f[notendx];
-        ca4=c4a[notendx];
         filt=fltr[notendx];
     }
     _T1IF = 0;
