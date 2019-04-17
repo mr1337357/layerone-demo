@@ -6,36 +6,34 @@ xc16-ld 1.36 (B)
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x522           0x7b3  (1971)
-.text                        0x722               0xa36           0xf51  (3921)
-.dinit                      0x1158               0x914           0xd9e  (3486)
-_0364a8405cb575f5           0x1a6c               0x578           0x834  (2100)
-_0364aa205cb575f5           0x1fe4               0x578           0x834  (2100)
-_0364aba05cb575f5           0x255c               0x578           0x834  (2100)
-_0364ad205cb575f5           0x2ad4               0x578           0x834  (2100)
-_0364aea05cb575f5           0x304c               0x578           0x834  (2100)
-_038630605cb575f5           0x35c4               0x578           0x834  (2100)
-_038631e05cb575f5           0x3b3c               0x578           0x834  (2100)
-_038633605cb575f5           0x40b4               0x578           0x834  (2100)
-_038634e05cb575f5           0x462c               0x578           0x834  (2100)
-.text                       0x4ba4               0x2fc           0x47a  (1146)
-.init.delay32               0x4ea0                0x1c            0x2a  (42)
+.text                        0x200               0x548           0x7ec  (2028)
+.text                        0x748               0xa36           0xf51  (3921)
+.dinit                      0x117e               0x9c2           0xea3  (3747)
+_035f78405cb6be7a           0x1b40               0x578           0x834  (2100)
+_035f7a205cb6be7a           0x20b8               0x578           0x834  (2100)
+_035f7ba05cb6be7a           0x2630               0x578           0x834  (2100)
+_035f7d205cb6be7a           0x2ba8               0x578           0x834  (2100)
+_035f7ea05cb6be7a           0x3120               0x578           0x834  (2100)
+.text                       0x3698               0x2fc           0x47a  (1146)
+.init.delay32               0x3994                0x1c            0x2a  (42)
 
-                 Total "program" memory used (bytes):         0x731a  (29466) 11%
+                 Total "program" memory used (bytes):         0x5388  (21384) 8%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x18000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.nbss                        0x800                   0            0x1c  (28)
-.ndata                       0x81c                   0             0x4  (4)
-.data                        0x820                   0           0x144  (324)
-.bss                         0x964                   0            0x34  (52)
+.nbss                        0x800                   0            0x14  (20)
+.ndata                       0x814                   0             0xa  (10)
+.nbss                        0x81e                   0             0x8  (8)
+.ndata                       0x826                   0             0x2  (2)
+.data                        0x828                   0           0x240  (576)
+.bss                         0xa68                   0            0x34  (52)
 FONTS                       0x4ff8                   0           0xc08  (3080)
 DISPLAY                     0x5c00                   0         0x12c00  (76800)
 
-                 Total "data" memory used (bytes):        0x139a0  (80288) 81%
+                 Total "data" memory used (bytes):        0x13aa4  (80548) 81%
 
 
 Dynamic Memory Usage
@@ -43,7 +41,7 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x998                              0x4660  (18016)
+stack                        0xa9c                              0x455c  (17756)
 
-                 Maximum dynamic memory (bytes):         0x4660  (18016)
+                 Maximum dynamic memory (bytes):         0x455c  (17756)
 
