@@ -85,11 +85,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 .text                        0x200               0x548           0x7ec  (2028)
 .text                        0x748               0xa36           0xf51  (3921)
 .dinit                      0x117e               0x9c2           0xea3  (3747)
-_035f78405cb6be7a           0x1b40               0x578           0x834  (2100)
-_035f7a205cb6be7a           0x20b8               0x578           0x834  (2100)
-_035f7ba05cb6be7a           0x2630               0x578           0x834  (2100)
-_035f7d205cb6be7a           0x2ba8               0x578           0x834  (2100)
-_035f7ea05cb6be7a           0x3120               0x578           0x834  (2100)
+_036cc8405cb6bf74           0x1b40               0x578           0x834  (2100)
+_036cca205cb6bf74           0x20b8               0x578           0x834  (2100)
+_036ccba05cb6bf74           0x2630               0x578           0x834  (2100)
+_036ccd205cb6bf74           0x2ba8               0x578           0x834  (2100)
+_036ccea05cb6bf74           0x3120               0x578           0x834  (2100)
 .text                       0x3698               0x2fc           0x47a  (1146)
 .init.delay32               0x3994                0x1c            0x2a  (42)
 
@@ -1776,33 +1776,33 @@ FONTS               0x4ff8        0xc08
 .dinit            0x00117e        0x9c2
  .dinit           0x00117e        0x9c2 data_init
 
-_035f78405cb6be7a
+_036cc8405cb6bf74
                   0x001b40        0x578
- _035f78405cb6be7a
+ _036cc8405cb6bf74
                   0x001b40        0x578 output/audio.o
                   0x001b40                  _c1f
 
-_035f7a205cb6be7a
+_036cca205cb6bf74
                   0x0020b8        0x578
- _035f7a205cb6be7a
+ _036cca205cb6bf74
                   0x0020b8        0x578 output/audio.o
                   0x0020b8                  _c2f
 
-_035f7ba05cb6be7a
+_036ccba05cb6bf74
                   0x002630        0x578
- _035f7ba05cb6be7a
+ _036ccba05cb6bf74
                   0x002630        0x578 output/audio.o
                   0x002630                  _c3f
 
-_035f7d205cb6be7a
+_036ccd205cb6bf74
                   0x002ba8        0x578
- _035f7d205cb6be7a
+ _036ccd205cb6bf74
                   0x002ba8        0x578 output/audio.o
                   0x002ba8                  _c4f
 
-_035f7ea05cb6be7a
+_036ccea05cb6bf74
                   0x003120        0x578
- _035f7ea05cb6be7a
+ _036ccea05cb6bf74
                   0x003120        0x578 output/audio.o
                   0x003120                  _fltr
 
