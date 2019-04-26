@@ -7,17 +7,18 @@ xc16-ld 1.36 (B)
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x548           0x7ec  (2028)
-.text                        0x748               0xa36           0xf51  (3921)
-.dinit                      0x117e               0x9c2           0xea3  (3747)
-_036cc8405cb6bf74           0x1b40               0x578           0x834  (2100)
-_036cca205cb6bf74           0x20b8               0x578           0x834  (2100)
-_036ccba05cb6bf74           0x2630               0x578           0x834  (2100)
-_036ccd205cb6bf74           0x2ba8               0x578           0x834  (2100)
-_036ccea05cb6bf74           0x3120               0x578           0x834  (2100)
-.text                       0x3698               0x2fc           0x47a  (1146)
-.init.delay32               0x3994                0x1c            0x2a  (42)
+.const                       0x748                0x36            0x51  (81)
+.text                        0x77e               0xa36           0xf51  (3921)
+.dinit                      0x11b4               0x9c2           0xea3  (3747)
+_035e78405cc2bb31           0x1b76               0x578           0x834  (2100)
+_035e7a205cc2bb31           0x20ee               0x578           0x834  (2100)
+_035e7ba05cc2bb31           0x2666               0x578           0x834  (2100)
+_035e7d205cc2bb31           0x2bde               0x578           0x834  (2100)
+_035e7ea05cc2bb31           0x3156               0x578           0x834  (2100)
+.text                       0x36ce               0x3f4           0x5ee  (1518)
+.init.delay32               0x3ac2                0x1c            0x2a  (42)
 
-                 Total "program" memory used (bytes):         0x5388  (21384) 8%
+                 Total "program" memory used (bytes):         0x554d  (21837) 8%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x18000]

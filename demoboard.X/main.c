@@ -87,13 +87,25 @@ void set_bw()
 int main(int argc, char** argv) {
     uint16_t x;
     uint16_t y;
-    volatile uint32_t i;
+    volatile uint16_t i;
+    volatile uint16_t offset=0;
+    uint16_t colors[16]=
+    {
+        0xF800, 0xFB00, 0xfde0, 0xdfe0,
+        0x87E0, 0x27E0, 0x07E8, 0x07F3,
+        0x07FF, 0x04FF, 0x021F, 0x401F,
+        0x801F, 0xD81F, 0xF817, 0xF80C,
+
+        
+    };
     ANSB = 0x0000;
     ANSC = 0x0000;
     ANSD = 0x0000;
     ANSF = 0x0000;
     ANSG = 0x0000;
     TRISB = 0x0000;
+    
+    
     
     gpu_init();
     gpu_set_res(RES_320x240, SINGLEBUFFERED, BPP_4);
@@ -102,37 +114,36 @@ int main(int argc, char** argv) {
     set_bw();
 
     audio_setup();
-    x=0;
-    y=0;
-    mandeldraw();
-    for(i=0;i<5;i++)
+    
+    uart_init();
+    uart_puts("This was a triumph\r\n");
+    
+    for(i=1;i<16;i++)
     {
-        while(hlines);
-        while(!hlines);
+        gpu_clut_set(i, colors[i]);
     }
-    set_color();
-    while(1);
+    //mandeldraw();
+    for(x=1;x<16;x++)
+    {
+        for(y=0;y<16;y++)
+        {
+            drawpixel(x+160,y+120,x);
+        }
+    }
+    
+    i=1;
+    //set_color();
+    //while(1);
     while(1)
     {
-        rcc_color(1);
-        x++;
-        if(x==gfx.hres-1)
+        gpu_flip_fb();
+        gpu_flip_fb();
+        //while(hlines<120);
+        for(i=1;i<16;i++)
         {
-            x=0;
-            y++;
+            gpu_clut_set(i, colors[(i+offset)%15]);
         }
-        //gpu_flip_fb();
-        while(hlines);
-        gpu_clut_set(0, rgb_2_565(0,0,0)); 
-        gpu_clut_set(1, rgb_2_565(0x40,0x40,0x40));
-        gpu_clut_set(2, rgb_2_565(0x80,0x80,0x80));
-        gpu_clut_set(3, rgb_2_565(0xC0,0xC0,0xC0));
-        while(hlines<240);
-        gpu_clut_set(1, rgb_2_565(255,0,0));
-        while(hlines<241);
-        gpu_clut_set(2, rgb_2_565(0,255,0));
-        while(hlines<242);
-        gpu_clut_set(3, rgb_2_565(0,0,255));
+        offset++;
     }
     return (0);
 }

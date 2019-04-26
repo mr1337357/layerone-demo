@@ -20,6 +20,7 @@ Command:
   output/mandelbrot.o \
   output/audio.o \
   output/gfx.o \
+  output/uart.o \
   --local-stack \
   --defsym=__MPLAB_BUILD=1 \
   -Tp24FJ256DA206.gld.00 \
@@ -83,17 +84,18 @@ xc16-ld 1.36 (B)
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x548           0x7ec  (2028)
-.text                        0x748               0xa36           0xf51  (3921)
-.dinit                      0x117e               0x9c2           0xea3  (3747)
-_036cc8405cb6bf74           0x1b40               0x578           0x834  (2100)
-_036cca205cb6bf74           0x20b8               0x578           0x834  (2100)
-_036ccba05cb6bf74           0x2630               0x578           0x834  (2100)
-_036ccd205cb6bf74           0x2ba8               0x578           0x834  (2100)
-_036ccea05cb6bf74           0x3120               0x578           0x834  (2100)
-.text                       0x3698               0x2fc           0x47a  (1146)
-.init.delay32               0x3994                0x1c            0x2a  (42)
+.const                       0x748                0x36            0x51  (81)
+.text                        0x77e               0xa36           0xf51  (3921)
+.dinit                      0x11b4               0x9c2           0xea3  (3747)
+_035e78405cc2bb31           0x1b76               0x578           0x834  (2100)
+_035e7a205cc2bb31           0x20ee               0x578           0x834  (2100)
+_035e7ba05cc2bb31           0x2666               0x578           0x834  (2100)
+_035e7d205cc2bb31           0x2bde               0x578           0x834  (2100)
+_035e7ea05cc2bb31           0x3156               0x578           0x834  (2100)
+.text                       0x36ce               0x3f4           0x5ee  (1518)
+.init.delay32               0x3ac2                0x1c            0x2a  (42)
 
-                 Total "program" memory used (bytes):         0x5388  (21384) 8%
+                 Total "program" memory used (bytes):         0x554d  (21837) 8%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x18000]
@@ -156,8 +158,8 @@ External Symbols in Program Memory (by address):
                   0x0004c6                  ___subsf3
                   0x0004c8                  ___addsf3
                   0x000582                  ___divsf3
-                  0x000606                  ___gtsf2
                   0x000606                  ___gesf2
+                  0x000606                  ___gtsf2
                   0x00060a                  ___fixsfsi
                   0x00064c                  __fpack
                   0x000698                  __funpack
@@ -167,44 +169,47 @@ External Symbols in Program Memory (by address):
                   0x0006ec                  __fbopReturnNaN
                   0x0006f2                  ___udivsi3
                   0x000712                  __fcompare
-                  0x000748                  _gpu_init
-                  0x000758                  _gpu_set_res
-                  0x0009dc                  _gpu_config
-                  0x000bfa                  _gpu_set_fb
-                  0x000c0e                  _gpu_flip_fb
-                  0x000cca                  _gpu_clear_fb
-                  0x000cea                  _gpu_clear_all_fb
-                  0x000d24                  _gpu_draw_border
-                  0x000d8e                  _gpu_config_clut
-                  0x000d96                  _gpu_clut_set
-                  0x000dbe                  _gpu_config_chr
-                  0x000e68                  _gpu_chr_print
-                  0x000ee8                  _gpu_chr_fg_color
-                  0x000ef8                  _gpu_chr_bg_color
-                  0x000f08                  _rcc_set_fb_dest
-                  0x000f36                  _rcc_color
-                  0x000f46                  _rcc_rec
-                  0x000fe2                  _rcc_pixel
-                  0x001046                  _rcc_line
-                  0x001144                  _rgb_2_565
-                  0x001b40                  _c1f
-                  0x0020b8                  _c2f
-                  0x002630                  _c3f
-                  0x002ba8                  _c4f
-                  0x003120                  _fltr
-                  0x003698                  _drawpixel
-                  0x003732                  _mandeldraw
-                  0x003782                  _set_color
-                  0x0037b8                  _set_bw
-                  0x0037de                  _main
-                  0x003842                  _fmul
-                  0x00387e                  _fadd
-                  0x00388c                  _mag
-                  0x0038c0                  _cadd
-                  0x0038ee                  _cmul
-                  0x00393a                  _iterate
-                  0x003978                  _audio_setup
-                  0x003994                  ___delay32
+                  0x00077e                  _gpu_init
+                  0x00078e                  _gpu_set_res
+                  0x000a12                  _gpu_config
+                  0x000c30                  _gpu_set_fb
+                  0x000c44                  _gpu_flip_fb
+                  0x000d00                  _gpu_clear_fb
+                  0x000d20                  _gpu_clear_all_fb
+                  0x000d5a                  _gpu_draw_border
+                  0x000dc4                  _gpu_config_clut
+                  0x000dcc                  _gpu_clut_set
+                  0x000df4                  _gpu_config_chr
+                  0x000e9e                  _gpu_chr_print
+                  0x000f1e                  _gpu_chr_fg_color
+                  0x000f2e                  _gpu_chr_bg_color
+                  0x000f3e                  _rcc_set_fb_dest
+                  0x000f6c                  _rcc_color
+                  0x000f7c                  _rcc_rec
+                  0x001018                  _rcc_pixel
+                  0x00107c                  _rcc_line
+                  0x00117a                  _rgb_2_565
+                  0x001b76                  _c1f
+                  0x0020ee                  _c2f
+                  0x002666                  _c3f
+                  0x002bde                  _c4f
+                  0x003156                  _fltr
+                  0x0036ce                  _drawpixel
+                  0x003768                  _mandeldraw
+                  0x0037b8                  _set_color
+                  0x0037ee                  _set_bw
+                  0x003814                  _main
+                  0x0038e4                  _fmul
+                  0x003920                  _fadd
+                  0x00392e                  _mag
+                  0x003962                  _cadd
+                  0x003990                  _cmul
+                  0x0039dc                  _iterate
+                  0x003a4a                  _uart_init
+                  0x003a74                  _uart_tx
+                  0x003a8c                  _uart_puts
+                  0x003aa6                  _audio_setup
+                  0x003ac2                  ___delay32
 
 External Symbols in Program Memory (by name):
 
@@ -212,7 +217,7 @@ External Symbols in Program Memory (by name):
                   0x000484                  __GFX1Interrupt
                   0x000304                  __T1Interrupt
                   0x0004c8                  ___addsf3
-                  0x003994                  ___delay32
+                  0x003ac2                  ___delay32
                   0x000582                  ___divsf3
                   0x00060a                  ___fixsfsi
                   0x000606                  ___gesf2
@@ -230,43 +235,46 @@ External Symbols in Program Memory (by name):
                   0x0006c2                  __funpack2
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x003978                  _audio_setup
-                  0x001b40                  _c1f
-                  0x0020b8                  _c2f
-                  0x002630                  _c3f
-                  0x002ba8                  _c4f
-                  0x0038c0                  _cadd
-                  0x0038ee                  _cmul
-                  0x003698                  _drawpixel
-                  0x00387e                  _fadd
-                  0x003120                  _fltr
-                  0x003842                  _fmul
-                  0x000ef8                  _gpu_chr_bg_color
-                  0x000ee8                  _gpu_chr_fg_color
-                  0x000e68                  _gpu_chr_print
-                  0x000cea                  _gpu_clear_all_fb
-                  0x000cca                  _gpu_clear_fb
-                  0x000d96                  _gpu_clut_set
-                  0x0009dc                  _gpu_config
-                  0x000dbe                  _gpu_config_chr
-                  0x000d8e                  _gpu_config_clut
-                  0x000d24                  _gpu_draw_border
-                  0x000c0e                  _gpu_flip_fb
-                  0x000748                  _gpu_init
-                  0x000bfa                  _gpu_set_fb
-                  0x000758                  _gpu_set_res
-                  0x00393a                  _iterate
-                  0x00388c                  _mag
-                  0x0037de                  _main
-                  0x003732                  _mandeldraw
-                  0x000f36                  _rcc_color
-                  0x001046                  _rcc_line
-                  0x000fe2                  _rcc_pixel
-                  0x000f46                  _rcc_rec
-                  0x000f08                  _rcc_set_fb_dest
-                  0x001144                  _rgb_2_565
-                  0x0037b8                  _set_bw
-                  0x003782                  _set_color
+                  0x003aa6                  _audio_setup
+                  0x001b76                  _c1f
+                  0x0020ee                  _c2f
+                  0x002666                  _c3f
+                  0x002bde                  _c4f
+                  0x003962                  _cadd
+                  0x003990                  _cmul
+                  0x0036ce                  _drawpixel
+                  0x003920                  _fadd
+                  0x003156                  _fltr
+                  0x0038e4                  _fmul
+                  0x000f2e                  _gpu_chr_bg_color
+                  0x000f1e                  _gpu_chr_fg_color
+                  0x000e9e                  _gpu_chr_print
+                  0x000d20                  _gpu_clear_all_fb
+                  0x000d00                  _gpu_clear_fb
+                  0x000dcc                  _gpu_clut_set
+                  0x000a12                  _gpu_config
+                  0x000df4                  _gpu_config_chr
+                  0x000dc4                  _gpu_config_clut
+                  0x000d5a                  _gpu_draw_border
+                  0x000c44                  _gpu_flip_fb
+                  0x00077e                  _gpu_init
+                  0x000c30                  _gpu_set_fb
+                  0x00078e                  _gpu_set_res
+                  0x0039dc                  _iterate
+                  0x00392e                  _mag
+                  0x003814                  _main
+                  0x003768                  _mandeldraw
+                  0x000f6c                  _rcc_color
+                  0x00107c                  _rcc_line
+                  0x001018                  _rcc_pixel
+                  0x000f7c                  _rcc_rec
+                  0x000f3e                  _rcc_set_fb_dest
+                  0x00117a                  _rgb_2_565
+                  0x0037ee                  _set_bw
+                  0x0037b8                  _set_color
+                  0x003a4a                  _uart_init
+                  0x003a8c                  _uart_puts
+                  0x003a74                  _uart_tx
 
 Memory Configuration
 
@@ -289,6 +297,7 @@ LOAD output/main.o
 LOAD output/mandelbrot.o
 LOAD output/audio.o
 LOAD output/gfx.o
+LOAD output/uart.o
                     0x0001                  __MPLAB_BUILD = 0x1
 LOAD pPIC24Fxxx
 LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libfx-elf.a
@@ -1662,7 +1671,7 @@ LOAD default_isr
 LOAD data_init
 
 __c30_signature
-                  0x000000         0x66
+                  0x000000         0x6c
  __c30_signature
                   0x000000          0x6 output/main.o
  __c30_signature
@@ -1672,31 +1681,33 @@ __c30_signature
  __c30_signature
                   0x000012          0x6 output/gfx.o
  __c30_signature
-                  0x000018          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(crt0_extended24.o)
+                  0x000018          0x6 output/uart.o
  __c30_signature
-                  0x00001e          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(data_init_24.o)
+                  0x00001e          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(crt0_extended24.o)
  __c30_signature
-                  0x000024          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32da.Leo)
+                  0x000024          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(data_init_24.o)
  __c30_signature
-                  0x00002a          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(addsf3.daeo)
+                  0x00002a          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32da.Leo)
  __c30_signature
-                  0x000030          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(divsf3.daeo)
+                  0x000030          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(addsf3.daeo)
  __c30_signature
-                  0x000036          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fgtge.daeo)
+                  0x000036          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(divsf3.daeo)
  __c30_signature
-                  0x00003c          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fixsfsi.daeo)
+                  0x00003c          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fgtge.daeo)
  __c30_signature
-                  0x000042          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fpack.daeo)
+                  0x000042          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fixsfsi.daeo)
  __c30_signature
-                  0x000048          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(funpack.daeo)
+                  0x000048          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fpack.daeo)
  __c30_signature
-                  0x00004e          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(funpack2.daeo)
+                  0x00004e          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(funpack.daeo)
  __c30_signature
-                  0x000054          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(futil.daeo)
+                  0x000054          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(funpack2.daeo)
  __c30_signature
-                  0x00005a          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(udivsi3.daeo)
+                  0x00005a          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(futil.daeo)
  __c30_signature
-                  0x000060          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fcompare.daeo)
+                  0x000060          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(udivsi3.daeo)
+ __c30_signature
+                  0x000066          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fcompare.daeo)
 
 .nbss               0x0800         0x14
  .nbss              0x0800         0x14 output/audio.o
@@ -1750,79 +1761,86 @@ FONTS               0x4ff8        0xc08
  .ivt._GFX1Interrupt
                   0x0000dc          0x2 output/gfx.o
 
-.text             0x000748        0xa36
- .text            0x000748        0xa36 output/gfx.o
-                  0x000748                  _gpu_init
-                  0x000758                  _gpu_set_res
-                  0x0009dc                  _gpu_config
-                  0x000bfa                  _gpu_set_fb
-                  0x000c0e                  _gpu_flip_fb
-                  0x000cca                  _gpu_clear_fb
-                  0x000cea                  _gpu_clear_all_fb
-                  0x000d24                  _gpu_draw_border
-                  0x000d8e                  _gpu_config_clut
-                  0x000d96                  _gpu_clut_set
-                  0x000dbe                  _gpu_config_chr
-                  0x000e68                  _gpu_chr_print
-                  0x000ee8                  _gpu_chr_fg_color
-                  0x000ef8                  _gpu_chr_bg_color
-                  0x000f08                  _rcc_set_fb_dest
-                  0x000f36                  _rcc_color
-                  0x000f46                  _rcc_rec
-                  0x000fe2                  _rcc_pixel
-                  0x001046                  _rcc_line
-                  0x001144                  _rgb_2_565
+.const              0x8748         0x36 load address 0x000748  
+ .const             0x8748         0x36 output/main.o
 
-.dinit            0x00117e        0x9c2
- .dinit           0x00117e        0x9c2 data_init
+.text             0x00077e        0xa36
+ .text            0x00077e        0xa36 output/gfx.o
+                  0x00077e                  _gpu_init
+                  0x00078e                  _gpu_set_res
+                  0x000a12                  _gpu_config
+                  0x000c30                  _gpu_set_fb
+                  0x000c44                  _gpu_flip_fb
+                  0x000d00                  _gpu_clear_fb
+                  0x000d20                  _gpu_clear_all_fb
+                  0x000d5a                  _gpu_draw_border
+                  0x000dc4                  _gpu_config_clut
+                  0x000dcc                  _gpu_clut_set
+                  0x000df4                  _gpu_config_chr
+                  0x000e9e                  _gpu_chr_print
+                  0x000f1e                  _gpu_chr_fg_color
+                  0x000f2e                  _gpu_chr_bg_color
+                  0x000f3e                  _rcc_set_fb_dest
+                  0x000f6c                  _rcc_color
+                  0x000f7c                  _rcc_rec
+                  0x001018                  _rcc_pixel
+                  0x00107c                  _rcc_line
+                  0x00117a                  _rgb_2_565
 
-_036cc8405cb6bf74
-                  0x001b40        0x578
- _036cc8405cb6bf74
-                  0x001b40        0x578 output/audio.o
-                  0x001b40                  _c1f
+.dinit            0x0011b4        0x9c2
+ .dinit           0x0011b4        0x9c2 data_init
 
-_036cca205cb6bf74
-                  0x0020b8        0x578
- _036cca205cb6bf74
-                  0x0020b8        0x578 output/audio.o
-                  0x0020b8                  _c2f
+_035e78405cc2bb31
+                  0x001b76        0x578
+ _035e78405cc2bb31
+                  0x001b76        0x578 output/audio.o
+                  0x001b76                  _c1f
 
-_036ccba05cb6bf74
-                  0x002630        0x578
- _036ccba05cb6bf74
-                  0x002630        0x578 output/audio.o
-                  0x002630                  _c3f
+_035e7a205cc2bb31
+                  0x0020ee        0x578
+ _035e7a205cc2bb31
+                  0x0020ee        0x578 output/audio.o
+                  0x0020ee                  _c2f
 
-_036ccd205cb6bf74
-                  0x002ba8        0x578
- _036ccd205cb6bf74
-                  0x002ba8        0x578 output/audio.o
-                  0x002ba8                  _c4f
+_035e7ba05cc2bb31
+                  0x002666        0x578
+ _035e7ba05cc2bb31
+                  0x002666        0x578 output/audio.o
+                  0x002666                  _c3f
 
-_036ccea05cb6bf74
-                  0x003120        0x578
- _036ccea05cb6bf74
-                  0x003120        0x578 output/audio.o
-                  0x003120                  _fltr
+_035e7d205cc2bb31
+                  0x002bde        0x578
+ _035e7d205cc2bb31
+                  0x002bde        0x578 output/audio.o
+                  0x002bde                  _c4f
 
-.text             0x003698        0x2fc
- .text            0x003698        0x1aa output/main.o
-                  0x003698                  _drawpixel
-                  0x003732                  _mandeldraw
-                  0x003782                  _set_color
-                  0x0037b8                  _set_bw
-                  0x0037de                  _main
- .text            0x003842        0x136 output/mandelbrot.o
-                  0x003842                  _fmul
-                  0x00387e                  _fadd
-                  0x00388c                  _mag
-                  0x0038c0                  _cadd
-                  0x0038ee                  _cmul
-                  0x00393a                  _iterate
- .text            0x003978         0x1c output/audio.o
-                  0x003978                  _audio_setup
+_035e7ea05cc2bb31
+                  0x003156        0x578
+ _035e7ea05cc2bb31
+                  0x003156        0x578 output/audio.o
+                  0x003156                  _fltr
 
-.init.delay32     0x003994         0x1c
- .init.delay32    0x003994         0x1c c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32da.Leo)
-                  0x003994                  ___delay32
+.text             0x0036ce        0x3f4
+ .text            0x0036ce        0x216 output/main.o
+                  0x0036ce                  _drawpixel
+                  0x003768                  _mandeldraw
+                  0x0037b8                  _set_color
+                  0x0037ee                  _set_bw
+                  0x003814                  _main
+ .text            0x0038e4        0x136 output/mandelbrot.o
+                  0x0038e4                  _fmul
+                  0x003920                  _fadd
+                  0x00392e                  _mag
+                  0x003962                  _cadd
+                  0x003990                  _cmul
+                  0x0039dc                  _iterate
+ .text            0x003a1a         0x8c output/uart.o
+                  0x003a4a                  _uart_init
+                  0x003a74                  _uart_tx
+                  0x003a8c                  _uart_puts
+ .text            0x003aa6         0x1c output/audio.o
+                  0x003aa6                  _audio_setup
+
+.init.delay32     0x003ac2         0x1c
+ .init.delay32    0x003ac2         0x1c c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32da.Leo)
+                  0x003ac2                  ___delay32
