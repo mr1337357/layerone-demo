@@ -1,0 +1,77 @@
+External pins:
+18-RP7-RB7
+17-RP6-RB6
+11-RP18-RB5
+12-RP28-RB4
+
+RPINR18 --what is this?
+U1RXR = 7? maybe?
+
+Set up the UART:a)Write appropriate values for data, parity andStop bits.b)Write  appropriate  baud  rate  value  to  theUxBRG register.c)Set up transmit and receive interrupt enableand priority bits.2.Enable the UART.3.Set the UTXEN bit (causes a transmit interrupttwo cycles after being set).4.Write a data byte to the lower byte of UxTXREGword. The value will be immediately transferredto  the  Transmit  Shift  Register  (TSR)  and  theserial  bit  stream  will  start  shifting  out  with  thenext rising edge of the baud clock.5.Alternately,  the  data  byte  may  be  transferredwhile  UTXEN =0  and  then  the  user  may  setUTXEN. This will cause the serial bit stream tobegin immediately because the baud clock willstart from a cleared state.6.A  transmit  interrupt  will  be  generated  as  perinterrupt control bit, UTXISELx.
+
+void twistCoords(float angle,float[] xy)
+{
+  float[][] trans = new float[2][2];
+  float nx;
+  float ny;
+  trans[0][0]=cos(angle);
+  trans[0][1]=-sin(angle);
+  trans[1][0]=sin(angle);
+  trans[1][1]=cos(angle);
+  nx = xy[0]*trans[0][0]+xy[1]*trans[0][1];
+  ny = xy[0]*trans[1][0]+xy[1]*trans[1][1];
+  xy[0]=nx;
+  xy[1]=ny;
+}
+
+
+void gfx_drawpixel(uint16_t x,uint16_t y,uint16_t color)
+{
+    uint16_t mask;
+    if(x<=0||x>=319)
+    {
+        return;
+    }
+    if(y<=0||y>=479)
+    {
+        return;
+    }
+    mask = 0xFFF0;
+    color&=0x000F;
+    if(x&1)
+    {
+        mask = 0xFF0F;
+        color<<=4;
+    }
+    x>>=1;
+    GFXDisplayBuffer[x+160*y]|=color;
+}
+
+void gfx_clear()
+{
+    int y;
+    int x;
+    for(y=0;y<gfx.vres;y++)
+    {
+        for(x=0;x<gfx.hres;x++)
+        {
+            gfx_drawpixel(x,y,0);
+        }
+    }
+}
+
+void setup_clut()
+{
+    gpu_clut_set(1,0xFFFF);
+    gpu_clut_set(2,0);
+    gpu_clut_set(3,0x841F);
+}
+
+void gfx_init()
+{
+    gpu_init();
+    gpu_set_res();
+    gpu_config_clut();
+    setup_clut();
+    gfx_clear(); 
+}
