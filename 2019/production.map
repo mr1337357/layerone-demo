@@ -33,7 +33,6 @@ Command:
   --isr \
   --no-gc-sections \
   --fill-upper=0 \
-  --stackguard=16 \
   --no-force-link \
   --smart-io \
   -Map=production.map \
@@ -88,38 +87,37 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x60e           0x915  (2325)
-_51ae9e605e4b6fe2            0x80e              0x3100          0x4980  (18816)
-.text                       0x390e               0xb4c          0x10f2  (4338)
-_c4002aa05e4b6fe1           0x445a               0x578           0x834  (2100)
-_c4002b405e4b6fe1           0x49d2               0x578           0x834  (2100)
-_c4002be05e4b6fe1           0x4f4a               0x578           0x834  (2100)
-_c4002c805e4b6fe1           0x54c2               0x578           0x834  (2100)
-_c4002d205e4b6fe1           0x5a3a               0x578           0x834  (2100)
-_ee8be0005e4b6fe1           0x5fb2               0x2d0           0x438  (1080)
-.text                       0x6282               0x222           0x333  (819)
-.dinit                      0x64a4               0x1e6           0x2d9  (729)
-.text                       0x668a               0x1f2           0x2eb  (747)
-.init.delay32               0x687c                0x1c            0x2a  (42)
+.text                        0x200               0x61a           0x927  (2343)
+_ac3d0e605e4ce7ba            0x81a              0x3100          0x4980  (18816)
+.text                       0x391a               0x8bc           0xd1a  (3354)
+_65286aa05e4ce7b9           0x41d6               0x578           0x834  (2100)
+_65286b405e4ce7b9           0x474e               0x578           0x834  (2100)
+_65286be05e4ce7b9           0x4cc6               0x578           0x834  (2100)
+_65286c805e4ce7b9           0x523e               0x578           0x834  (2100)
+_65286d205e4ce7b9           0x57b6               0x578           0x834  (2100)
+_1aee60005e4ce7ba           0x5d2e               0x2d0           0x438  (1080)
+.dinit                      0x5ffe               0x1e0           0x2d0  (720)
+.text                       0x61de               0x24c           0x372  (882)
+.init.delay32               0x642a                0x1c            0x2a  (42)
+.text                       0x6446                0x2e            0x45  (69)
 
-                 Total "program" memory used (bytes):         0x99e4  (39396) 15%
+                 Total "program" memory used (bytes):         0x93ae  (37806) 14%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x18000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.nbss                        0x800                   0            0x14  (20)
-.ndata                       0x814                   0             0xa  (10)
-.nbss                        0x81e                   0             0xc  (12)
-.ndata                       0x82a                   0             0x4  (4)
-.nbss                        0x82e                   0             0x4  (4)
-.data                        0x832                   0           0x240  (576)
-.bss                         0xa72                   0            0xa4  (164)
-.data                        0xb16                   0            0x18  (24)
+.nbss                        0x800                   0            0x20  (32)
+.ndata                       0x820                   0             0x4  (4)
+.nbss                        0x824                   0             0x4  (4)
+.ndata                       0x828                   0             0x2  (2)
+.data                        0x82a                   0           0x240  (576)
+.bss                         0xa6a                   0            0xa4  (164)
+.data                        0xb0e                   0            0x18  (24)
 DISPLAY                     0x5c00                   0         0x12c00  (76800)
 
-                 Total "data" memory used (bytes):        0x12f2e  (77614) 78%
+                 Total "data" memory used (bytes):        0x12f26  (77606) 78%
 
 
 Dynamic Memory Usage
@@ -127,56 +125,56 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0xb2e                              0x50d2  (20690)
+stack                        0xb26                              0x50da  (20698)
 
-                 Maximum dynamic memory (bytes):         0x50d2  (20690)
+                 Maximum dynamic memory (bytes):         0x50da  (20698)
 
 
 External Symbols in Data Memory (by address):
 
-                    0x081e                  _hlines
-                    0x0820                  _frames
-                    0x0824                  _rxwptr
-                    0x0825                  _rxrptr
-                    0x0826                  _rxlen
-                    0x0827                  _txwptr
-                    0x0828                  _txrptr
-                    0x0829                  _txlen
-                    0x082a                  _colorspin
-                    0x082e                  _tsin
-                    0x0830                  _tcos
-                    0x0832                  _sine
-                    0x0932                  _square
-                    0x0a32                  _triangle
-                    0x0a72                  _line
-                    0x0ac2                  _gfx
-                    0x0af6                  _rxbuf
-                    0x0b06                  _txbuf
-                    0x0b16                  _colors
+                    0x0814                  _hlines
+                    0x0816                  _frames
+                    0x081a                  _rxwptr
+                    0x081b                  _rxrptr
+                    0x081c                  _rxlen
+                    0x081d                  _txwptr
+                    0x081e                  _txrptr
+                    0x081f                  _txlen
+                    0x0820                  _colorspin
+                    0x0824                  _tsin
+                    0x0826                  _tcos
+                    0x082a                  _sine
+                    0x092a                  _square
+                    0x0a2a                  _triangle
+                    0x0a6a                  _line
+                    0x0aba                  _gfx
+                    0x0aee                  _rxbuf
+                    0x0afe                  _txbuf
+                    0x0b0e                  _colors
                     0x5c00                  _GFXDisplayBuffer
 
 External Symbols in Data Memory (by name):
 
                     0x5c00                  _GFXDisplayBuffer
-                    0x0b16                  _colors
-                    0x082a                  _colorspin
-                    0x0820                  _frames
-                    0x0ac2                  _gfx
-                    0x081e                  _hlines
-                    0x0a72                  _line
-                    0x0af6                  _rxbuf
-                    0x0826                  _rxlen
-                    0x0825                  _rxrptr
-                    0x0824                  _rxwptr
-                    0x0832                  _sine
-                    0x0932                  _square
-                    0x0830                  _tcos
-                    0x0a32                  _triangle
-                    0x082e                  _tsin
-                    0x0b06                  _txbuf
-                    0x0829                  _txlen
-                    0x0828                  _txrptr
-                    0x0827                  _txwptr
+                    0x0b0e                  _colors
+                    0x0820                  _colorspin
+                    0x0816                  _frames
+                    0x0aba                  _gfx
+                    0x0814                  _hlines
+                    0x0a6a                  _line
+                    0x0aee                  _rxbuf
+                    0x081c                  _rxlen
+                    0x081b                  _rxrptr
+                    0x081a                  _rxwptr
+                    0x082a                  _sine
+                    0x092a                  _square
+                    0x0826                  _tcos
+                    0x0a2a                  _triangle
+                    0x0824                  _tsin
+                    0x0afe                  _txbuf
+                    0x081f                  _txlen
+                    0x081e                  _txrptr
+                    0x081d                  _txwptr
 
 External Symbols in Program Memory (by address):
 
@@ -185,142 +183,142 @@ External Symbols in Program Memory (by address):
                   0x000252                  __data_init_da
                   0x000252                  __data_init
                   0x000304                  __T1Interrupt
-                  0x000484                  __GFX1Interrupt
-                  0x0004dc                  __U1RXInterrupt
-                  0x000526                  __U1TXInterrupt
-                  0x000586                  __DefaultInterrupt
-                  0x00058c                  ___subsf3
-                  0x00058e                  ___addsf3
-                  0x000648                  ___divsf3
-                  0x0006cc                  ___gtsf2
-                  0x0006cc                  ___gesf2
-                  0x0006d0                  ___fixsfsi
-                  0x000712                  __fpack
-                  0x00075e                  __funpack
-                  0x000788                  __funpack2
-                  0x000798                  __fPropagateNaN
-                  0x0007aa                  __fbopExit
-                  0x0007b2                  __fbopReturnNaN
-                  0x0007b8                  ___udivsi3
-                  0x0007d8                  __fcompare
-                  0x00080e                  _logo
-                  0x00390e                  _gpu_init
-                  0x00391e                  _gpu_set_res
-                  0x003bac                  _gpu_config
-                  0x003dcc                  _gpu_set_fb
-                  0x003de0                  _gpu_flip_fb
-                  0x003e9c                  _gpu_clear_fb
-                  0x003ebc                  _gpu_clear_all_fb
-                  0x003ef6                  _gpu_draw_border
-                  0x003f60                  _gpu_config_clut
-                  0x003f68                  _gpu_clut_set
-                  0x003f90                  _rcc_set_fb_dest
-                  0x003fbe                  _rcc_color
-                  0x003fce                  _rcc_rec
-                  0x00406a                  _rcc_pixel
-                  0x0040ce                  _rcc_line
-                  0x0041e4                  _rgb_2_565
-                  0x00421e                  _gfx_drawpixel
-                  0x00436e                  _gpu_vsync
-                  0x004380                  _gfx_clear
-                  0x0043be                  _rotate_colors
-                  0x004400                  _setup_clut
-                  0x004442                  _gfx_init
-                  0x00445a                  _c1f
-                  0x0049d2                  _c2f
-                  0x004f4a                  _c3f
-                  0x0054c2                  _c4f
-                  0x005a3a                  _fltr
-                  0x006282                  _rotate
-                  0x006328                  _img2coord
-                  0x006344                  _coord2gfx
-                  0x006366                  _drawlogo
-                  0x006436                  _drawbg
-                  0x006478                  _main
-                  0x0066bc                  _uart_init
-                  0x0066fe                  _uart_tx
-                  0x00672a                  _uart_puts
-                  0x006778                  _uart_rx
-                  0x0067a6                  _fcos
-                  0x0067cc                  _fsin
-                  0x006800                  _fmul
-                  0x006836                  _ledon
-                  0x006842                  _ledoff
-                  0x00684e                  _gpio_init
-                  0x006860                  _audio_setup
-                  0x00687c                  ___delay32
+                  0x0004a4                  __GFX1Interrupt
+                  0x000510                  __U1RXInterrupt
+                  0x00053e                  __U1TXInterrupt
+                  0x000592                  __DefaultInterrupt
+                  0x000598                  ___subsf3
+                  0x00059a                  ___addsf3
+                  0x000654                  ___divsf3
+                  0x0006d8                  ___gtsf2
+                  0x0006d8                  ___gesf2
+                  0x0006dc                  ___fixsfsi
+                  0x00071e                  __fpack
+                  0x00076a                  __funpack
+                  0x000794                  __funpack2
+                  0x0007a4                  __fPropagateNaN
+                  0x0007b6                  __fbopExit
+                  0x0007be                  __fbopReturnNaN
+                  0x0007c4                  ___udivsi3
+                  0x0007e4                  __fcompare
+                  0x00081a                  _logo
+                  0x00391a                  _gpu_init
+                  0x003926                  _gpu_config
+                  0x003a8c                  _gpu_set_res
+                  0x003cf4                  _gpu_set_fb
+                  0x003cfa                  _gpu_flip_fb
+                  0x003da6                  _gpu_config_clut
+                  0x003daa                  _gpu_clut_set
+                  0x003dbc                  _rcc_set_fb_dest
+                  0x003dca                  _rcc_color
+                  0x003dd2                  _rcc_rec
+                  0x003e1c                  _gpu_draw_border
+                  0x003e6e                  _gpu_clear_fb
+                  0x003e86                  _gpu_clear_all_fb
+                  0x003ece                  _rcc_pixel
+                  0x003f0a                  _rcc_line
+                  0x00403e                  _rgb_2_565
+                  0x004054                  _gfx_drawpixel
+                  0x0040ce                  _gpu_vsync
+                  0x0040d8                  _gfx_clear
+                  0x004118                  _rotate_colors
+                  0x004152                  _setup_clut
+                  0x0041bc                  _gfx_init
+                  0x0041d6                  _c1f
+                  0x00474e                  _c2f
+                  0x004cc6                  _c3f
+                  0x00523e                  _c4f
+                  0x0057b6                  _fltr
+                  0x0061de                  _rotate
+                  0x00620c                  _img2coord
+                  0x006214                  _coord2gfx
+                  0x006222                  _drawlogo
+                  0x0062dc                  _drawbg
+                  0x00630c                  _main
+                  0x006336                  _uart_init
+                  0x00635c                  _uart_tx
+                  0x006374                  _uart_puts
+                  0x0063b6                  _uart_rx
+                  0x0063da                  _fcos
+                  0x0063f8                  _fsin
+                  0x006420                  _fmul
+                  0x00642a                  ___delay32
+                  0x006446                  _audio_setup
+                  0x00645e                  _ledon
+                  0x006462                  _ledoff
+                  0x006466                  _gpio_init
 
 External Symbols in Program Memory (by name):
 
-                  0x000586                  __DefaultInterrupt
-                  0x000484                  __GFX1Interrupt
+                  0x000592                  __DefaultInterrupt
+                  0x0004a4                  __GFX1Interrupt
                   0x000304                  __T1Interrupt
-                  0x0004dc                  __U1RXInterrupt
-                  0x000526                  __U1TXInterrupt
-                  0x00058e                  ___addsf3
-                  0x00687c                  ___delay32
-                  0x000648                  ___divsf3
-                  0x0006d0                  ___fixsfsi
-                  0x0006cc                  ___gesf2
-                  0x0006cc                  ___gtsf2
-                  0x00058c                  ___subsf3
-                  0x0007b8                  ___udivsi3
+                  0x000510                  __U1RXInterrupt
+                  0x00053e                  __U1TXInterrupt
+                  0x00059a                  ___addsf3
+                  0x00642a                  ___delay32
+                  0x000654                  ___divsf3
+                  0x0006dc                  ___fixsfsi
+                  0x0006d8                  ___gesf2
+                  0x0006d8                  ___gtsf2
+                  0x000598                  ___subsf3
+                  0x0007c4                  ___udivsi3
                   0x000252                  __data_init
                   0x000252                  __data_init_da
-                  0x000798                  __fPropagateNaN
-                  0x0007aa                  __fbopExit
-                  0x0007b2                  __fbopReturnNaN
-                  0x0007d8                  __fcompare
-                  0x000712                  __fpack
-                  0x00075e                  __funpack
-                  0x000788                  __funpack2
+                  0x0007a4                  __fPropagateNaN
+                  0x0007b6                  __fbopExit
+                  0x0007be                  __fbopReturnNaN
+                  0x0007e4                  __fcompare
+                  0x00071e                  __fpack
+                  0x00076a                  __funpack
+                  0x000794                  __funpack2
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x006860                  _audio_setup
-                  0x00445a                  _c1f
-                  0x0049d2                  _c2f
-                  0x004f4a                  _c3f
-                  0x0054c2                  _c4f
-                  0x006344                  _coord2gfx
-                  0x006436                  _drawbg
-                  0x006366                  _drawlogo
-                  0x0067a6                  _fcos
-                  0x005a3a                  _fltr
-                  0x006800                  _fmul
-                  0x0067cc                  _fsin
-                  0x004380                  _gfx_clear
-                  0x00421e                  _gfx_drawpixel
-                  0x004442                  _gfx_init
-                  0x00684e                  _gpio_init
-                  0x003ebc                  _gpu_clear_all_fb
-                  0x003e9c                  _gpu_clear_fb
-                  0x003f68                  _gpu_clut_set
-                  0x003bac                  _gpu_config
-                  0x003f60                  _gpu_config_clut
-                  0x003ef6                  _gpu_draw_border
-                  0x003de0                  _gpu_flip_fb
-                  0x00390e                  _gpu_init
-                  0x003dcc                  _gpu_set_fb
-                  0x00391e                  _gpu_set_res
-                  0x00436e                  _gpu_vsync
-                  0x006328                  _img2coord
-                  0x006842                  _ledoff
-                  0x006836                  _ledon
-                  0x00080e                  _logo
-                  0x006478                  _main
-                  0x003fbe                  _rcc_color
-                  0x0040ce                  _rcc_line
-                  0x00406a                  _rcc_pixel
-                  0x003fce                  _rcc_rec
-                  0x003f90                  _rcc_set_fb_dest
-                  0x0041e4                  _rgb_2_565
-                  0x006282                  _rotate
-                  0x0043be                  _rotate_colors
-                  0x004400                  _setup_clut
-                  0x0066bc                  _uart_init
-                  0x00672a                  _uart_puts
-                  0x006778                  _uart_rx
-                  0x0066fe                  _uart_tx
+                  0x006446                  _audio_setup
+                  0x0041d6                  _c1f
+                  0x00474e                  _c2f
+                  0x004cc6                  _c3f
+                  0x00523e                  _c4f
+                  0x006214                  _coord2gfx
+                  0x0062dc                  _drawbg
+                  0x006222                  _drawlogo
+                  0x0063da                  _fcos
+                  0x0057b6                  _fltr
+                  0x006420                  _fmul
+                  0x0063f8                  _fsin
+                  0x0040d8                  _gfx_clear
+                  0x004054                  _gfx_drawpixel
+                  0x0041bc                  _gfx_init
+                  0x006466                  _gpio_init
+                  0x003e86                  _gpu_clear_all_fb
+                  0x003e6e                  _gpu_clear_fb
+                  0x003daa                  _gpu_clut_set
+                  0x003926                  _gpu_config
+                  0x003da6                  _gpu_config_clut
+                  0x003e1c                  _gpu_draw_border
+                  0x003cfa                  _gpu_flip_fb
+                  0x00391a                  _gpu_init
+                  0x003cf4                  _gpu_set_fb
+                  0x003a8c                  _gpu_set_res
+                  0x0040ce                  _gpu_vsync
+                  0x00620c                  _img2coord
+                  0x006462                  _ledoff
+                  0x00645e                  _ledon
+                  0x00081a                  _logo
+                  0x00630c                  _main
+                  0x003dca                  _rcc_color
+                  0x003f0a                  _rcc_line
+                  0x003ece                  _rcc_pixel
+                  0x003dd2                  _rcc_rec
+                  0x003dbc                  _rcc_set_fb_dest
+                  0x00403e                  _rgb_2_565
+                  0x0061de                  _rotate
+                  0x004118                  _rotate_colors
+                  0x004152                  _setup_clut
+                  0x006336                  _uart_init
+                  0x006374                  _uart_puts
+                  0x0063b6                  _uart_rx
+                  0x00635c                  _uart_tx
 
 Memory Configuration
 
@@ -365,7 +363,7 @@ LOAD /opt/microchip/xc16/v1.50/bin/bin/../../lib/libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200        0x60e
+.text             0x000200        0x61a
  *(.init)
  .init            0x000200         0x4c /opt/microchip/xc16/v1.50/bin/bin/../../lib/liblega-pic30-elf.a(crt0_extended24.o)
                   0x000200                  __reset
@@ -377,54 +375,54 @@ LOAD /opt/microchip/xc16/v1.50/bin/bin/../../lib/libfx-elf.a
  *(.user_init)
  *(.handle)
  *(.isr*)
- .isr.text        0x000304        0x180 out/audio.o
+ .isr.text        0x000304        0x1a0 out/audio.o
                   0x000304                  __T1Interrupt
- .isr.text        0x000484         0x58 out/gfx.o
-                  0x000484                  __GFX1Interrupt
- .isr.text        0x0004dc         0xaa out/uart.o
-                  0x0004dc                  __U1RXInterrupt
-                  0x000526                  __U1TXInterrupt
- .isr             0x000586          0x4 default_isr
-                  0x000586                  __DefaultInterrupt
+ .isr.text        0x0004a4         0x6c out/gfx.o
+                  0x0004a4                  __GFX1Interrupt
+ .isr.text        0x000510         0x82 out/uart.o
+                  0x000510                  __U1RXInterrupt
+                  0x00053e                  __U1TXInterrupt
+ .isr             0x000592          0x4 default_isr
+                  0x000592                  __DefaultInterrupt
  *(.libc)
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x00058a          0x2 /opt/microchip/xc16/v1.50/bin/bin/../../lib/liblega-pic30-elf.a(crt_start_mode_normalda.Leo)
-                  0x00058a                  __crt_start_mode_normal
-                  0x00058a                  __crt_start_mode
- .libm.subsf3     0x00058c         0xbc /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(addsf3.daeo)
-                  0x00058c                  ___subsf3
-                  0x00058e                  ___addsf3
- .libm.divfs3     0x000648         0x84 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(divsf3.daeo)
-                  0x000648                  ___divsf3
- .libm.gtsf2      0x0006cc          0x4 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fgtge.daeo)
-                  0x0006cc                  ___gtsf2
-                  0x0006cc                  ___gesf2
- .libm.fixsfsi    0x0006d0         0x42 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fixsfsi.daeo)
-                  0x0006d0                  _(float, int, long long, short, float, short, int)
- .libm.fpack      0x000712         0x4c /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fpack.daeo)
-                  0x000712                  __fpack
- .libm.funpack    0x00075e         0x2a /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(funpack.daeo)
-                  0x00075e                  __funpack
+                  0x000596          0x2 /opt/microchip/xc16/v1.50/bin/bin/../../lib/liblega-pic30-elf.a(crt_start_mode_normalda.Leo)
+                  0x000596                  __crt_start_mode_normal
+                  0x000596                  __crt_start_mode
+ .libm.subsf3     0x000598         0xbc /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(addsf3.daeo)
+                  0x000598                  ___subsf3
+                  0x00059a                  ___addsf3
+ .libm.divfs3     0x000654         0x84 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(divsf3.daeo)
+                  0x000654                  ___divsf3
+ .libm.gtsf2      0x0006d8          0x4 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fgtge.daeo)
+                  0x0006d8                  ___gtsf2
+                  0x0006d8                  ___gesf2
+ .libm.fixsfsi    0x0006dc         0x42 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fixsfsi.daeo)
+                  0x0006dc                  _(float, int, long long, short, float, short, int)
+ .libm.fpack      0x00071e         0x4c /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fpack.daeo)
+                  0x00071e                  __fpack
+ .libm.funpack    0x00076a         0x2a /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(funpack.daeo)
+                  0x00076a                  __funpack
  .libm.funpack2
-                  0x000788         0x10 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(funpack2.daeo)
-                  0x000788                  __funpack2
+                  0x000794         0x10 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(funpack2.daeo)
+                  0x000794                  __funpack2
  .libm.fPropagateNaN
-                  0x000798         0x12 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(futil.daeo)
-                  0x000798                  __fPropagateNaN
+                  0x0007a4         0x12 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(futil.daeo)
+                  0x0007a4                  __fPropagateNaN
  .libm.fbobExit
-                  0x0007aa          0x8 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(futil.daeo)
-                  0x0007aa                  __fbopExit
+                  0x0007b6          0x8 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(futil.daeo)
+                  0x0007b6                  __fbopExit
  .libm.fbopReturnNaN
-                  0x0007b2          0x6 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(futil.daeo)
-                  0x0007b2                  __fbopReturnNaN
- .libm.udivsi3    0x0007b8         0x20 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(udivsi3.daeo)
-                  0x0007b8                  ___udivsi3
+                  0x0007be          0x6 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(futil.daeo)
+                  0x0007be                  __fbopReturnNaN
+ .libm.udivsi3    0x0007c4         0x20 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(udivsi3.daeo)
+                  0x0007c4                  ___udivsi3
  .libm.fcompare
-                  0x0007d8         0x36 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fcompare.daeo)
-                  0x0007d8                  __fcompare
+                  0x0007e4         0x36 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fcompare.daeo)
+                  0x0007e4                  __fcompare
 
 usercode
  *(usercode)
@@ -1761,51 +1759,49 @@ __c30_signature
  __c30_signature
                   0x00006c          0x6 /opt/microchip/xc16/v1.50/bin/bin/../../lib/libm-elf.a(fcompare.daeo)
 
-.nbss               0x0800         0x14
+.nbss               0x0800         0x20
  .nbss              0x0800         0x14 out/audio.o
+ .nbss              0x0814          0x6 out/gfx.o
+                    0x0814                  _hlines
+                    0x0816                  _frames
+ .nbss              0x081a          0x6 out/uart.o
+                    0x081a                  _rxwptr
+                    0x081b                  _rxrptr
+                    0x081c                  _rxlen
+                    0x081d                  _txwptr
+                    0x081e                  _txrptr
+                    0x081f                  _txlen
 
-.ndata              0x0814          0xa
- .ndata             0x0814          0xa out/audio.o
+.ndata              0x0820          0x4
+ .ndata             0x0820          0x4 out/gfx.o
+                    0x0820                  _colorspin
 
-.nbss               0x081e          0xc
- .nbss              0x081e          0x6 out/gfx.o
-                    0x081e                  _hlines
-                    0x0820                  _frames
- .nbss              0x0824          0x6 out/uart.o
-                    0x0824                  _rxwptr
-                    0x0825                  _rxrptr
-                    0x0826                  _rxlen
-                    0x0827                  _txwptr
-                    0x0828                  _txrptr
-                    0x0829                  _txlen
+.nbss               0x0824          0x4
+ .nbss              0x0824          0x4 out/main.o
+                    0x0824                  _tsin
+                    0x0826                  _tcos
 
-.ndata              0x082a          0x4
- .ndata             0x082a          0x4 out/gfx.o
-                    0x082a                  _colorspin
+.ndata              0x0828          0x2
+ .ndata             0x0828          0x2 out/audio.o
 
-.nbss               0x082e          0x4
- .nbss              0x082e          0x4 out/main.o
-                    0x082e                  _tsin
-                    0x0830                  _tcos
+.data               0x082a        0x240
+ .data              0x082a        0x240 out/audio.o
+                    0x082a                  _sine
+                    0x092a                  _square
+                    0x0a2a                  _triangle
 
-.data               0x0832        0x240
- .data              0x0832        0x240 out/audio.o
-                    0x0832                  _sine
-                    0x0932                  _square
-                    0x0a32                  _triangle
+.bss                0x0a6a         0xa4
+ .bss               0x0a6a         0x50 out/main.o
+                    0x0a6a                  _line
+ .bss               0x0aba         0x34 out/gfx.o
+                    0x0aba                  _gfx
+ .bss               0x0aee         0x20 out/uart.o
+                    0x0aee                  _rxbuf
+                    0x0afe                  _txbuf
 
-.bss                0x0a72         0xa4
- .bss               0x0a72         0x50 out/main.o
-                    0x0a72                  _line
- .bss               0x0ac2         0x34 out/gfx.o
-                    0x0ac2                  _gfx
- .bss               0x0af6         0x20 out/uart.o
-                    0x0af6                  _rxbuf
-                    0x0b06                  _txbuf
-
-.data               0x0b16         0x18
- .data              0x0b16         0x18 out/gfx.o
-                    0x0b16                  _colors
+.data               0x0b0e         0x18
+ .data              0x0b0e         0x18 out/gfx.o
+                    0x0b0e                  _colors
 
 DISPLAY             0x5c00      0x12c00
  DISPLAY            0x5c00      0x12c00 out/gfx.o
@@ -1841,101 +1837,101 @@ DISPLAY             0x5c00      0x12c00
  .ivt._U1TXInterrupt
                   0x00002c          0x2 out/uart.o
 
-_51ae9e605e4b6fe2
-                  0x00080e       0x3100
- _51ae9e605e4b6fe2
-                  0x00080e       0x3100 out/main.o
-                  0x00080e                  _logo
+_ac3d0e605e4ce7ba
+                  0x00081a       0x3100
+ _ac3d0e605e4ce7ba
+                  0x00081a       0x3100 out/main.o
+                  0x00081a                  _logo
 
-.text             0x00390e        0xb4c
- .text            0x00390e        0xb4c out/gfx.o
-                  0x00390e                  _gpu_init
-                  0x00391e                  _gpu_set_res
-                  0x003bac                  _gpu_config
-                  0x003dcc                  _gpu_set_fb
-                  0x003de0                  _gpu_flip_fb
-                  0x003e9c                  _gpu_clear_fb
-                  0x003ebc                  _gpu_clear_all_fb
-                  0x003ef6                  _gpu_draw_border
-                  0x003f60                  _gpu_config_clut
-                  0x003f68                  _gpu_clut_set
-                  0x003f90                  _rcc_set_fb_dest
-                  0x003fbe                  _rcc_color
-                  0x003fce                  _rcc_rec
-                  0x00406a                  _rcc_pixel
-                  0x0040ce                  _rcc_line
-                  0x0041e4                  _rgb_2_565
-                  0x00421e                  _gfx_drawpixel
-                  0x00436e                  _gpu_vsync
-                  0x004380                  _gfx_clear
-                  0x0043be                  _rotate_colors
-                  0x004400                  _setup_clut
-                  0x004442                  _gfx_init
+.text             0x00391a        0x8bc
+ .text            0x00391a        0x8bc out/gfx.o
+                  0x00391a                  _gpu_init
+                  0x003926                  _gpu_config
+                  0x003a8c                  _gpu_set_res
+                  0x003cf4                  _gpu_set_fb
+                  0x003cfa                  _gpu_flip_fb
+                  0x003da6                  _gpu_config_clut
+                  0x003daa                  _gpu_clut_set
+                  0x003dbc                  _rcc_set_fb_dest
+                  0x003dca                  _rcc_color
+                  0x003dd2                  _rcc_rec
+                  0x003e1c                  _gpu_draw_border
+                  0x003e6e                  _gpu_clear_fb
+                  0x003e86                  _gpu_clear_all_fb
+                  0x003ece                  _rcc_pixel
+                  0x003f0a                  _rcc_line
+                  0x00403e                  _rgb_2_565
+                  0x004054                  _gfx_drawpixel
+                  0x0040ce                  _gpu_vsync
+                  0x0040d8                  _gfx_clear
+                  0x004118                  _rotate_colors
+                  0x004152                  _setup_clut
+                  0x0041bc                  _gfx_init
 
-_c4002aa05e4b6fe1
-                  0x00445a        0x578
- _c4002aa05e4b6fe1
-                  0x00445a        0x578 out/audio.o
-                  0x00445a                  _c1f
+_65286aa05e4ce7b9
+                  0x0041d6        0x578
+ _65286aa05e4ce7b9
+                  0x0041d6        0x578 out/audio.o
+                  0x0041d6                  _c1f
 
-_c4002b405e4b6fe1
-                  0x0049d2        0x578
- _c4002b405e4b6fe1
-                  0x0049d2        0x578 out/audio.o
-                  0x0049d2                  _c2f
+_65286b405e4ce7b9
+                  0x00474e        0x578
+ _65286b405e4ce7b9
+                  0x00474e        0x578 out/audio.o
+                  0x00474e                  _c2f
 
-_c4002be05e4b6fe1
-                  0x004f4a        0x578
- _c4002be05e4b6fe1
-                  0x004f4a        0x578 out/audio.o
-                  0x004f4a                  _c3f
+_65286be05e4ce7b9
+                  0x004cc6        0x578
+ _65286be05e4ce7b9
+                  0x004cc6        0x578 out/audio.o
+                  0x004cc6                  _c3f
 
-_c4002c805e4b6fe1
-                  0x0054c2        0x578
- _c4002c805e4b6fe1
-                  0x0054c2        0x578 out/audio.o
-                  0x0054c2                  _c4f
+_65286c805e4ce7b9
+                  0x00523e        0x578
+ _65286c805e4ce7b9
+                  0x00523e        0x578 out/audio.o
+                  0x00523e                  _c4f
 
-_c4002d205e4b6fe1
-                  0x005a3a        0x578
- _c4002d205e4b6fe1
-                  0x005a3a        0x578 out/audio.o
-                  0x005a3a                  _fltr
+_65286d205e4ce7b9
+                  0x0057b6        0x578
+ _65286d205e4ce7b9
+                  0x0057b6        0x578 out/audio.o
+                  0x0057b6                  _fltr
 
-_ee8be0005e4b6fe1
-                  0x005fb2        0x2d0
- _ee8be0005e4b6fe1
-                  0x005fb2        0x2d0 out/fixed.o
+_1aee60005e4ce7ba
+                  0x005d2e        0x2d0
+ _1aee60005e4ce7ba
+                  0x005d2e        0x2d0 out/fixed.o
 
-.text             0x006282        0x222
- .text            0x006282        0x222 out/main.o
-                  0x006282                  _rotate
-                  0x006328                  _img2coord
-                  0x006344                  _coord2gfx
-                  0x006366                  _drawlogo
-                  0x006436                  _drawbg
-                  0x006478                  _main
+.dinit            0x005ffe        0x1e0
+ .dinit           0x005ffe        0x1e0 data_init
 
-.dinit            0x0064a4        0x1e6
- .dinit           0x0064a4        0x1e6 data_init
+.text             0x0061de        0x24c
+ .text            0x0061de        0x158 out/main.o
+                  0x0061de                  _rotate
+                  0x00620c                  _img2coord
+                  0x006214                  _coord2gfx
+                  0x006222                  _drawlogo
+                  0x0062dc                  _drawbg
+                  0x00630c                  _main
+ .text            0x006336         0xa4 out/uart.o
+                  0x006336                  _uart_init
+                  0x00635c                  _uart_tx
+                  0x006374                  _uart_puts
+                  0x0063b6                  _uart_rx
+ .text            0x0063da         0x50 out/fixed.o
+                  0x0063da                  _fcos
+                  0x0063f8                  _fsin
+                  0x006420                  _fmul
 
-.text             0x00668a        0x1f2
- .text            0x00668a        0x11c out/uart.o
-                  0x0066bc                  _uart_init
-                  0x0066fe                  _uart_tx
-                  0x00672a                  _uart_puts
-                  0x006778                  _uart_rx
- .text            0x0067a6         0x90 out/fixed.o
-                  0x0067a6                  _fcos
-                  0x0067cc                  _fsin
-                  0x006800                  _fmul
- .text            0x006836         0x2a out/gpio.o
-                  0x006836                  _ledon
-                  0x006842                  _ledoff
-                  0x00684e                  _gpio_init
- .text            0x006860         0x1c out/audio.o
-                  0x006860                  _audio_setup
+.init.delay32     0x00642a         0x1c
+ .init.delay32    0x00642a         0x1c /opt/microchip/xc16/v1.50/bin/bin/../../lib/liblega-pic30-elf.a(delay32da.Leo)
+                  0x00642a                  ___delay32
 
-.init.delay32     0x00687c         0x1c
- .init.delay32    0x00687c         0x1c /opt/microchip/xc16/v1.50/bin/bin/../../lib/liblega-pic30-elf.a(delay32da.Leo)
-                  0x00687c                  ___delay32
+.text             0x006446         0x2e
+ .text            0x006446         0x18 out/audio.o
+                  0x006446                  _audio_setup
+ .text            0x00645e         0x16 out/gpio.o
+                  0x00645e                  _ledon
+                  0x006462                  _ledoff
+                  0x006466                  _gpio_init

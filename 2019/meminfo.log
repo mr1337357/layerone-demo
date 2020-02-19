@@ -10,38 +10,37 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x60e           0x915  (2325)
-_51ae9e605e4b6fe2            0x80e              0x3100          0x4980  (18816)
-.text                       0x390e               0xb4c          0x10f2  (4338)
-_c4002aa05e4b6fe1           0x445a               0x578           0x834  (2100)
-_c4002b405e4b6fe1           0x49d2               0x578           0x834  (2100)
-_c4002be05e4b6fe1           0x4f4a               0x578           0x834  (2100)
-_c4002c805e4b6fe1           0x54c2               0x578           0x834  (2100)
-_c4002d205e4b6fe1           0x5a3a               0x578           0x834  (2100)
-_ee8be0005e4b6fe1           0x5fb2               0x2d0           0x438  (1080)
-.text                       0x6282               0x222           0x333  (819)
-.dinit                      0x64a4               0x1e6           0x2d9  (729)
-.text                       0x668a               0x1f2           0x2eb  (747)
-.init.delay32               0x687c                0x1c            0x2a  (42)
+.text                        0x200               0x61a           0x927  (2343)
+_ac3d0e605e4ce7ba            0x81a              0x3100          0x4980  (18816)
+.text                       0x391a               0x8bc           0xd1a  (3354)
+_65286aa05e4ce7b9           0x41d6               0x578           0x834  (2100)
+_65286b405e4ce7b9           0x474e               0x578           0x834  (2100)
+_65286be05e4ce7b9           0x4cc6               0x578           0x834  (2100)
+_65286c805e4ce7b9           0x523e               0x578           0x834  (2100)
+_65286d205e4ce7b9           0x57b6               0x578           0x834  (2100)
+_1aee60005e4ce7ba           0x5d2e               0x2d0           0x438  (1080)
+.dinit                      0x5ffe               0x1e0           0x2d0  (720)
+.text                       0x61de               0x24c           0x372  (882)
+.init.delay32               0x642a                0x1c            0x2a  (42)
+.text                       0x6446                0x2e            0x45  (69)
 
-                 Total "program" memory used (bytes):         0x99e4  (39396) 15%
+                 Total "program" memory used (bytes):         0x93ae  (37806) 14%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x18000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.nbss                        0x800                   0            0x14  (20)
-.ndata                       0x814                   0             0xa  (10)
-.nbss                        0x81e                   0             0xc  (12)
-.ndata                       0x82a                   0             0x4  (4)
-.nbss                        0x82e                   0             0x4  (4)
-.data                        0x832                   0           0x240  (576)
-.bss                         0xa72                   0            0xa4  (164)
-.data                        0xb16                   0            0x18  (24)
+.nbss                        0x800                   0            0x20  (32)
+.ndata                       0x820                   0             0x4  (4)
+.nbss                        0x824                   0             0x4  (4)
+.ndata                       0x828                   0             0x2  (2)
+.data                        0x82a                   0           0x240  (576)
+.bss                         0xa6a                   0            0xa4  (164)
+.data                        0xb0e                   0            0x18  (24)
 DISPLAY                     0x5c00                   0         0x12c00  (76800)
 
-                 Total "data" memory used (bytes):        0x12f2e  (77614) 78%
+                 Total "data" memory used (bytes):        0x12f26  (77606) 78%
 
 
 Dynamic Memory Usage
@@ -49,7 +48,7 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0xb2e                              0x50d2  (20690)
+stack                        0xb26                              0x50da  (20698)
 
-                 Maximum dynamic memory (bytes):         0x50d2  (20690)
+                 Maximum dynamic memory (bytes):         0x50da  (20698)
 
