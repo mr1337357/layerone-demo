@@ -1,20 +1,24 @@
 
 
-xc16-ld 1.36 (B)
+xc16-ld 1.50 (A)
+
+Default Code Model: Small
+Default Data Model: Large
+Default Scalar Model: Small
 
 "program" Memory  [Origin = 0x200, Length = 0x2a9f8]
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x60e           0x915  (2325)
-_038f70005ce8e8f2            0x80e              0x3100          0x4980  (18816)
+_51ae9e605e4b6fe2            0x80e              0x3100          0x4980  (18816)
 .text                       0x390e               0xb4c          0x10f2  (4338)
-_037378405ce8e8f2           0x445a               0x578           0x834  (2100)
-_03737a205ce8e8f2           0x49d2               0x578           0x834  (2100)
-_03737ba05ce8e8f2           0x4f4a               0x578           0x834  (2100)
-_03737d205ce8e8f2           0x54c2               0x578           0x834  (2100)
-_03737ea05ce8e8f2           0x5a3a               0x578           0x834  (2100)
-_02bd01e05ce8e8f2           0x5fb2               0x2d0           0x438  (1080)
+_c4002aa05e4b6fe1           0x445a               0x578           0x834  (2100)
+_c4002b405e4b6fe1           0x49d2               0x578           0x834  (2100)
+_c4002be05e4b6fe1           0x4f4a               0x578           0x834  (2100)
+_c4002c805e4b6fe1           0x54c2               0x578           0x834  (2100)
+_c4002d205e4b6fe1           0x5a3a               0x578           0x834  (2100)
+_ee8be0005e4b6fe1           0x5fb2               0x2d0           0x438  (1080)
 .text                       0x6282               0x222           0x333  (819)
 .dinit                      0x64a4               0x1e6           0x2d9  (729)
 .text                       0x668a               0x1f2           0x2eb  (747)
