@@ -1,0 +1,38 @@
+Microchip Technology Inc, v1.50 (A)
+
+Tool Name:
+  /opt/microchip/xc16/v1.50/bin/bin/../bin/elf-ld
+
+Command:
+  -p24FJ256DA206 \
+  -o \
+  out/demo.elf \
+  -L/opt/microchip/xc16/v1.50/bin/bin/.. \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../lib \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../support/PIC24E/gld \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../support/PIC24F/gld \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../support/PIC24H/gld \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../support/dsPIC30F/gld \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../support/dsPIC33C/gld \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../support/dsPIC33E/gld \
+  -L/opt/microchip/xc16/v1.50/bin/bin/../../support/dsPIC33F/gld \
+  --local-stack \
+  -Tp24FJ256DA206.gld.00 \
+  --stack=16 \
+  --check-sections \
+  --data-init \
+  --pack-data \
+  --handles \
+  --isr \
+  --no-gc-sections \
+  --fill-upper=0 \
+  --no-force-link \
+  --smart-io \
+  -Map=production.map \
+  --report-mem \
+  -start-group \
+  --library=lega-pic30-elf \
+  --library=m-elf \
+  --library=lega-c-elf \
+  -end-group \
+

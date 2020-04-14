@@ -26,8 +26,8 @@ CFLAGS="-mcpu=24FJ256DA206 -mlarge-arrays -mlarge-code -Wall"
 SRCDIR=src
 INCDIR=inc/
 OUTDIR=out
-CFLAGS="${CFLAGS} -I${INCDIR} -O2"
-#CFLAGS="${CFLAGS} -I${INCDIR}"
+#CFLAGS="${CFLAGS} -I${INCDIR} -O2"
+CFLAGS="${CFLAGS} -I${INCDIR}"
 
 cd ${SRCDIR}
 src=$(ls *.c)

@@ -1,0 +1,6 @@
+External pins:
+18-RP7-RB7 UART rx
+17-RP6-RB6 UART tx
+11-RP18-RB5
+12-RP28-RB4
+

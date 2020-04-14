@@ -1,0 +1,49 @@
+
+
+xc16-ld 1.50 (A)
+
+Default Code Model: Small
+Default Data Model: Large
+Default Scalar Model: Small
+
+"program" Memory  [Origin = 0x200, Length = 0x2a9f8]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.text                        0x200               0x4f6           0x771  (1905)
+.const                       0x6f6                 0x8             0xc  (12)
+_c27f2e605e952d42            0x6fe              0x3100          0x4980  (18816)
+.text                       0x37fe               0x8bc           0xd1a  (3354)
+_5c2dd0005e952d42           0x40ba               0x2d0           0x438  (1080)
+.dinit                      0x438a               0x27e           0x3bd  (957)
+.text                       0x4608               0x21a           0x327  (807)
+.init.delay32               0x4822                0x1c            0x2a  (42)
+.text                       0x483e                0x16            0x21  (33)
+
+                 Total "program" memory used (bytes):         0x697e  (27006) 10%
+
+
+"data" Memory  [Origin = 0x800, Length = 0x18000]
+
+section                    address      alignment gaps    total length  (dec)
+-------                    -------      --------------    -------------------
+.nbss                        0x800                   0            0x24  (36)
+.ndata                       0x824                   0             0x4  (4)
+.data                        0x828                   0           0x340  (832)
+.bss                         0xb68                   0            0x54  (84)
+.data                        0xbbc                   0            0x18  (24)
+.bss                         0xbd4                   0             0x4  (4)
+DISPLAY                     0x5c00                   0         0x12c00  (76800)
+
+                 Total "data" memory used (bytes):        0x12fd8  (77784) 79%
+
+
+Dynamic Memory Usage
+
+region                     address                      maximum length  (dec)
+------                     -------                      ---------------------
+heap                             0                                   0  (0)
+stack                        0xbd8                              0x5028  (20520)
+
+                 Maximum dynamic memory (bytes):         0x5028  (20520)
+
