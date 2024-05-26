@@ -1,0 +1,59 @@
+
+
+xc16-ld 2.00 (A)
+
+Default Code Model: Small
+Default Data Model: Large
+Default Scalar Model: Small
+
+"program" Memory  [Origin = 0x200, Length = 0x2a9f8]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.text                        0x200               0x350           0x4f8  (1272)
+_bbe3bd2063eed290            0x550              0x9600          0xe100  (57600)
+_bbe3be6063eed290           0x9b50              0x9600          0xe100  (57600)
+.dinit                     0x13150              0x11de          0x1acd  (6861)
+.text                      0x1432e               0x666           0x999  (2457)
+_3c0e9aa063eed290          0x14994               0x578           0x834  (2100)
+_3c0e9b4063eed290          0x14f0c               0x578           0x834  (2100)
+_3c0e9be063eed290          0x15484               0x578           0x834  (2100)
+_3c0e9c8063eed290          0x159fc               0x578           0x834  (2100)
+_3c0e9d2063eed290          0x15f74               0x578           0x834  (2100)
+.text                      0x164ec               0xcae          0x1305  (4869)
+_bbe3bdc063eed290          0x1719a                0x20            0x30  (48)
+_bbe3bf0063eed290          0x171ba                0x20            0x30  (48)
+.text                      0x171da                0x1c            0x2a  (42)
+.init.delay32              0x171f6                0x1c            0x2a  (42)
+
+                 Total "program" memory used (bytes):        0x2281b  (141339) 53%
+
+
+"data" Memory  [Origin = 0x800, Length = 0x18000]
+
+section                    address      alignment gaps    total length  (dec)
+-------                    -------      --------------    -------------------
+.nbss                        0x800                   0            0x14  (20)
+.ndata                       0x814                   0             0xa  (10)
+.nbss                        0x81e                   0             0xa  (10)
+.ndata                       0x828                   0             0x8  (8)
+.nbss                        0x830                   0             0xa  (10)
+.ndata                       0x83a                   0             0x2  (2)
+.nbss                        0x83c                   0             0x2  (2)
+.data                        0x83e                   0           0xe20  (3616)
+.bss                        0x165e                   0            0x50  (80)
+FONTS                       0x4ff8                   0           0xc08  (3080)
+DISPLAY                     0x5c00                   0         0x12c00  (76800)
+
+                 Total "data" memory used (bytes):        0x146b6  (83638) 85%
+
+
+Dynamic Memory Usage
+
+region                     address                      maximum length  (dec)
+------                     -------                      ---------------------
+heap                             0                                   0  (0)
+stack                       0x16ae                              0x394a  (14666)
+
+                 Maximum dynamic memory (bytes):         0x394a  (14666)
+

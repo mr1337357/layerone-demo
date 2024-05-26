@@ -1,0 +1,4 @@
+
+void gfx_init()
+{
+}

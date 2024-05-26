@@ -1,0 +1,26 @@
+External pins:
+18-RP7-RB7 == RX
+17-RP6-RB6 == TX
+11-RP18-RB5
+12-RP28-RB4
+
+
+
+RPINR18 --what is this?
+U1RXR = 7? maybe?
+
+RPINR18 = 0x0007
+
+seems like top left is 1,23 in 320x480
+bottom right 317,479
+
+320x240:
+   1,23->318,240
+
+SPRITES MUST BE WITHIN VBUF AT ALL TIMES >:(
+let's use rows 0-22 to store non-visible sprites (28 16x16 sprites)
+
+-O2 breaks: can't handle numbers over 0xFFFF
+
+BASIC code: saved format uses first 2 bytes of line to store line number (0-32767) plus 32768, followed by offset of next line(from beginning of prog memory), followed by code, followed by \n
+

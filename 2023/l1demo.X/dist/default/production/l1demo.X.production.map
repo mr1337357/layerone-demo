@@ -1,0 +1,2724 @@
+Microchip Technology Inc, v2.10 (A)
+
+Tool Name:
+  /opt/microchip/xc16/v2.10/bin/bin/../bin/elf-ld
+
+Command:
+  -p24FJ256DA206 \
+  -o \
+  dist/default/production/l1demo.X.production.elf \
+  -L/opt/microchip/xc16/v2.10/bin/bin/.. \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../lib \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../support/PIC24E/gld \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../support/PIC24F/gld \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../support/PIC24H/gld \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../support/dsPIC30F/gld \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33C/gld \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33E/gld \
+  -L/opt/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33F/gld \
+  build/default/production/_ext/1360937237/gpu.o \
+  build/default/production/_ext/1360937237/uart.o \
+  build/default/production/_ext/1360937237/audio.o \
+  build/default/production/_ext/1360937237/gfx.o \
+  build/default/production/_ext/1360937237/program.o \
+  build/default/production/_ext/1360937237/io.o \
+  build/default/production/_ext/1360937237/basic_external_functions.o \
+  build/default/production/_ext/1360937237/main.o \
+  build/default/production/_ext/1360937237/editor.o \
+  build/default/production/_ext/1360937237/parser.o \
+  build/default/production/_ext/1360937237/interpreter.o \
+  build/default/production/_ext/1360937237/demo.o \
+  build/default/production/_ext/1360937237/variable.o \
+  --local-stack \
+  --defsym=__MPLAB_BUILD=1 \
+  -Tp24FJ256DA206.gld.00 \
+  --stack=16 \
+  --check-sections \
+  --data-init \
+  --pack-data \
+  --handles \
+  --isr \
+  --no-gc-sections \
+  --fill-upper=0 \
+  --stackguard=16 \
+  --no-force-link \
+  --smart-io \
+  -Map=dist/default/production/l1demo.X.production.map \
+  --report-mem \
+  --memorysummary \
+  dist/default/production/memoryfile.xml \
+  -start-group \
+  --library=c99-pic30-elf \
+  --library=m-elf \
+  --library=c99-elf \
+  -end-group \
+
+
+Optional library libpPIC24Fxxx.a not found
+Archive member included because of file (symbol)
+
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(crt0_extended24.o)
+                              (__resetPRI)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(data_init_24.o)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(crt0_extended24.o) (__data_init_da)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(crt_start_mode_normalda.Meo)
+                              (__crt_start_mode_normal)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(delay32da.Meo)
+                              build/default/production/_ext/1360937237/gpu.o (___delay32)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.DA_o)
+                              build/default/production/_ext/1360937237/interpreter.o (___divsi3)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.DA_o)
+                              build/default/production/_ext/1360937237/uart.o (___udivsi3)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo)
+                              build/default/production/_ext/1360937237/editor.o (__fprintf_cdnopsuxX)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_doux.DA_lo)
+                              build/default/production/_ext/1360937237/program.o (__fprintf_cdnopuxX)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_printf_dosux.DA_lo)
+                              build/default/production/_ext/1360937237/parser.o (__printf_cdnopsuxX)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(fwrite.DA_lo)
+                              build/default/production/_ext/1360937237/main.o (_fwrite)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(isalnum.DA_lo)
+                              build/default/production/_ext/1360937237/interpreter.o (_isalnum)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(putc.DA_lo)
+                              build/default/production/_ext/1360937237/editor.o (_putc)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(putchar.DA_lo)
+                              build/default/production/_ext/1360937237/parser.o (_putchar)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo)
+                              build/default/production/_ext/1360937237/program.o (__stderr)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stdout.DA_lo)
+                              build/default/production/_ext/1360937237/main.o (__stdout)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strlen.DA_lo)
+                              build/default/production/_ext/1360937237/program.o (_strlen)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+                              build/default/production/_ext/1360937237/program.o (_strtol)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo) (___fmt_d_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_o.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo) (___fmt_o_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_s.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo) (___fmt_s_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.DA_lo) (___cvt_u)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo) (___fmt_x_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__int_vfprintf.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo) (___vfprintf)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_init_needed.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo) (___io_init_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__out.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo) (___stdio_write_unbuffered)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_int.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo) (___pop_int_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_ptr.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo) (___pop_ptr_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.DA_lo) (___pad)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_close.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo) (___stdio_close_rw)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(atoi.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo) (_atoi)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(intscan.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo) (___intscan)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(lseek.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_close.DA_lo) (_lseek)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memcpy.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__out.DA_lo) (_memcpy)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memset.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo) (_memset)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo) (___shlim)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(syscall_ret.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(lseek.DA_lo) (___syscall_ret)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo) (_tolower)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.DA_lo) (_toupper)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__errno_location.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo) (___errno_val)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__init_stdio.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_init_needed.DA_lo) (___init_stdio_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_file_needed.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_init_needed.DA_lo) (___io_file_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo) (___pop_float)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.DA_lo) (___uflow)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.DA_lo) (___toread)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.DA_lo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.DA_lo) (___stdio_exit_needed)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(closeda.Melo)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_close.DA_lo) (_close)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.DA_lo) (___extendsfdf2)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(funpack.DA_o)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o) (__funpack)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.DA_o)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(fwrite.DA_lo) (___mulsi3)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.DA_lo) (___udivdi3)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.lDA_o)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(intscan.DA_lo) (___muldi3)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.DA_o)
+                              /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.lDA_o) (___umuldi3)
+
+
+xc16-ld 2.10 (A)
+
+Default Code Model: Small
+Default Data Model: Large
+Default Scalar Model: Small
+
+"program" Memory  [Origin = 0x200, Length = 0x2a9f8]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.text                        0x200              0x1a8a          0x27cf  (10191)
+.const                      0x1c8a               0x462           0x693  (1683)
+.dinit                      0x20ec              0x1372          0x1d2b  (7467)
+.text                       0x345e              0x2df6          0x44f1  (17649)
+.init.delay32               0x6254                0x1c            0x2a  (42)
+
+                 Total "program" memory used (bytes):         0x90a8  (37032) 14%
+
+
+"data" Memory  [Origin = 0x800, Length = 0x18000]
+
+section                    address      alignment gaps    total length  (dec)
+-------                    -------      --------------    -------------------
+.data                        0x800                   0           0xbe0  (3040)
+.bss                        0x13e0                   0           0x2bc  (700)
+.data                       0x169c                   0           0x354  (852)
+.bss                        0x19f0                   0            0xae  (174)
+.data                       0x1a9e                   0            0xf6  (246)
+.bss                        0x1b94                   0            0x2c  (44)
+.data                       0x1bc0                   0             0x8  (8)
+.bss                        0x1bc8                   0             0x4  (4)
+.data                       0x1bcc                   0             0x6  (6)
+.bss                        0x1bd2                   0             0x2  (2)
+.data                       0x1bd4                   0             0x2  (2)
+.bss                        0x1bd6                   0             0x6  (6)
+DISPLAY                     0x4ff8                   0         0x12c00  (76800)
+FONTS                      0x17bf8                   0           0xc08  (3080)
+
+                 Total "data" memory used (bytes):        0x14be4  (84964) 86%
+
+
+Dynamic Memory Usage
+
+region                     address                      maximum length  (dec)
+------                     -------                      ---------------------
+heap                             0                                   0  (0)
+stack                       0x1bdc                              0x341c  (13340)
+
+                 Maximum dynamic memory (bytes):         0x341c  (13340)
+
+
+External Symbols in Data Memory (by address):
+
+                    0x0800                  _font
+                    0x13e0                  _variables
+                    0x169c                  _sine
+                    0x179c                  _square
+                    0x189c                  _triangle
+                    0x1a4c                  _line
+                    0x1a9c                  _cursor
+                    0x1a9d                  _editor_state
+                    0x1a9e                  _keywords
+                    0x1aee                  __stderr
+                    0x1af0                  ___stderr_used
+                    0x1b32                  __stdout
+                    0x1b34                  ___stdout_used
+                    0x1b94                  _c1f
+                    0x1b95                  _fltr
+                    0x1baa                  _program
+                    0x1bae                  _progsize
+                    0x1bb2                  _proglen
+                    0x1bc8                  _debug_level
+                    0x1bca                  _system_state
+                    0x1bcc                  _demo_timeout
+                    0x1bd6                  _demo_index
+                    0x1bd8                  ___errno_val
+                    0x4ff8                  _GFXDisplayBuffer
+                    0x17bf8                  _FontStart
+
+External Symbols in Data Memory (by name):
+
+                    0x17bf8                  _FontStart
+                    0x4ff8                  _GFXDisplayBuffer
+                    0x1bd8                  ___errno_val
+                    0x1af0                  ___stderr_used
+                    0x1b34                  ___stdout_used
+                    0x1aee                  __stderr
+                    0x1b32                  __stdout
+                    0x1b94                  _c1f
+                    0x1a9c                  _cursor
+                    0x1bc8                  _debug_level
+                    0x1bd6                  _demo_index
+                    0x1bcc                  _demo_timeout
+                    0x1a9d                  _editor_state
+                    0x1b95                  _fltr
+                    0x0800                  _font
+                    0x1a9e                  _keywords
+                    0x1a4c                  _line
+                    0x1bb2                  _proglen
+                    0x1baa                  _program
+                    0x1bae                  _progsize
+                    0x169c                  _sine
+                    0x179c                  _square
+                    0x1bca                  _system_state
+                    0x189c                  _triangle
+                    0x13e0                  _variables
+
+External Symbols in Program Memory (by address):
+
+                  0x000200                  __resetPRI
+                  0x00023c                  __psv_init
+                  0x000252                  __data_init_da
+                  0x000252                  __data_init
+                  0x000354                  __GFX1Interrupt
+                  0x00037e                  __T1Interrupt
+                  0x000472                  __DefaultInterrupt
+                  0x00048a                  ___divsi3
+                  0x0004a8                  ___udivsi3
+                  0x0004d4                  ___sio_fprintf_dosux
+                  0x0004ee                  ___sio_fprintf_doux
+                  0x00050c                  ___sio_printf_dosux
+                  0x000522                  _fwrite
+                  0x000568                  _isalnum
+                  0x000580                  ___isalnum_l
+                  0x000582                  ___putc_unbuffered
+                  0x0005b6                  _putc
+                  0x0005b8                  _putchar
+                  0x0005c4                  ___init_stderr
+                  0x0005d2                  ___init_stdout
+                  0x0005da                  _strlen
+                  0x000692                  _strtoull
+                  0x00069a                  _strtoll
+                  0x0006a2                  _strtoul
+                  0x0006aa                  _strtol
+                  0x0006b2                  _strtoimax
+                  0x0006b4                  _strtoumax
+                  0x0006b6                  ___fmt_d
+                  0x000770                  ___fmt_o
+                  0x0007e2                  ___fmt_s
+                  0x00083e                  ___cvt_u
+                  0x0008f2                  ___fmt_u
+                  0x00094c                  ___fmt_x
+                  0x000ab2                  ___vfprintf
+                  0x000b0a                  ___out
+                  0x000b1a                  ___pop_int
+                  0x000bd4                  ___pop_ptr
+                  0x000c7c                  ___pad
+                  0x000d0a                  ___fmt_state
+                  0x001024                  ___printf_core
+                  0x001064                  ___stdio_close
+                  0x0010a2                  ___stdio_close_rw
+                  0x00110e                  _atoi
+                  0x001180                  ___intscan
+                  0x0015b2                  ___lseek
+                  0x0015be                  _memcpy
+                  0x0015d4                  _memset
+                  0x0016f4                  ___shlim
+                  0x00173e                  ___shgetc
+                  0x001872                  ___syscall_ret
+                  0x001886                  _tolower
+                  0x001892                  ___tolower_l
+                  0x001894                  _toupper
+                  0x0018a0                  ___toupper_l
+                  0x0018a4                  ___init_stdio
+                  0x0018aa                  ___pop_float
+                  0x0018e8                  ___uflow
+                  0x001916                  ___toread
+                  0x00195e                  ___toread_needs_stdio_exit
+                  0x001964                  ___stdio_exit
+                  0x00197c                  ___extendsfdf2
+                  0x0019ba                  __funpack
+                  0x0019e4                  ___mulp32eds3
+                  0x0019e4                  ___mulp32peds3
+                  0x0019e4                  ___mulsi3
+                  0x001a3c                  ___udivmoddi3
+                  0x001b22                  ___udivdi3
+                  0x001b30                  ___umoddi3
+                  0x001b38                  ___divdi3
+                  0x001b98                  ___moddi3
+                  0x001bf4                  ___muldi3
+                  0x001c46                  ___umuldi3
+                  0x001c8a                  _demo
+                  0x00354a                  _interpreter_infix2postfix
+                  0x003752                  _interpreter_postfix2num
+                  0x004040                  _interpreter_expr
+                  0x00405c                  _interpreter_if_handler
+                  0x004088                  _interpreter_goto_handler
+                  0x0040b2                  _interpreter_print_handler
+                  0x0040ea                  _interpreter_let_handler
+                  0x00413a                  _interpreter_gosub_handler
+                  0x004168                  _interpreter_ret_handler
+                  0x004190                  _interpreter_prints_handler
+                  0x004202                  _interpreter_debug_handler
+                  0x00422a                  _interpreter_breakpoint_handler
+                  0x004254                  _interpreter_run
+                  0x0042ea                  _interpreter_run_handler
+                  0x0042f8                  _gpu_vsync
+                  0x00430a                  _gpu_init
+                  0x004446                  _gpu_flush
+                  0x00447a                  _gpu_set_fb
+                  0x00448e                  _gpu_flip_fb
+                  0x00450a                  _gpu_clear_fb
+                  0x00451e                  _gpu_config_clut
+                  0x004526                  _gpu_clut_set
+                  0x00454e                  _chr_init
+                  0x0045da                  _chr_print
+                  0x004658                  _chr_fg_color
+                  0x004668                  _chr_bg_color
+                  0x004678                  _rcc_set_fb_dest
+                  0x00469a                  _rcc_set_fb_src
+                  0x0046bc                  _rcc_color
+                  0x0046cc                  _rcc_rec
+                  0x004760                  _rcc_blit
+                  0x004830                  _rcc_scroll
+                  0x0048be                  _rcc_pixel
+                  0x00491c                  _program_is_code
+                  0x004982                  _program_init
+                  0x0049ea                  _program_move_code
+                  0x004afc                  _program_insert_line
+                  0x004dc8                  _program_dump
+                  0x004e20                  _program_add_line
+                  0x004e6c                  _program_get_line
+                  0x004efc                  _gfx_singlebuffer
+                  0x004f2a                  _screen_putch
+                  0x004fe0                  _font_load
+                  0x005036                  _sprite_clear
+                  0x005060                  _sprite_blit
+                  0x005082                  _gfx_clear_screen
+                  0x0050a2                  _gfx_flip
+                  0x005112                  _gfx_drawpixel
+                  0x00522e                  _gfx_getpixel
+                  0x005284                  _set_bw
+                  0x00530a                  _gfx_init
+                  0x0053b8                  _parser_find_keyword
+                  0x0054c6                  _parser_get_token
+                  0x00556e                  _parser_handle_list
+                  0x0056d0                  _parser_parse_text
+                  0x005728                  _parser_parse_line
+                  0x0057b8                  _variable_init
+                  0x0057ec                  _variable_create
+                  0x005a1c                  _variable_get
+                  0x005b28                  _variable_dump
+                  0x005baa                  _editor_list
+                  0x005d18                  _editor_run
+                  0x005e6a                  _find_separator
+                  0x005eb2                  _draw_dot
+                  0x005f80                  _color_handler
+                  0x00607c                  _uart_init
+                  0x0060b4                  _uart_tx
+                  0x0060cc                  _uart_rx
+                  0x0060e0                  _uart_rx_available
+                  0x0060f2                  _uart_puts
+                  0x00610c                  _main
+                  0x006188                  _demo_disable
+                  0x006194                  _demo_has_byte
+                  0x0061d0                  _demo_get_byte
+                  0x0061f2                  _write
+                  0x006238                  _audio_init
+                  0x006254                  ___delay32
+
+External Symbols in Program Memory (by name):
+
+                  0x000472                  __DefaultInterrupt
+                  0x000354                  __GFX1Interrupt
+                  0x00037e                  __T1Interrupt
+                  0x00083e                  ___cvt_u
+                  0x006254                  ___delay32
+                  0x001b38                  ___divdi3
+                  0x00048a                  ___divsi3
+                  0x00197c                  ___extendsfdf2
+                  0x0006b6                  ___fmt_d
+                  0x000770                  ___fmt_o
+                  0x0007e2                  ___fmt_s
+                  0x000d0a                  ___fmt_state
+                  0x0008f2                  ___fmt_u
+                  0x00094c                  ___fmt_x
+                  0x0005c4                  ___init_stderr
+                  0x0018a4                  ___init_stdio
+                  0x0005d2                  ___init_stdout
+                  0x001180                  ___intscan
+                  0x000580                  ___isalnum_l
+                  0x0015b2                  ___lseek
+                  0x001b98                  ___moddi3
+                  0x001bf4                  ___muldi3
+                  0x0019e4                  ___mulp32eds3
+                  0x0019e4                  ___mulp32peds3
+                  0x0019e4                  ___mulsi3
+                  0x000b0a                  ___out
+                  0x000c7c                  ___pad
+                  0x0018aa                  ___pop_float
+                  0x000b1a                  ___pop_int
+                  0x000bd4                  ___pop_ptr
+                  0x001024                  ___printf_core
+                  0x000582                  ___putc_unbuffered
+                  0x00173e                  ___shgetc
+                  0x0016f4                  ___shlim
+                  0x0004d4                  ___sio_fprintf_dosux
+                  0x0004ee                  ___sio_fprintf_doux
+                  0x00050c                  ___sio_printf_dosux
+                  0x001064                  ___stdio_close
+                  0x0010a2                  ___stdio_close_rw
+                  0x001964                  ___stdio_exit
+                  0x001872                  ___syscall_ret
+                  0x001892                  ___tolower_l
+                  0x001916                  ___toread
+                  0x00195e                  ___toread_needs_stdio_exit
+                  0x0018a0                  ___toupper_l
+                  0x001b22                  ___udivdi3
+                  0x001a3c                  ___udivmoddi3
+                  0x0004a8                  ___udivsi3
+                  0x0018e8                  ___uflow
+                  0x001b30                  ___umoddi3
+                  0x001c46                  ___umuldi3
+                  0x000ab2                  ___vfprintf
+                  0x000252                  __data_init
+                  0x000252                  __data_init_da
+                  0x0019ba                  __funpack
+                  0x00023c                  __psv_init
+                  0x000200                  __resetPRI
+                  0x00110e                  _atoi
+                  0x006238                  _audio_init
+                  0x004668                  _chr_bg_color
+                  0x004658                  _chr_fg_color
+                  0x00454e                  _chr_init
+                  0x0045da                  _chr_print
+                  0x005f80                  _color_handler
+                  0x001c8a                  _demo
+                  0x006188                  _demo_disable
+                  0x0061d0                  _demo_get_byte
+                  0x006194                  _demo_has_byte
+                  0x005eb2                  _draw_dot
+                  0x005baa                  _editor_list
+                  0x005d18                  _editor_run
+                  0x005e6a                  _find_separator
+                  0x004fe0                  _font_load
+                  0x000522                  _fwrite
+                  0x005082                  _gfx_clear_screen
+                  0x005112                  _gfx_drawpixel
+                  0x0050a2                  _gfx_flip
+                  0x00522e                  _gfx_getpixel
+                  0x00530a                  _gfx_init
+                  0x004efc                  _gfx_singlebuffer
+                  0x00450a                  _gpu_clear_fb
+                  0x004526                  _gpu_clut_set
+                  0x00451e                  _gpu_config_clut
+                  0x00448e                  _gpu_flip_fb
+                  0x004446                  _gpu_flush
+                  0x00430a                  _gpu_init
+                  0x00447a                  _gpu_set_fb
+                  0x0042f8                  _gpu_vsync
+                  0x00422a                  _interpreter_breakpoint_handler
+                  0x004202                  _interpreter_debug_handler
+                  0x004040                  _interpreter_expr
+                  0x00413a                  _interpreter_gosub_handler
+                  0x004088                  _interpreter_goto_handler
+                  0x00405c                  _interpreter_if_handler
+                  0x00354a                  _interpreter_infix2postfix
+                  0x0040ea                  _interpreter_let_handler
+                  0x003752                  _interpreter_postfix2num
+                  0x0040b2                  _interpreter_print_handler
+                  0x004190                  _interpreter_prints_handler
+                  0x004168                  _interpreter_ret_handler
+                  0x004254                  _interpreter_run
+                  0x0042ea                  _interpreter_run_handler
+                  0x000568                  _isalnum
+                  0x00610c                  _main
+                  0x0015be                  _memcpy
+                  0x0015d4                  _memset
+                  0x0053b8                  _parser_find_keyword
+                  0x0054c6                  _parser_get_token
+                  0x00556e                  _parser_handle_list
+                  0x005728                  _parser_parse_line
+                  0x0056d0                  _parser_parse_text
+                  0x004e20                  _program_add_line
+                  0x004dc8                  _program_dump
+                  0x004e6c                  _program_get_line
+                  0x004982                  _program_init
+                  0x004afc                  _program_insert_line
+                  0x00491c                  _program_is_code
+                  0x0049ea                  _program_move_code
+                  0x0005b6                  _putc
+                  0x0005b8                  _putchar
+                  0x004760                  _rcc_blit
+                  0x0046bc                  _rcc_color
+                  0x0048be                  _rcc_pixel
+                  0x0046cc                  _rcc_rec
+                  0x004830                  _rcc_scroll
+                  0x004678                  _rcc_set_fb_dest
+                  0x00469a                  _rcc_set_fb_src
+                  0x004f2a                  _screen_putch
+                  0x005284                  _set_bw
+                  0x005060                  _sprite_blit
+                  0x005036                  _sprite_clear
+                  0x0005da                  _strlen
+                  0x0006b2                  _strtoimax
+                  0x0006aa                  _strtol
+                  0x00069a                  _strtoll
+                  0x0006a2                  _strtoul
+                  0x000692                  _strtoull
+                  0x0006b4                  _strtoumax
+                  0x001886                  _tolower
+                  0x001894                  _toupper
+                  0x00607c                  _uart_init
+                  0x0060f2                  _uart_puts
+                  0x0060cc                  _uart_rx
+                  0x0060e0                  _uart_rx_available
+                  0x0060b4                  _uart_tx
+                  0x0057ec                  _variable_create
+                  0x005b28                  _variable_dump
+                  0x005a1c                  _variable_get
+                  0x0057b8                  _variable_init
+                  0x0061f2                  _write
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+data             0x000800           0x018000           a !xr
+reset            0x000000           0x000004  
+ivt              0x000004           0x0000fc  
+_reserved        0x000100           0x000004  
+aivt             0x000104           0x0000fc  
+program          0x000200           0x02a9f8           xr
+CONFIG4          0x02abf8           0x000002  
+CONFIG3          0x02abfa           0x000002  
+CONFIG2          0x02abfc           0x000002  
+CONFIG1          0x02abfe           0x000002  
+*default*        0x000000           0xffffffffffffffff  
+
+Linker script and memory map
+
+LOAD build/default/production/_ext/1360937237/gpu.o
+LOAD build/default/production/_ext/1360937237/uart.o
+LOAD build/default/production/_ext/1360937237/audio.o
+LOAD build/default/production/_ext/1360937237/gfx.o
+LOAD build/default/production/_ext/1360937237/program.o
+LOAD build/default/production/_ext/1360937237/io.o
+LOAD build/default/production/_ext/1360937237/basic_external_functions.o
+LOAD build/default/production/_ext/1360937237/main.o
+LOAD build/default/production/_ext/1360937237/editor.o
+LOAD build/default/production/_ext/1360937237/parser.o
+LOAD build/default/production/_ext/1360937237/interpreter.o
+LOAD build/default/production/_ext/1360937237/demo.o
+LOAD build/default/production/_ext/1360937237/variable.o
+                    0x0001                  __MPLAB_BUILD = 0x1
+LOAD pPIC24Fxxx
+LOAD /opt/microchip/xc16/v2.10/bin/bin/../../lib/libfx-elf.a
+                    0x2abf8                  __CONFIG4 = 0x2abf8
+                    0x2abfa                  __CONFIG3 = 0x2abfa
+                    0x2abfc                  __CONFIG2 = 0x2abfc
+                    0x2abfe                  __CONFIG1 = 0x2abfe
+                    0x0200                  __CODE_BASE = 0x200
+                    0x2a9f8                  __CODE_LENGTH = 0x2a9f8
+                    0x0004                  __IVT_BASE = 0x4
+                    0x0104                  __AIVT_BASE = 0x104
+                    0x0800                  __DATA_BASE = 0x800
+                    0x18000                  __DATA_LENGTH = 0x18000
+
+.reset            0x000000          0x4
+                  0x000000          0x2 SHORT 0x200 ABSOLUTE (__reset)
+                  0x000001          0x2 SHORT 0x4
+                  0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
+                  0x000003          0x2 SHORT 0x0
+
+.text             0x000200       0x1a8a
+ *(.init)
+ .init            0x000200         0x4c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(crt0_extended24.o)
+                  0x000200                  __reset
+                  0x000200                  __resetPRI
+                  0x00023c                  __psv_init
+ .init            0x00024c         0xb8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(data_init_24.o)
+                  0x000252                  __data_init_da
+                  0x000252                  __data_init
+ *(.user_init)
+ *(.handle)
+ .handle          0x000304         0x50 jump_table
+ *(.isr*)
+ .isr.text        0x000354         0x2a build/default/production/_ext/1360937237/gpu.o
+                  0x000354                  __GFX1Interrupt
+ .isr.text        0x00037e         0xf4 build/default/production/_ext/1360937237/audio.o
+                  0x00037e                  __T1Interrupt
+ .isr             0x000472          0x4 default_isr
+                  0x000472                  __DefaultInterrupt
+ *(.libc)
+ .libc            0x000476         0x12 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(closeda.Melo)
+                  0x000476                  _close
+ *(.libm)
+ *(.libdsp)
+ *(.lib*)
+ .libpic30_crt_start_mode
+                  0x000488          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(crt_start_mode_normalda.Meo)
+                  0x000488                  __crt_start_mode_normal
+                  0x000488                  __crt_start_mode
+ .libm.divsi3     0x00048a         0x1e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.DA_o)
+                  0x00048a                  ___divsi3
+ .libm.udivsi3    0x0004a8         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.DA_o)
+                  0x0004a8                  ___udivsi3
+ .libc.__wrap_fprintf
+                  0x0004c8          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo)
+                  0x0004c8                  __fprintf_cdnopsuxX
+                  0x0004c8                  __dfprintf_cdnopsuxX
+ .libc.__sio_fprintf_dosux
+                  0x0004d4          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo)
+                  0x0004d4                  ___sio_fprintf_dosux
+ .libc.__wrap_fprintf
+                  0x0004e2          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_doux.DA_lo)
+                  0x0004e2                  __dfprintf_cdnopuxX
+                  0x0004e2                  __fprintf_cdnopuxX
+ .libc.__sio_fprintf_doux
+                  0x0004ee          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_doux.DA_lo)
+                  0x0004ee                  ___sio_fprintf_doux
+ .libc.__wrap_printf
+                  0x0004fc         0x10 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_printf_dosux.DA_lo)
+                  0x0004fc                  __printf_cdnopsuxX
+                  0x0004fc                  __dprintf_cdnopsuxX
+ .libc.__sio_printf_dosux
+                  0x00050c          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_printf_dosux.DA_lo)
+                  0x00050c                  ___sio_printf_dosux
+ .libc.__fwrite_min
+                  0x00051a          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(fwrite.DA_lo)
+                  0x00051a                  ___fwrite
+ .libc.fwrite     0x000522         0x46 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(fwrite.DA_lo)
+                  0x000522                  _fwrite_unlocked
+                  0x000522                  _fwrite
+ .libc.isalnum    0x000568         0x18 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(isalnum.DA_lo)
+                  0x000568                  _isalnum
+ .libc.__isalnum_l
+                  0x000580          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(isalnum.DA_lo)
+                  0x000580                  ___isalnum_l
+                  0x000580                  _isalnum_l
+ .libc.__putc_unbuffered
+                  0x000582         0x34 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(putc.DA_lo)
+                  0x000582                  ___putc_unbuffered
+                  0x000582                  ___putc
+ .libc.putc       0x0005b6          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(putc.DA_lo)
+                  0x0005b6                  __IO_putc
+                  0x0005b6                  _putc
+                  0x0005b6                  _fputc
+                  0x0005b6                  _putc_unlocked
+ .libc.putchar    0x0005b8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(putchar.DA_lo)
+                  0x0005b8                  _putchar
+ .libc.__dummy0
+                  0x0005be          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo)
+                  0x0005be                  ___stdio_seek
+ .libc.__dummy    0x0005c0          0x4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo)
+                  0x0005c0                  ___get_stderr
+ .libc.__init_stderr
+                  0x0005c4          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo)
+                  0x0005c4                  ___init_stderr
+ .libc.__dummy0
+                  0x0005cc          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stdout.DA_lo)
+ .libc.__dummy    0x0005ce          0x4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stdout.DA_lo)
+                  0x0005ce                  ___get_stdout
+ .libc.__init_stdout
+                  0x0005d2          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stdout.DA_lo)
+                  0x0005d2                  ___init_stdout
+ .libc.strlen     0x0005da         0x60 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strlen.DA_lo)
+                  0x0005da                  _strlen
+ .libc.strtox     0x00063a         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+ .libc.strtoull
+                  0x000692          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+                  0x000692                  _strtoull
+                  0x000692                  ___strtoull_internal
+ .libc.strtoll    0x00069a          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+                  0x00069a                  ___strtoll_internal
+                  0x00069a                  _strtoll
+ .libc.strtoul    0x0006a2          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+                  0x0006a2                  ___strtoul_internal
+                  0x0006a2                  _strtoul
+ .libc.strtol     0x0006aa          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+                  0x0006aa                  ___strtol_internal
+                  0x0006aa                  _strtol
+ .libc.strtoimax
+                  0x0006b2          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+                  0x0006b2                  _strtoimax
+                  0x0006b2                  ___strtoimax_internal
+ .libc.strtoumax
+                  0x0006b4          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+                  0x0006b4                  ___strtoumax_internal
+                  0x0006b4                  _strtoumax
+ .libc.__fmt_d    0x0006b6         0xba /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.DA_lo)
+                  0x0006b6                  ___fmt_d_needed
+                  0x0006b6                  ___fmt_d
+ .libc.__fmt_o    0x000770         0x72 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_o.DA_lo)
+                  0x000770                  ___fmt_o_needed
+                  0x000770                  ___fmt_o
+ .libc.__fmt_s    0x0007e2         0x5c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_s.DA_lo)
+                  0x0007e2                  ___fmt_s
+                  0x0007e2                  ___fmt_0_needed
+                  0x0007e2                  ___fmt_s_needed
+ .libc.__cvt_u    0x00083e         0xb4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.DA_lo)
+                  0x00083e                  ___cvt_u
+ .libc.__fmt_u    0x0008f2         0x5a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.DA_lo)
+                  0x0008f2                  ___fmt_u_needed
+                  0x0008f2                  ___fmt_u
+ .libc.__fmt_x    0x00094c        0x166 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.DA_lo)
+                  0x00094c                  ___fmt_x
+                  0x00094c                  ___fmt_x_needed
+ .libc.__vfprintf
+                  0x000ab2         0x1c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__int_vfprintf.DA_lo)
+                  0x000ab2                  ___vfprintf
+ .libc.__string_out
+                  0x000ace         0x34 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__out.DA_lo)
+ .libc.__fwrite_min
+                  0x000b02          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__out.DA_lo)
+                  0x000b02                  ___stdio_write_unbuffered
+                  0x000b02                  ___stdio_write
+ .libc.__out      0x000b0a         0x10 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__out.DA_lo)
+                  0x000b0a                  ___out
+                  0x000b0a                  ___out_needed
+ .libc.__pop_int
+                  0x000b1a         0xba /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_int.DA_lo)
+                  0x000b1a                  ___pop_int_needed
+                  0x000b1a                  ___pop_int
+ .libc.__pop_ptr
+                  0x000bd4         0x74 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_ptr.DA_lo)
+                  0x000bd4                  ___pop_ptr
+                  0x000bd4                  ___pop_ptr_needed
+ .libc.__string_out
+                  0x000c48         0x34 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+ .libc.__pad      0x000c7c         0x88 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+                  0x000c7c                  ___pad
+ .libc.__dummy_fmt3
+                  0x000d04          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+ .libc.__dummy_fmt4
+                  0x000d06          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+                  0x000d06                  ___fmt_a
+                  0x000d06                  ___fmt_fp
+ .libc.__dummy_fmts
+                  0x000d08          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+ .libc.__fmt_state
+                  0x000d0a         0x30 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+                  0x000d0a                  ___fmt_state
+ .libc.vfpfcnvrt.clone.0
+                  0x000d3a        0x2ea /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+ .libc.__printf_core
+                  0x001024         0x40 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+                  0x001024                  ___printf_core
+ .libc.__stdio_close
+                  0x001064         0x3e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_close.DA_lo)
+                  0x001064                  ___stdio_close
+ .libc.__stdio_close_rw
+                  0x0010a2         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_close.DA_lo)
+                  0x0010a2                  ___stdio_close_rw
+ .libc.__isspace
+                  0x0010fa         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(atoi.DA_lo)
+ .libc.atoi       0x00110e         0x5e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(atoi.DA_lo)
+                  0x00110e                  _atoi
+ .libc.__isspace
+                  0x00116c         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(intscan.DA_lo)
+ .libc.__intscan
+                  0x001180        0x432 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(intscan.DA_lo)
+                  0x001180                  ___intscan
+ .libc.__lseek    0x0015b2          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(lseek.DA_lo)
+                  0x0015b2                  ___lseek
+                  0x0015b2                  _lseek
+ .libc.memcpy     0x0015be         0x16 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memcpy.DA_lo)
+                  0x0015be                  _memcpy
+ .libc.memset     0x0015d4        0x120 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memset.DA_lo)
+                  0x0015d4                  _memset
+ .libc.__shlim    0x0016f4         0x4a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.DA_lo)
+                  0x0016f4                  ___shlim
+ .libc.__shgetc
+                  0x00173e        0x134 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.DA_lo)
+                  0x00173e                  ___shgetc
+ .libc.__syscall_ret
+                  0x001872         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(syscall_ret.DA_lo)
+                  0x001872                  ___syscall_ret
+ .libc.tolower    0x001886          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.DA_lo)
+                  0x001886                  _tolower
+ .libc.__tolower_l
+                  0x001892          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.DA_lo)
+                  0x001892                  _tolower_l
+                  0x001892                  ___tolower_l
+ .libc.toupper    0x001894          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.DA_lo)
+                  0x001894                  _toupper
+ .libc.__toupper_l
+                  0x0018a0          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.DA_lo)
+                  0x0018a0                  _toupper_l
+                  0x0018a0                  ___toupper_l
+ .libc.__dummy    0x0018a2          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__init_stdio.DA_lo)
+                  0x0018a2                  ___init_stdin
+ .libc.__init_stdio
+                  0x0018a4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__init_stdio.DA_lo)
+                  0x0018a4                  ___init_stdio_needed
+                  0x0018a4                  ___init_stdio
+ .libc.__pop_float
+                  0x0018aa         0x3e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.DA_lo)
+                  0x0018aa                  ___pop_float_needed
+                  0x0018aa                  ___pop_float
+ .libc.__uflow    0x0018e8         0x2e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.DA_lo)
+                  0x0018e8                  ___uflow
+ .libc.__toread
+                  0x001916         0x48 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.DA_lo)
+                  0x001916                  ___toread
+ .libc.__toread_needs_stdio_exit
+                  0x00195e          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.DA_lo)
+                  0x00195e                  ___toread_needs_stdio_exit
+ .libc.__dummy    0x001960          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.DA_lo)
+                  0x001960                  ___stdio_exit_ofl
+ .libc.__dummy1
+                  0x001962          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.DA_lo)
+                  0x001962                  ___fclose
+ .libc.__stdio_exit
+                  0x001964         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.DA_lo)
+                  0x001964                  ___stdio_exit
+                  0x001964                  ___stdio_exit_needed
+ .libc.doclose    0x001978          0x4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(closeda.Melo)
+ .libm.extendsfdf2
+                  0x00197c         0x3e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o)
+                  0x00197c                  ___extendsfdf2
+ .libm.funpack    0x0019ba         0x2a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(funpack.DA_o)
+                  0x0019ba                  __funpack
+ .libm.mulsi3     0x0019e4          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.DA_o)
+                  0x0019e4                  ___mulp32eds3
+                  0x0019e4                  ___mulp32peds3
+                  0x0019e4                  ___mulsi3
+ .libm.__PplusBdi
+                  0x0019f0         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+ .libm.__PminusBdi
+                  0x001a16         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+ .libm.__udivmoddi3
+                  0x001a3c         0xe6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+                  0x001a3c                  ___udivmoddi3
+ .libm.__udivdi3
+                  0x001b22          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+                  0x001b22                  ___udivdi3
+ .libm.__umoddi3
+                  0x001b30          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+                  0x001b30                  ___umoddi3
+ .libm.__divdi3
+                  0x001b38         0x60 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+                  0x001b38                  ___divdi3
+ .libm.__moddi3
+                  0x001b98         0x5c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+                  0x001b98                  ___moddi3
+ .libm.__muldi3
+                  0x001bf4         0x52 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.lDA_o)
+                  0x001bf4                  ___muldi3
+ .libm.umuldi3    0x001c46         0x44 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.DA_o)
+                  0x001c46                  ___umuldi3
+
+usercode
+ *(usercode)
+
+__CONFIG4
+ *(__CONFIG4.sec*)
+
+__CONFIG3
+ *(__CONFIG3.sec*)
+
+__CONFIG2
+ *(__CONFIG2.sec*)
+
+__CONFIG1
+ *(__CONFIG1.sec*)
+
+.comment
+ *(.comment)
+
+.debug_info       0x000000       0x6173
+ *(.debug_info)
+ .debug_info      0x000000       0x26b2 build/default/production/_ext/1360937237/gpu.o
+ .debug_info      0x0026b2        0x856 build/default/production/_ext/1360937237/uart.o
+ .debug_info      0x002f08        0x944 build/default/production/_ext/1360937237/audio.o
+ .debug_info      0x00384c        0x442 build/default/production/_ext/1360937237/gfx.o
+ .debug_info      0x003c8e        0x4f3 build/default/production/_ext/1360937237/program.o
+ .debug_info      0x004181        0x17e build/default/production/_ext/1360937237/io.o
+ .debug_info      0x0042ff        0x31e build/default/production/_ext/1360937237/basic_external_functions.o
+ .debug_info      0x00461d        0x285 build/default/production/_ext/1360937237/main.o
+ .debug_info      0x0048a2        0x3ad build/default/production/_ext/1360937237/editor.o
+ .debug_info      0x004c4f        0x449 build/default/production/_ext/1360937237/parser.o
+ .debug_info      0x005098        0x829 build/default/production/_ext/1360937237/interpreter.o
+ .debug_info      0x0058c1        0x225 build/default/production/_ext/1360937237/demo.o
+ .debug_info      0x005ae6        0x33e build/default/production/_ext/1360937237/variable.o
+ .debug_info      0x005e24         0x8c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.DA_o)
+ .debug_info      0x005eb0         0x8d /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.DA_o)
+ .debug_info      0x005f3d         0x90 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o)
+ .debug_info      0x005fcd         0x8d /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(funpack.DA_o)
+ .debug_info      0x00605a         0x8c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.DA_o)
+ .debug_info      0x0060e6         0x8d /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.DA_o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev     0x000000        0xe4c
+ *(.debug_abbrev)
+ .debug_abbrev    0x000000        0x1c6 build/default/production/_ext/1360937237/gpu.o
+ .debug_abbrev    0x0001c6        0x12f build/default/production/_ext/1360937237/uart.o
+ .debug_abbrev    0x0002f5        0x11d build/default/production/_ext/1360937237/audio.o
+ .debug_abbrev    0x000412         0xe0 build/default/production/_ext/1360937237/gfx.o
+ .debug_abbrev    0x0004f2        0x135 build/default/production/_ext/1360937237/program.o
+ .debug_abbrev    0x000627         0x5d build/default/production/_ext/1360937237/io.o
+ .debug_abbrev    0x000684         0xc6 build/default/production/_ext/1360937237/basic_external_functions.o
+ .debug_abbrev    0x00074a         0xd9 build/default/production/_ext/1360937237/main.o
+ .debug_abbrev    0x000823        0x126 build/default/production/_ext/1360937237/editor.o
+ .debug_abbrev    0x000949        0x10f build/default/production/_ext/1360937237/parser.o
+ .debug_abbrev    0x000a58        0x1a3 build/default/production/_ext/1360937237/interpreter.o
+ .debug_abbrev    0x000bfb         0xb8 build/default/production/_ext/1360937237/demo.o
+ .debug_abbrev    0x000cb3        0x121 build/default/production/_ext/1360937237/variable.o
+ .debug_abbrev    0x000dd4         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.DA_o)
+ .debug_abbrev    0x000de8         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.DA_o)
+ .debug_abbrev    0x000dfc         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o)
+ .debug_abbrev    0x000e10         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(funpack.DA_o)
+ .debug_abbrev    0x000e24         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.DA_o)
+ .debug_abbrev    0x000e38         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.DA_o)
+
+.debug_line       0x000000        0xfcb
+ *(.debug_line)
+ .debug_line      0x000000        0x1dc build/default/production/_ext/1360937237/gpu.o
+ .debug_line      0x0001dc         0xed build/default/production/_ext/1360937237/uart.o
+ .debug_line      0x0002c9         0xfb build/default/production/_ext/1360937237/audio.o
+ .debug_line      0x0003c4        0x11a build/default/production/_ext/1360937237/gfx.o
+ .debug_line      0x0004de        0x14a build/default/production/_ext/1360937237/program.o
+ .debug_line      0x000628         0x42 build/default/production/_ext/1360937237/io.o
+ .debug_line      0x00066a         0xdc build/default/production/_ext/1360937237/basic_external_functions.o
+ .debug_line      0x000746         0xda build/default/production/_ext/1360937237/main.o
+ .debug_line      0x000820        0x127 build/default/production/_ext/1360937237/editor.o
+ .debug_line      0x000947        0x102 build/default/production/_ext/1360937237/parser.o
+ .debug_line      0x000a49        0x213 build/default/production/_ext/1360937237/interpreter.o
+ .debug_line      0x000c5c         0x8b build/default/production/_ext/1360937237/demo.o
+ .debug_line      0x000ce7        0x128 build/default/production/_ext/1360937237/variable.o
+ .debug_line      0x000e0f         0x43 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.DA_o)
+ .debug_line      0x000e52         0x45 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.DA_o)
+ .debug_line      0x000e97         0x59 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o)
+ .debug_line      0x000ef0         0x4a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(funpack.DA_o)
+ .debug_line      0x000f3a         0x3a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.DA_o)
+ .debug_line      0x000f74         0x57 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.DA_o)
+
+.debug_frame      0x000000        0x9e2
+ *(.debug_frame)
+ .debug_frame     0x000000        0x238 build/default/production/_ext/1360937237/gpu.o
+ .debug_frame     0x000238         0xb0 build/default/production/_ext/1360937237/uart.o
+ .debug_frame     0x0002e8         0x62 build/default/production/_ext/1360937237/audio.o
+ .debug_frame     0x00034a        0x148 build/default/production/_ext/1360937237/gfx.o
+ .debug_frame     0x000492         0xda build/default/production/_ext/1360937237/program.o
+ .debug_frame     0x00056c         0x2e build/default/production/_ext/1360937237/io.o
+ .debug_frame     0x00059a         0x62 build/default/production/_ext/1360937237/basic_external_functions.o
+ .debug_frame     0x0005fc         0x2e build/default/production/_ext/1360937237/main.o
+ .debug_frame     0x00062a         0x5e build/default/production/_ext/1360937237/editor.o
+ .debug_frame     0x000688         0xb4 build/default/production/_ext/1360937237/parser.o
+ .debug_frame     0x00073c        0x1b8 build/default/production/_ext/1360937237/interpreter.o
+ .debug_frame     0x0008f4         0x62 build/default/production/_ext/1360937237/demo.o
+ .debug_frame     0x000956         0x8c build/default/production/_ext/1360937237/variable.o
+
+.debug_str        0x000000        0x221
+ *(.debug_str)
+ .debug_str       0x000000        0x14c build/default/production/_ext/1360937237/gpu.o
+ .debug_str       0x00014c         0x20 build/default/production/_ext/1360937237/uart.o
+ .debug_str       0x00016c         0x25 build/default/production/_ext/1360937237/audio.o
+ .debug_str       0x000191         0x11 build/default/production/_ext/1360937237/gfx.o
+ .debug_str       0x0001a2          0x9 build/default/production/_ext/1360937237/program.o
+ .debug_str       0x0001ab         0x1e build/default/production/_ext/1360937237/main.o
+ .debug_str       0x0001c9         0x16 build/default/production/_ext/1360937237/editor.o
+ .debug_str       0x0001df          0x9 build/default/production/_ext/1360937237/parser.o
+ .debug_str       0x0001e8         0x17 build/default/production/_ext/1360937237/interpreter.o
+ .debug_str       0x0001ff         0x18 build/default/production/_ext/1360937237/demo.o
+ .debug_str       0x000217          0xa build/default/production/_ext/1360937237/variable.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubnames
+                  0x000000        0x7b7
+ *(.debug_pubnames)
+ .debug_pubnames
+                  0x000000        0x16e build/default/production/_ext/1360937237/gpu.o
+ .debug_pubnames
+                  0x00016e         0x5c build/default/production/_ext/1360937237/uart.o
+ .debug_pubnames
+                  0x0001ca         0x64 build/default/production/_ext/1360937237/audio.o
+ .debug_pubnames
+                  0x00022e         0xc4 build/default/production/_ext/1360937237/gfx.o
+ .debug_pubnames
+                  0x0002f2         0xc5 build/default/production/_ext/1360937237/program.o
+ .debug_pubnames
+                  0x0003b7         0x1c build/default/production/_ext/1360937237/io.o
+ .debug_pubnames
+                  0x0003d3         0x44 build/default/production/_ext/1360937237/basic_external_functions.o
+ .debug_pubnames
+                  0x000417         0x45 build/default/production/_ext/1360937237/main.o
+ .debug_pubnames
+                  0x00045c         0x56 build/default/production/_ext/1360937237/editor.o
+ .debug_pubnames
+                  0x0004b2         0x8f build/default/production/_ext/1360937237/parser.o
+ .debug_pubnames
+                  0x000541        0x19d build/default/production/_ext/1360937237/interpreter.o
+ .debug_pubnames
+                  0x0006de         0x70 build/default/production/_ext/1360937237/demo.o
+ .debug_pubnames
+                  0x00074e         0x69 build/default/production/_ext/1360937237/variable.o
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_aranges    0x000000        0x1f8
+ *(.debug_aranges)
+ .debug_aranges
+                  0x000000         0x18 build/default/production/_ext/1360937237/gpu.o
+ .debug_aranges
+                  0x000018         0x18 build/default/production/_ext/1360937237/uart.o
+ .debug_aranges
+                  0x000030         0x18 build/default/production/_ext/1360937237/audio.o
+ .debug_aranges
+                  0x000048         0x18 build/default/production/_ext/1360937237/gfx.o
+ .debug_aranges
+                  0x000060         0x18 build/default/production/_ext/1360937237/program.o
+ .debug_aranges
+                  0x000078         0x18 build/default/production/_ext/1360937237/io.o
+ .debug_aranges
+                  0x000090         0x18 build/default/production/_ext/1360937237/basic_external_functions.o
+ .debug_aranges
+                  0x0000a8         0x18 build/default/production/_ext/1360937237/main.o
+ .debug_aranges
+                  0x0000c0         0x18 build/default/production/_ext/1360937237/editor.o
+ .debug_aranges
+                  0x0000d8         0x18 build/default/production/_ext/1360937237/parser.o
+ .debug_aranges
+                  0x0000f0         0x18 build/default/production/_ext/1360937237/interpreter.o
+ .debug_aranges
+                  0x000108         0x18 build/default/production/_ext/1360937237/demo.o
+ .debug_aranges
+                  0x000120         0x18 build/default/production/_ext/1360937237/variable.o
+ .debug_aranges
+                  0x000138         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.DA_o)
+ .debug_aranges
+                  0x000158         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.DA_o)
+ .debug_aranges
+                  0x000178         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o)
+ .debug_aranges
+                  0x000198         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(funpack.DA_o)
+ .debug_aranges
+                  0x0001b8         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.DA_o)
+ .debug_aranges
+                  0x0001d8         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.DA_o)
+                    0x0000                  WREG0 = 0x0
+                    0x0000                  _WREG0 = 0x0
+                    0x0002                  WREG1 = 0x2
+                    0x0002                  _WREG1 = 0x2
+                    0x0004                  WREG2 = 0x4
+                    0x0004                  _WREG2 = 0x4
+                    0x0006                  WREG3 = 0x6
+                    0x0006                  _WREG3 = 0x6
+                    0x0008                  WREG4 = 0x8
+                    0x0008                  _WREG4 = 0x8
+                    0x000a                  WREG5 = 0xa
+                    0x000a                  _WREG5 = 0xa
+                    0x000c                  WREG6 = 0xc
+                    0x000c                  _WREG6 = 0xc
+                    0x000e                  WREG7 = 0xe
+                    0x000e                  _WREG7 = 0xe
+                    0x0010                  WREG8 = 0x10
+                    0x0010                  _WREG8 = 0x10
+                    0x0012                  WREG9 = 0x12
+                    0x0012                  _WREG9 = 0x12
+                    0x0014                  WREG10 = 0x14
+                    0x0014                  _WREG10 = 0x14
+                    0x0016                  WREG11 = 0x16
+                    0x0016                  _WREG11 = 0x16
+                    0x0018                  WREG12 = 0x18
+                    0x0018                  _WREG12 = 0x18
+                    0x001a                  WREG13 = 0x1a
+                    0x001a                  _WREG13 = 0x1a
+                    0x001c                  WREG14 = 0x1c
+                    0x001c                  _WREG14 = 0x1c
+                    0x001e                  WREG15 = 0x1e
+                    0x001e                  _WREG15 = 0x1e
+                    0x0020                  SPLIM = 0x20
+                    0x0020                  _SPLIM = 0x20
+                    0x002e                  PCL = 0x2e
+                    0x002e                  _PCL = 0x2e
+                    0x0030                  PCH = 0x30
+                    0x0030                  _PCH = 0x30
+                    0x0032                  DSRPAG = 0x32
+                    0x0032                  _DSRPAG = 0x32
+                    0x0034                  DSWPAG = 0x34
+                    0x0034                  _DSWPAG = 0x34
+                    0x0036                  RCOUNT = 0x36
+                    0x0036                  _RCOUNT = 0x36
+                    0x0042                  SR = 0x42
+                    0x0042                  _SR = 0x42
+                    0x0042                  _SRbits = 0x42
+                    0x0044                  CORCON = 0x44
+                    0x0044                  _CORCON = 0x44
+                    0x0044                  _CORCONbits = 0x44
+                    0x0052                  DISICNT = 0x52
+                    0x0052                  _DISICNT = 0x52
+                    0x0054                  TBLPAG = 0x54
+                    0x0054                  _TBLPAG = 0x54
+                    0x0056                  CNPD1 = 0x56
+                    0x0056                  _CNPD1 = 0x56
+                    0x0056                  _CNPD1bits = 0x56
+                    0x0058                  CNPD2 = 0x58
+                    0x0058                  _CNPD2 = 0x58
+                    0x0058                  _CNPD2bits = 0x58
+                    0x005a                  CNPD3 = 0x5a
+                    0x005a                  _CNPD3 = 0x5a
+                    0x005a                  _CNPD3bits = 0x5a
+                    0x005c                  CNPD4 = 0x5c
+                    0x005c                  _CNPD4 = 0x5c
+                    0x005c                  _CNPD4bits = 0x5c
+                    0x005e                  CNPD5 = 0x5e
+                    0x005e                  _CNPD5 = 0x5e
+                    0x005e                  _CNPD5bits = 0x5e
+                    0x0060                  CNPD6 = 0x60
+                    0x0060                  _CNPD6 = 0x60
+                    0x0060                  _CNPD6bits = 0x60
+                    0x0062                  CNEN1 = 0x62
+                    0x0062                  _CNEN1 = 0x62
+                    0x0062                  _CNEN1bits = 0x62
+                    0x0064                  CNEN2 = 0x64
+                    0x0064                  _CNEN2 = 0x64
+                    0x0064                  _CNEN2bits = 0x64
+                    0x0066                  CNEN3 = 0x66
+                    0x0066                  _CNEN3 = 0x66
+                    0x0066                  _CNEN3bits = 0x66
+                    0x0068                  CNEN4 = 0x68
+                    0x0068                  _CNEN4 = 0x68
+                    0x0068                  _CNEN4bits = 0x68
+                    0x006a                  CNEN5 = 0x6a
+                    0x006a                  _CNEN5 = 0x6a
+                    0x006a                  _CNEN5bits = 0x6a
+                    0x006c                  CNEN6 = 0x6c
+                    0x006c                  _CNEN6 = 0x6c
+                    0x006c                  _CNEN6bits = 0x6c
+                    0x006e                  CNPU1 = 0x6e
+                    0x006e                  _CNPU1 = 0x6e
+                    0x006e                  _CNPU1bits = 0x6e
+                    0x0070                  CNPU2 = 0x70
+                    0x0070                  _CNPU2 = 0x70
+                    0x0070                  _CNPU2bits = 0x70
+                    0x0072                  CNPU3 = 0x72
+                    0x0072                  _CNPU3 = 0x72
+                    0x0072                  _CNPU3bits = 0x72
+                    0x0074                  CNPU4 = 0x74
+                    0x0074                  _CNPU4 = 0x74
+                    0x0074                  _CNPU4bits = 0x74
+                    0x0076                  CNPU5 = 0x76
+                    0x0076                  _CNPU5 = 0x76
+                    0x0076                  _CNPU5bits = 0x76
+                    0x0078                  CNPU6 = 0x78
+                    0x0078                  _CNPU6 = 0x78
+                    0x0078                  _CNPU6bits = 0x78
+                    0x0080                  INTCON1 = 0x80
+                    0x0080                  _INTCON1 = 0x80
+                    0x0080                  _INTCON1bits = 0x80
+                    0x0082                  INTCON2 = 0x82
+                    0x0082                  _INTCON2 = 0x82
+                    0x0082                  _INTCON2bits = 0x82
+                    0x0084                  IFS0 = 0x84
+                    0x0084                  _IFS0 = 0x84
+                    0x0084                  _IFS0bits = 0x84
+                    0x0086                  IFS1 = 0x86
+                    0x0086                  _IFS1 = 0x86
+                    0x0086                  _IFS1bits = 0x86
+                    0x0088                  IFS2 = 0x88
+                    0x0088                  _IFS2 = 0x88
+                    0x0088                  _IFS2bits = 0x88
+                    0x008a                  IFS3 = 0x8a
+                    0x008a                  _IFS3 = 0x8a
+                    0x008a                  _IFS3bits = 0x8a
+                    0x008c                  IFS4 = 0x8c
+                    0x008c                  _IFS4 = 0x8c
+                    0x008c                  _IFS4bits = 0x8c
+                    0x008e                  IFS5 = 0x8e
+                    0x008e                  _IFS5 = 0x8e
+                    0x008e                  _IFS5bits = 0x8e
+                    0x0090                  IFS6 = 0x90
+                    0x0090                  _IFS6 = 0x90
+                    0x0090                  _IFS6bits = 0x90
+                    0x0094                  IEC0 = 0x94
+                    0x0094                  _IEC0 = 0x94
+                    0x0094                  _IEC0bits = 0x94
+                    0x0096                  IEC1 = 0x96
+                    0x0096                  _IEC1 = 0x96
+                    0x0096                  _IEC1bits = 0x96
+                    0x0098                  IEC2 = 0x98
+                    0x0098                  _IEC2 = 0x98
+                    0x0098                  _IEC2bits = 0x98
+                    0x009a                  IEC3 = 0x9a
+                    0x009a                  _IEC3 = 0x9a
+                    0x009a                  _IEC3bits = 0x9a
+                    0x009c                  IEC4 = 0x9c
+                    0x009c                  _IEC4 = 0x9c
+                    0x009c                  _IEC4bits = 0x9c
+                    0x009e                  IEC5 = 0x9e
+                    0x009e                  _IEC5 = 0x9e
+                    0x009e                  _IEC5bits = 0x9e
+                    0x00a0                  IEC6 = 0xa0
+                    0x00a0                  _IEC6 = 0xa0
+                    0x00a0                  _IEC6bits = 0xa0
+                    0x00a4                  IPC0 = 0xa4
+                    0x00a4                  _IPC0 = 0xa4
+                    0x00a4                  _IPC0bits = 0xa4
+                    0x00a6                  IPC1 = 0xa6
+                    0x00a6                  _IPC1 = 0xa6
+                    0x00a6                  _IPC1bits = 0xa6
+                    0x00a8                  IPC2 = 0xa8
+                    0x00a8                  _IPC2 = 0xa8
+                    0x00a8                  _IPC2bits = 0xa8
+                    0x00aa                  IPC3 = 0xaa
+                    0x00aa                  _IPC3 = 0xaa
+                    0x00aa                  _IPC3bits = 0xaa
+                    0x00ac                  IPC4 = 0xac
+                    0x00ac                  _IPC4 = 0xac
+                    0x00ac                  _IPC4bits = 0xac
+                    0x00ae                  IPC5 = 0xae
+                    0x00ae                  _IPC5 = 0xae
+                    0x00ae                  _IPC5bits = 0xae
+                    0x00b0                  IPC6 = 0xb0
+                    0x00b0                  _IPC6 = 0xb0
+                    0x00b0                  _IPC6bits = 0xb0
+                    0x00b2                  IPC7 = 0xb2
+                    0x00b2                  _IPC7 = 0xb2
+                    0x00b2                  _IPC7bits = 0xb2
+                    0x00b4                  IPC8 = 0xb4
+                    0x00b4                  _IPC8 = 0xb4
+                    0x00b4                  _IPC8bits = 0xb4
+                    0x00b6                  IPC9 = 0xb6
+                    0x00b6                  _IPC9 = 0xb6
+                    0x00b6                  _IPC9bits = 0xb6
+                    0x00b8                  IPC10 = 0xb8
+                    0x00b8                  _IPC10 = 0xb8
+                    0x00b8                  _IPC10bits = 0xb8
+                    0x00ba                  IPC11 = 0xba
+                    0x00ba                  _IPC11 = 0xba
+                    0x00ba                  _IPC11bits = 0xba
+                    0x00bc                  IPC12 = 0xbc
+                    0x00bc                  _IPC12 = 0xbc
+                    0x00bc                  _IPC12bits = 0xbc
+                    0x00be                  IPC13 = 0xbe
+                    0x00be                  _IPC13 = 0xbe
+                    0x00be                  _IPC13bits = 0xbe
+                    0x00c2                  IPC15 = 0xc2
+                    0x00c2                  _IPC15 = 0xc2
+                    0x00c2                  _IPC15bits = 0xc2
+                    0x00c4                  IPC16 = 0xc4
+                    0x00c4                  _IPC16 = 0xc4
+                    0x00c4                  _IPC16bits = 0xc4
+                    0x00c8                  IPC18 = 0xc8
+                    0x00c8                  _IPC18 = 0xc8
+                    0x00c8                  _IPC18bits = 0xc8
+                    0x00ca                  IPC19 = 0xca
+                    0x00ca                  _IPC19 = 0xca
+                    0x00ca                  _IPC19bits = 0xca
+                    0x00cc                  IPC20 = 0xcc
+                    0x00cc                  _IPC20 = 0xcc
+                    0x00cc                  _IPC20bits = 0xcc
+                    0x00ce                  IPC21 = 0xce
+                    0x00ce                  _IPC21 = 0xce
+                    0x00ce                  _IPC21bits = 0xce
+                    0x00d0                  IPC22 = 0xd0
+                    0x00d0                  _IPC22 = 0xd0
+                    0x00d0                  _IPC22bits = 0xd0
+                    0x00d2                  IPC23 = 0xd2
+                    0x00d2                  _IPC23 = 0xd2
+                    0x00d2                  _IPC23bits = 0xd2
+                    0x00d6                  IPC25 = 0xd6
+                    0x00d6                  _IPC25 = 0xd6
+                    0x00d6                  _IPC25bits = 0xd6
+                    0x00e0                  INTTREG = 0xe0
+                    0x00e0                  _INTTREG = 0xe0
+                    0x00e0                  _INTTREGbits = 0xe0
+                    0x0100                  TMR1 = 0x100
+                    0x0100                  _TMR1 = 0x100
+                    0x0102                  PR1 = 0x102
+                    0x0102                  _PR1 = 0x102
+                    0x0104                  T1CON = 0x104
+                    0x0104                  _T1CON = 0x104
+                    0x0104                  _T1CONbits = 0x104
+                    0x0106                  TMR2 = 0x106
+                    0x0106                  _TMR2 = 0x106
+                    0x0108                  TMR3HLD = 0x108
+                    0x0108                  _TMR3HLD = 0x108
+                    0x010a                  TMR3 = 0x10a
+                    0x010a                  _TMR3 = 0x10a
+                    0x010c                  PR2 = 0x10c
+                    0x010c                  _PR2 = 0x10c
+                    0x010e                  PR3 = 0x10e
+                    0x010e                  _PR3 = 0x10e
+                    0x0110                  T2CON = 0x110
+                    0x0110                  _T2CON = 0x110
+                    0x0110                  _T2CONbits = 0x110
+                    0x0112                  T3CON = 0x112
+                    0x0112                  _T3CON = 0x112
+                    0x0112                  _T3CONbits = 0x112
+                    0x0114                  TMR4 = 0x114
+                    0x0114                  _TMR4 = 0x114
+                    0x0116                  TMR5HLD = 0x116
+                    0x0116                  _TMR5HLD = 0x116
+                    0x0118                  TMR5 = 0x118
+                    0x0118                  _TMR5 = 0x118
+                    0x011a                  PR4 = 0x11a
+                    0x011a                  _PR4 = 0x11a
+                    0x011c                  PR5 = 0x11c
+                    0x011c                  _PR5 = 0x11c
+                    0x011e                  T4CON = 0x11e
+                    0x011e                  _T4CON = 0x11e
+                    0x011e                  _T4CONbits = 0x11e
+                    0x0120                  T5CON = 0x120
+                    0x0120                  _T5CON = 0x120
+                    0x0120                  _T5CONbits = 0x120
+                    0x0140                  IC1CON1 = 0x140
+                    0x0140                  _IC1CON1 = 0x140
+                    0x0140                  _IC1CON1bits = 0x140
+                    0x0142                  IC1CON2 = 0x142
+                    0x0142                  _IC1CON2 = 0x142
+                    0x0142                  _IC1CON2bits = 0x142
+                    0x0144                  IC1BUF = 0x144
+                    0x0144                  _IC1BUF = 0x144
+                    0x0146                  IC1TMR = 0x146
+                    0x0146                  _IC1TMR = 0x146
+                    0x0148                  IC2CON1 = 0x148
+                    0x0148                  _IC2CON1 = 0x148
+                    0x0148                  _IC2CON1bits = 0x148
+                    0x014a                  IC2CON2 = 0x14a
+                    0x014a                  _IC2CON2 = 0x14a
+                    0x014a                  _IC2CON2bits = 0x14a
+                    0x014c                  IC2BUF = 0x14c
+                    0x014c                  _IC2BUF = 0x14c
+                    0x014e                  IC2TMR = 0x14e
+                    0x014e                  _IC2TMR = 0x14e
+                    0x0150                  IC3CON1 = 0x150
+                    0x0150                  _IC3CON1 = 0x150
+                    0x0150                  _IC3CON1bits = 0x150
+                    0x0152                  IC3CON2 = 0x152
+                    0x0152                  _IC3CON2 = 0x152
+                    0x0152                  _IC3CON2bits = 0x152
+                    0x0154                  IC3BUF = 0x154
+                    0x0154                  _IC3BUF = 0x154
+                    0x0156                  IC3TMR = 0x156
+                    0x0156                  _IC3TMR = 0x156
+                    0x0158                  IC4CON1 = 0x158
+                    0x0158                  _IC4CON1 = 0x158
+                    0x0158                  _IC4CON1bits = 0x158
+                    0x015a                  IC4CON2 = 0x15a
+                    0x015a                  _IC4CON2 = 0x15a
+                    0x015a                  _IC4CON2bits = 0x15a
+                    0x015c                  IC4BUF = 0x15c
+                    0x015c                  _IC4BUF = 0x15c
+                    0x015e                  IC4TMR = 0x15e
+                    0x015e                  _IC4TMR = 0x15e
+                    0x0160                  IC5CON1 = 0x160
+                    0x0160                  _IC5CON1 = 0x160
+                    0x0160                  _IC5CON1bits = 0x160
+                    0x0162                  IC5CON2 = 0x162
+                    0x0162                  _IC5CON2 = 0x162
+                    0x0162                  _IC5CON2bits = 0x162
+                    0x0164                  IC5BUF = 0x164
+                    0x0164                  _IC5BUF = 0x164
+                    0x0166                  IC5TMR = 0x166
+                    0x0166                  _IC5TMR = 0x166
+                    0x0168                  IC6CON1 = 0x168
+                    0x0168                  _IC6CON1 = 0x168
+                    0x0168                  _IC6CON1bits = 0x168
+                    0x016a                  IC6CON2 = 0x16a
+                    0x016a                  _IC6CON2 = 0x16a
+                    0x016a                  _IC6CON2bits = 0x16a
+                    0x016c                  IC6BUF = 0x16c
+                    0x016c                  _IC6BUF = 0x16c
+                    0x016e                  IC6TMR = 0x16e
+                    0x016e                  _IC6TMR = 0x16e
+                    0x0170                  IC7CON1 = 0x170
+                    0x0170                  _IC7CON1 = 0x170
+                    0x0170                  _IC7CON1bits = 0x170
+                    0x0172                  IC7CON2 = 0x172
+                    0x0172                  _IC7CON2 = 0x172
+                    0x0172                  _IC7CON2bits = 0x172
+                    0x0174                  IC7BUF = 0x174
+                    0x0174                  _IC7BUF = 0x174
+                    0x0176                  IC7TMR = 0x176
+                    0x0176                  _IC7TMR = 0x176
+                    0x0178                  IC8CON1 = 0x178
+                    0x0178                  _IC8CON1 = 0x178
+                    0x0178                  _IC8CON1bits = 0x178
+                    0x017a                  IC8CON2 = 0x17a
+                    0x017a                  _IC8CON2 = 0x17a
+                    0x017a                  _IC8CON2bits = 0x17a
+                    0x017c                  IC8BUF = 0x17c
+                    0x017c                  _IC8BUF = 0x17c
+                    0x017e                  IC8TMR = 0x17e
+                    0x017e                  _IC8TMR = 0x17e
+                    0x0180                  IC9CON1 = 0x180
+                    0x0180                  _IC9CON1 = 0x180
+                    0x0180                  _IC9CON1bits = 0x180
+                    0x0182                  IC9CON2 = 0x182
+                    0x0182                  _IC9CON2 = 0x182
+                    0x0182                  _IC9CON2bits = 0x182
+                    0x0184                  IC9BUF = 0x184
+                    0x0184                  _IC9BUF = 0x184
+                    0x0186                  IC9TMR = 0x186
+                    0x0186                  _IC9TMR = 0x186
+                    0x0190                  OC1CON1 = 0x190
+                    0x0190                  _OC1CON1 = 0x190
+                    0x0190                  _OC1CON1bits = 0x190
+                    0x0192                  OC1CON2 = 0x192
+                    0x0192                  _OC1CON2 = 0x192
+                    0x0192                  _OC1CON2bits = 0x192
+                    0x0194                  OC1RS = 0x194
+                    0x0194                  _OC1RS = 0x194
+                    0x0196                  OC1R = 0x196
+                    0x0196                  _OC1R = 0x196
+                    0x0198                  OC1TMR = 0x198
+                    0x0198                  _OC1TMR = 0x198
+                    0x019a                  OC2CON1 = 0x19a
+                    0x019a                  _OC2CON1 = 0x19a
+                    0x019a                  _OC2CON1bits = 0x19a
+                    0x019c                  OC2CON2 = 0x19c
+                    0x019c                  _OC2CON2 = 0x19c
+                    0x019c                  _OC2CON2bits = 0x19c
+                    0x019e                  OC2RS = 0x19e
+                    0x019e                  _OC2RS = 0x19e
+                    0x01a0                  OC2R = 0x1a0
+                    0x01a0                  _OC2R = 0x1a0
+                    0x01a2                  OC2TMR = 0x1a2
+                    0x01a2                  _OC2TMR = 0x1a2
+                    0x01a4                  OC3CON1 = 0x1a4
+                    0x01a4                  _OC3CON1 = 0x1a4
+                    0x01a4                  _OC3CON1bits = 0x1a4
+                    0x01a6                  OC3CON2 = 0x1a6
+                    0x01a6                  _OC3CON2 = 0x1a6
+                    0x01a6                  _OC3CON2bits = 0x1a6
+                    0x01a8                  OC3RS = 0x1a8
+                    0x01a8                  _OC3RS = 0x1a8
+                    0x01aa                  OC3R = 0x1aa
+                    0x01aa                  _OC3R = 0x1aa
+                    0x01ac                  OC3TMR = 0x1ac
+                    0x01ac                  _OC3TMR = 0x1ac
+                    0x01ae                  OC4CON1 = 0x1ae
+                    0x01ae                  _OC4CON1 = 0x1ae
+                    0x01ae                  _OC4CON1bits = 0x1ae
+                    0x01b0                  OC4CON2 = 0x1b0
+                    0x01b0                  _OC4CON2 = 0x1b0
+                    0x01b0                  _OC4CON2bits = 0x1b0
+                    0x01b2                  OC4RS = 0x1b2
+                    0x01b2                  _OC4RS = 0x1b2
+                    0x01b4                  OC4R = 0x1b4
+                    0x01b4                  _OC4R = 0x1b4
+                    0x01b6                  OC4TMR = 0x1b6
+                    0x01b6                  _OC4TMR = 0x1b6
+                    0x01b8                  OC5CON1 = 0x1b8
+                    0x01b8                  _OC5CON1 = 0x1b8
+                    0x01b8                  _OC5CON1bits = 0x1b8
+                    0x01ba                  OC5CON2 = 0x1ba
+                    0x01ba                  _OC5CON2 = 0x1ba
+                    0x01ba                  _OC5CON2bits = 0x1ba
+                    0x01bc                  OC5RS = 0x1bc
+                    0x01bc                  _OC5RS = 0x1bc
+                    0x01be                  OC5R = 0x1be
+                    0x01be                  _OC5R = 0x1be
+                    0x01c0                  OC5TMR = 0x1c0
+                    0x01c0                  _OC5TMR = 0x1c0
+                    0x01c2                  OC6CON1 = 0x1c2
+                    0x01c2                  _OC6CON1 = 0x1c2
+                    0x01c2                  _OC6CON1bits = 0x1c2
+                    0x01c4                  OC6CON2 = 0x1c4
+                    0x01c4                  _OC6CON2 = 0x1c4
+                    0x01c4                  _OC6CON2bits = 0x1c4
+                    0x01c6                  OC6RS = 0x1c6
+                    0x01c6                  _OC6RS = 0x1c6
+                    0x01c8                  OC6R = 0x1c8
+                    0x01c8                  _OC6R = 0x1c8
+                    0x01ca                  OC6TMR = 0x1ca
+                    0x01ca                  _OC6TMR = 0x1ca
+                    0x01cc                  OC7CON1 = 0x1cc
+                    0x01cc                  _OC7CON1 = 0x1cc
+                    0x01cc                  _OC7CON1bits = 0x1cc
+                    0x01ce                  OC7CON2 = 0x1ce
+                    0x01ce                  _OC7CON2 = 0x1ce
+                    0x01ce                  _OC7CON2bits = 0x1ce
+                    0x01d0                  OC7RS = 0x1d0
+                    0x01d0                  _OC7RS = 0x1d0
+                    0x01d2                  OC7R = 0x1d2
+                    0x01d2                  _OC7R = 0x1d2
+                    0x01d4                  OC7TMR = 0x1d4
+                    0x01d4                  _OC7TMR = 0x1d4
+                    0x01d6                  OC8CON1 = 0x1d6
+                    0x01d6                  _OC8CON1 = 0x1d6
+                    0x01d6                  _OC8CON1bits = 0x1d6
+                    0x01d8                  OC8CON2 = 0x1d8
+                    0x01d8                  _OC8CON2 = 0x1d8
+                    0x01d8                  _OC8CON2bits = 0x1d8
+                    0x01da                  OC8RS = 0x1da
+                    0x01da                  _OC8RS = 0x1da
+                    0x01dc                  OC8R = 0x1dc
+                    0x01dc                  _OC8R = 0x1dc
+                    0x01de                  OC8TMR = 0x1de
+                    0x01de                  _OC8TMR = 0x1de
+                    0x01e0                  OC9CON1 = 0x1e0
+                    0x01e0                  _OC9CON1 = 0x1e0
+                    0x01e0                  _OC9CON1bits = 0x1e0
+                    0x01e2                  OC9CON2 = 0x1e2
+                    0x01e2                  _OC9CON2 = 0x1e2
+                    0x01e2                  _OC9CON2bits = 0x1e2
+                    0x01e4                  OC9RS = 0x1e4
+                    0x01e4                  _OC9RS = 0x1e4
+                    0x01e6                  OC9R = 0x1e6
+                    0x01e6                  _OC9R = 0x1e6
+                    0x01e8                  OC9TMR = 0x1e8
+                    0x01e8                  _OC9TMR = 0x1e8
+                    0x0200                  I2C1RCV = 0x200
+                    0x0200                  _I2C1RCV = 0x200
+                    0x0202                  I2C1TRN = 0x202
+                    0x0202                  _I2C1TRN = 0x202
+                    0x0204                  I2C1BRG = 0x204
+                    0x0204                  _I2C1BRG = 0x204
+                    0x0206                  I2C1CON = 0x206
+                    0x0206                  _I2C1CON = 0x206
+                    0x0206                  _I2C1CONbits = 0x206
+                    0x0208                  I2C1STAT = 0x208
+                    0x0208                  _I2C1STAT = 0x208
+                    0x0208                  _I2C1STATbits = 0x208
+                    0x020a                  I2C1ADD = 0x20a
+                    0x020a                  _I2C1ADD = 0x20a
+                    0x020c                  I2C1MSK = 0x20c
+                    0x020c                  _I2C1MSK = 0x20c
+                    0x0210                  I2C2RCV = 0x210
+                    0x0210                  _I2C2RCV = 0x210
+                    0x0212                  I2C2TRN = 0x212
+                    0x0212                  _I2C2TRN = 0x212
+                    0x0214                  I2C2BRG = 0x214
+                    0x0214                  _I2C2BRG = 0x214
+                    0x0216                  I2C2CON = 0x216
+                    0x0216                  _I2C2CON = 0x216
+                    0x0216                  _I2C2CONbits = 0x216
+                    0x0218                  I2C2STAT = 0x218
+                    0x0218                  _I2C2STAT = 0x218
+                    0x0218                  _I2C2STATbits = 0x218
+                    0x021a                  I2C2ADD = 0x21a
+                    0x021a                  _I2C2ADD = 0x21a
+                    0x021c                  I2C2MSK = 0x21c
+                    0x021c                  _I2C2MSK = 0x21c
+                    0x0220                  U1MODE = 0x220
+                    0x0220                  _U1MODE = 0x220
+                    0x0220                  _U1MODEbits = 0x220
+                    0x0222                  U1STA = 0x222
+                    0x0222                  _U1STA = 0x222
+                    0x0222                  _U1STAbits = 0x222
+                    0x0224                  U1TXREG = 0x224
+                    0x0224                  _U1TXREG = 0x224
+                    0x0224                  _U1TXREGbits = 0x224
+                    0x0226                  U1RXREG = 0x226
+                    0x0226                  _U1RXREG = 0x226
+                    0x0226                  _U1RXREGbits = 0x226
+                    0x0228                  U1BRG = 0x228
+                    0x0228                  _U1BRG = 0x228
+                    0x0230                  U2MODE = 0x230
+                    0x0230                  _U2MODE = 0x230
+                    0x0230                  _U2MODEbits = 0x230
+                    0x0232                  U2STA = 0x232
+                    0x0232                  _U2STA = 0x232
+                    0x0232                  _U2STAbits = 0x232
+                    0x0234                  U2TXREG = 0x234
+                    0x0234                  _U2TXREG = 0x234
+                    0x0234                  _U2TXREGbits = 0x234
+                    0x0236                  U2RXREG = 0x236
+                    0x0236                  _U2RXREG = 0x236
+                    0x0236                  _U2RXREGbits = 0x236
+                    0x0238                  U2BRG = 0x238
+                    0x0238                  _U2BRG = 0x238
+                    0x0240                  SPI1STAT = 0x240
+                    0x0240                  _SPI1STAT = 0x240
+                    0x0240                  _SPI1STATbits = 0x240
+                    0x0242                  SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1bits = 0x242
+                    0x0244                  SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2bits = 0x244
+                    0x0248                  SPI1BUF = 0x248
+                    0x0248                  _SPI1BUF = 0x248
+                    0x0250                  U3MODE = 0x250
+                    0x0250                  _U3MODE = 0x250
+                    0x0250                  _U3MODEbits = 0x250
+                    0x0252                  U3STA = 0x252
+                    0x0252                  _U3STA = 0x252
+                    0x0252                  _U3STAbits = 0x252
+                    0x0254                  U3TXREG = 0x254
+                    0x0254                  _U3TXREG = 0x254
+                    0x0254                  _U3TXREGbits = 0x254
+                    0x0256                  U3RXREG = 0x256
+                    0x0256                  _U3RXREG = 0x256
+                    0x0256                  _U3RXREGbits = 0x256
+                    0x0258                  U3BRG = 0x258
+                    0x0258                  _U3BRG = 0x258
+                    0x0260                  SPI2STAT = 0x260
+                    0x0260                  _SPI2STAT = 0x260
+                    0x0260                  _SPI2STATbits = 0x260
+                    0x0262                  SPI2CON1 = 0x262
+                    0x0262                  _SPI2CON1 = 0x262
+                    0x0262                  _SPI2CON1bits = 0x262
+                    0x0264                  SPI2CON2 = 0x264
+                    0x0264                  _SPI2CON2 = 0x264
+                    0x0264                  _SPI2CON2bits = 0x264
+                    0x0268                  SPI2BUF = 0x268
+                    0x0268                  _SPI2BUF = 0x268
+                    0x0270                  I2C3RCV = 0x270
+                    0x0270                  _I2C3RCV = 0x270
+                    0x0272                  I2C3TRN = 0x272
+                    0x0272                  _I2C3TRN = 0x272
+                    0x0274                  I2C3BRG = 0x274
+                    0x0274                  _I2C3BRG = 0x274
+                    0x0276                  I2C3CON = 0x276
+                    0x0276                  _I2C3CON = 0x276
+                    0x0276                  _I2C3CONbits = 0x276
+                    0x0278                  I2C3STAT = 0x278
+                    0x0278                  _I2C3STAT = 0x278
+                    0x0278                  _I2C3STATbits = 0x278
+                    0x027a                  I2C3ADD = 0x27a
+                    0x027a                  _I2C3ADD = 0x27a
+                    0x027c                  I2C3MSK = 0x27c
+                    0x027c                  _I2C3MSK = 0x27c
+                    0x0280                  SPI3STAT = 0x280
+                    0x0280                  _SPI3STAT = 0x280
+                    0x0280                  _SPI3STATbits = 0x280
+                    0x0282                  SPI3CON1 = 0x282
+                    0x0282                  _SPI3CON1 = 0x282
+                    0x0282                  _SPI3CON1bits = 0x282
+                    0x0284                  SPI3CON2 = 0x284
+                    0x0284                  _SPI3CON2 = 0x284
+                    0x0284                  _SPI3CON2bits = 0x284
+                    0x0288                  SPI3BUF = 0x288
+                    0x0288                  _SPI3BUF = 0x288
+                    0x02b0                  U4MODE = 0x2b0
+                    0x02b0                  _U4MODE = 0x2b0
+                    0x02b0                  _U4MODEbits = 0x2b0
+                    0x02b2                  U4STA = 0x2b2
+                    0x02b2                  _U4STA = 0x2b2
+                    0x02b2                  _U4STAbits = 0x2b2
+                    0x02b4                  U4TXREG = 0x2b4
+                    0x02b4                  _U4TXREG = 0x2b4
+                    0x02b4                  _U4TXREGbits = 0x2b4
+                    0x02b6                  U4RXREG = 0x2b6
+                    0x02b6                  _U4RXREG = 0x2b6
+                    0x02b6                  _U4RXREGbits = 0x2b6
+                    0x02b8                  U4BRG = 0x2b8
+                    0x02b8                  _U4BRG = 0x2b8
+                    0x02c8                  TRISB = 0x2c8
+                    0x02c8                  _TRISB = 0x2c8
+                    0x02c8                  _TRISBbits = 0x2c8
+                    0x02ca                  PORTB = 0x2ca
+                    0x02ca                  _PORTB = 0x2ca
+                    0x02ca                  _PORTBbits = 0x2ca
+                    0x02cc                  LATB = 0x2cc
+                    0x02cc                  _LATB = 0x2cc
+                    0x02cc                  _LATBbits = 0x2cc
+                    0x02ce                  ODCB = 0x2ce
+                    0x02ce                  _ODCB = 0x2ce
+                    0x02ce                  _ODCBbits = 0x2ce
+                    0x02d0                  TRISC = 0x2d0
+                    0x02d0                  _TRISC = 0x2d0
+                    0x02d0                  _TRISCbits = 0x2d0
+                    0x02d2                  PORTC = 0x2d2
+                    0x02d2                  _PORTC = 0x2d2
+                    0x02d2                  _PORTCbits = 0x2d2
+                    0x02d4                  LATC = 0x2d4
+                    0x02d4                  _LATC = 0x2d4
+                    0x02d4                  _LATCbits = 0x2d4
+                    0x02d6                  ODCC = 0x2d6
+                    0x02d6                  _ODCC = 0x2d6
+                    0x02d6                  _ODCCbits = 0x2d6
+                    0x02d8                  TRISD = 0x2d8
+                    0x02d8                  _TRISD = 0x2d8
+                    0x02d8                  _TRISDbits = 0x2d8
+                    0x02da                  PORTD = 0x2da
+                    0x02da                  _PORTD = 0x2da
+                    0x02da                  _PORTDbits = 0x2da
+                    0x02dc                  LATD = 0x2dc
+                    0x02dc                  _LATD = 0x2dc
+                    0x02dc                  _LATDbits = 0x2dc
+                    0x02de                  ODCD = 0x2de
+                    0x02de                  _ODCD = 0x2de
+                    0x02de                  _ODCDbits = 0x2de
+                    0x02e0                  TRISE = 0x2e0
+                    0x02e0                  _TRISE = 0x2e0
+                    0x02e0                  _TRISEbits = 0x2e0
+                    0x02e2                  PORTE = 0x2e2
+                    0x02e2                  _PORTE = 0x2e2
+                    0x02e2                  _PORTEbits = 0x2e2
+                    0x02e4                  LATE = 0x2e4
+                    0x02e4                  _LATE = 0x2e4
+                    0x02e4                  _LATEbits = 0x2e4
+                    0x02e6                  ODCE = 0x2e6
+                    0x02e6                  _ODCE = 0x2e6
+                    0x02e6                  _ODCEbits = 0x2e6
+                    0x02e8                  TRISF = 0x2e8
+                    0x02e8                  _TRISF = 0x2e8
+                    0x02e8                  _TRISFbits = 0x2e8
+                    0x02ea                  PORTF = 0x2ea
+                    0x02ea                  _PORTF = 0x2ea
+                    0x02ea                  _PORTFbits = 0x2ea
+                    0x02ec                  LATF = 0x2ec
+                    0x02ec                  _LATF = 0x2ec
+                    0x02ec                  _LATFbits = 0x2ec
+                    0x02ee                  ODCF = 0x2ee
+                    0x02ee                  _ODCF = 0x2ee
+                    0x02ee                  _ODCFbits = 0x2ee
+                    0x02f0                  TRISG = 0x2f0
+                    0x02f0                  _TRISG = 0x2f0
+                    0x02f0                  _TRISGbits = 0x2f0
+                    0x02f2                  PORTG = 0x2f2
+                    0x02f2                  _PORTG = 0x2f2
+                    0x02f2                  _PORTGbits = 0x2f2
+                    0x02f4                  LATG = 0x2f4
+                    0x02f4                  _LATG = 0x2f4
+                    0x02f4                  _LATGbits = 0x2f4
+                    0x02f6                  ODCG = 0x2f6
+                    0x02f6                  _ODCG = 0x2f6
+                    0x02f6                  _ODCGbits = 0x2f6
+                    0x02fc                  PADCFG1 = 0x2fc
+                    0x02fc                  _PADCFG1 = 0x2fc
+                    0x02fc                  _PADCFG1bits = 0x2fc
+                    0x0300                  ADC1BUF0 = 0x300
+                    0x0300                  _ADC1BUF0 = 0x300
+                    0x0302                  ADC1BUF1 = 0x302
+                    0x0302                  _ADC1BUF1 = 0x302
+                    0x0304                  ADC1BUF2 = 0x304
+                    0x0304                  _ADC1BUF2 = 0x304
+                    0x0306                  ADC1BUF3 = 0x306
+                    0x0306                  _ADC1BUF3 = 0x306
+                    0x0308                  ADC1BUF4 = 0x308
+                    0x0308                  _ADC1BUF4 = 0x308
+                    0x030a                  ADC1BUF5 = 0x30a
+                    0x030a                  _ADC1BUF5 = 0x30a
+                    0x030c                  ADC1BUF6 = 0x30c
+                    0x030c                  _ADC1BUF6 = 0x30c
+                    0x030e                  ADC1BUF7 = 0x30e
+                    0x030e                  _ADC1BUF7 = 0x30e
+                    0x0310                  ADC1BUF8 = 0x310
+                    0x0310                  _ADC1BUF8 = 0x310
+                    0x0312                  ADC1BUF9 = 0x312
+                    0x0312                  _ADC1BUF9 = 0x312
+                    0x0314                  ADC1BUFA = 0x314
+                    0x0314                  _ADC1BUFA = 0x314
+                    0x0316                  ADC1BUFB = 0x316
+                    0x0316                  _ADC1BUFB = 0x316
+                    0x0318                  ADC1BUFC = 0x318
+                    0x0318                  _ADC1BUFC = 0x318
+                    0x031a                  ADC1BUFD = 0x31a
+                    0x031a                  _ADC1BUFD = 0x31a
+                    0x031c                  ADC1BUFE = 0x31c
+                    0x031c                  _ADC1BUFE = 0x31c
+                    0x031e                  ADC1BUFF = 0x31e
+                    0x031e                  _ADC1BUFF = 0x31e
+                    0x0320                  AD1CON1 = 0x320
+                    0x0320                  _AD1CON1 = 0x320
+                    0x0320                  _AD1CON1bits = 0x320
+                    0x0322                  AD1CON2 = 0x322
+                    0x0322                  _AD1CON2 = 0x322
+                    0x0322                  _AD1CON2bits = 0x322
+                    0x0324                  AD1CON3 = 0x324
+                    0x0324                  _AD1CON3 = 0x324
+                    0x0324                  _AD1CON3bits = 0x324
+                    0x0328                  AD1CHS = 0x328
+                    0x0328                  _AD1CHS = 0x328
+                    0x0328                  _AD1CHSbits = 0x328
+                    0x0328                  AD1CHS0 = 0x328
+                    0x0328                  _AD1CHS0 = 0x328
+                    0x0328                  _AD1CHS0bits = 0x328
+                    0x032e                  AD1CSSH = 0x32e
+                    0x032e                  _AD1CSSH = 0x32e
+                    0x032e                  _AD1CSSHbits = 0x32e
+                    0x0330                  AD1CSSL = 0x330
+                    0x0330                  _AD1CSSL = 0x330
+                    0x0330                  _AD1CSSLbits = 0x330
+                    0x033c                  CTMUCON = 0x33c
+                    0x033c                  _CTMUCON = 0x33c
+                    0x033c                  _CTMUCONbits = 0x33c
+                    0x033e                  CTMUICON = 0x33e
+                    0x033e                  _CTMUICON = 0x33e
+                    0x033e                  _CTMUICONbits = 0x33e
+                    0x0340                  ADC1BUF10 = 0x340
+                    0x0340                  _ADC1BUF10 = 0x340
+                    0x0342                  ADC1BUF11 = 0x342
+                    0x0342                  _ADC1BUF11 = 0x342
+                    0x0344                  ADC1BUF12 = 0x344
+                    0x0344                  _ADC1BUF12 = 0x344
+                    0x0346                  ADC1BUF13 = 0x346
+                    0x0346                  _ADC1BUF13 = 0x346
+                    0x0348                  ADC1BUF14 = 0x348
+                    0x0348                  _ADC1BUF14 = 0x348
+                    0x034a                  ADC1BUF15 = 0x34a
+                    0x034a                  _ADC1BUF15 = 0x34a
+                    0x034c                  ADC1BUF16 = 0x34c
+                    0x034c                  _ADC1BUF16 = 0x34c
+                    0x034e                  ADC1BUF17 = 0x34e
+                    0x034e                  _ADC1BUF17 = 0x34e
+                    0x0350                  ADC1BUF18 = 0x350
+                    0x0350                  _ADC1BUF18 = 0x350
+                    0x0352                  ADC1BUF19 = 0x352
+                    0x0352                  _ADC1BUF19 = 0x352
+                    0x0354                  ADC1BUF1A = 0x354
+                    0x0354                  _ADC1BUF1A = 0x354
+                    0x0356                  ADC1BUF1B = 0x356
+                    0x0356                  _ADC1BUF1B = 0x356
+                    0x0358                  ADC1BUF1C = 0x358
+                    0x0358                  _ADC1BUF1C = 0x358
+                    0x035a                  ADC1BUF1D = 0x35a
+                    0x035a                  _ADC1BUF1D = 0x35a
+                    0x035c                  ADC1BUF1E = 0x35c
+                    0x035c                  _ADC1BUF1E = 0x35c
+                    0x035e                  ADC1BUF1F = 0x35e
+                    0x035e                  _ADC1BUF1F = 0x35e
+                    0x0480                  U1OTGIR = 0x480
+                    0x0480                  _U1OTGIR = 0x480
+                    0x0480                  _U1OTGIRbits = 0x480
+                    0x0482                  U1OTGIE = 0x482
+                    0x0482                  _U1OTGIE = 0x482
+                    0x0482                  _U1OTGIEbits = 0x482
+                    0x0484                  U1OTGSTAT = 0x484
+                    0x0484                  _U1OTGSTAT = 0x484
+                    0x0484                  _U1OTGSTATbits = 0x484
+                    0x0486                  U1OTGCON = 0x486
+                    0x0486                  _U1OTGCON = 0x486
+                    0x0486                  _U1OTGCONbits = 0x486
+                    0x0488                  U1PWRC = 0x488
+                    0x0488                  _U1PWRC = 0x488
+                    0x0488                  _U1PWRCbits = 0x488
+                    0x048a                  U1IR = 0x48a
+                    0x048a                  _U1IR = 0x48a
+                    0x048a                  _U1IRbits = 0x48a
+                    0x048c                  U1IE = 0x48c
+                    0x048c                  _U1IE = 0x48c
+                    0x048c                  _U1IEbits = 0x48c
+                    0x048e                  U1EIR = 0x48e
+                    0x048e                  _U1EIR = 0x48e
+                    0x048e                  _U1EIRbits = 0x48e
+                    0x0490                  U1EIE = 0x490
+                    0x0490                  _U1EIE = 0x490
+                    0x0490                  _U1EIEbits = 0x490
+                    0x0492                  U1STAT = 0x492
+                    0x0492                  _U1STAT = 0x492
+                    0x0492                  _U1STATbits = 0x492
+                    0x0494                  U1CON = 0x494
+                    0x0494                  _U1CON = 0x494
+                    0x0494                  _U1CONbits = 0x494
+                    0x0496                  U1ADDR = 0x496
+                    0x0496                  _U1ADDR = 0x496
+                    0x0496                  _U1ADDRbits = 0x496
+                    0x0498                  U1BDTP1 = 0x498
+                    0x0498                  _U1BDTP1 = 0x498
+                    0x0498                  _U1BDTP1bits = 0x498
+                    0x049a                  U1FRML = 0x49a
+                    0x049a                  _U1FRML = 0x49a
+                    0x049a                  _U1FRMLbits = 0x49a
+                    0x049c                  U1FRMH = 0x49c
+                    0x049c                  _U1FRMH = 0x49c
+                    0x049c                  _U1FRMHbits = 0x49c
+                    0x049e                  U1TOK = 0x49e
+                    0x049e                  _U1TOK = 0x49e
+                    0x049e                  _U1TOKbits = 0x49e
+                    0x04a0                  U1SOF = 0x4a0
+                    0x04a0                  _U1SOF = 0x4a0
+                    0x04a0                  _U1SOFbits = 0x4a0
+                    0x04a6                  U1CNFG1 = 0x4a6
+                    0x04a6                  _U1CNFG1 = 0x4a6
+                    0x04a6                  _U1CNFG1bits = 0x4a6
+                    0x04a8                  U1CNFG2 = 0x4a8
+                    0x04a8                  _U1CNFG2 = 0x4a8
+                    0x04a8                  _U1CNFG2bits = 0x4a8
+                    0x04aa                  U1EP0 = 0x4aa
+                    0x04aa                  _U1EP0 = 0x4aa
+                    0x04aa                  _U1EP0bits = 0x4aa
+                    0x04ac                  U1EP1 = 0x4ac
+                    0x04ac                  _U1EP1 = 0x4ac
+                    0x04ac                  _U1EP1bits = 0x4ac
+                    0x04ae                  U1EP2 = 0x4ae
+                    0x04ae                  _U1EP2 = 0x4ae
+                    0x04ae                  _U1EP2bits = 0x4ae
+                    0x04b0                  U1EP3 = 0x4b0
+                    0x04b0                  _U1EP3 = 0x4b0
+                    0x04b0                  _U1EP3bits = 0x4b0
+                    0x04b2                  U1EP4 = 0x4b2
+                    0x04b2                  _U1EP4 = 0x4b2
+                    0x04b2                  _U1EP4bits = 0x4b2
+                    0x04b4                  U1EP5 = 0x4b4
+                    0x04b4                  _U1EP5 = 0x4b4
+                    0x04b4                  _U1EP5bits = 0x4b4
+                    0x04b6                  U1EP6 = 0x4b6
+                    0x04b6                  _U1EP6 = 0x4b6
+                    0x04b6                  _U1EP6bits = 0x4b6
+                    0x04b8                  U1EP7 = 0x4b8
+                    0x04b8                  _U1EP7 = 0x4b8
+                    0x04b8                  _U1EP7bits = 0x4b8
+                    0x04ba                  U1EP8 = 0x4ba
+                    0x04ba                  _U1EP8 = 0x4ba
+                    0x04ba                  _U1EP8bits = 0x4ba
+                    0x04bc                  U1EP9 = 0x4bc
+                    0x04bc                  _U1EP9 = 0x4bc
+                    0x04bc                  _U1EP9bits = 0x4bc
+                    0x04be                  U1EP10 = 0x4be
+                    0x04be                  _U1EP10 = 0x4be
+                    0x04be                  _U1EP10bits = 0x4be
+                    0x04c0                  U1EP11 = 0x4c0
+                    0x04c0                  _U1EP11 = 0x4c0
+                    0x04c0                  _U1EP11bits = 0x4c0
+                    0x04c2                  U1EP12 = 0x4c2
+                    0x04c2                  _U1EP12 = 0x4c2
+                    0x04c2                  _U1EP12bits = 0x4c2
+                    0x04c4                  U1EP13 = 0x4c4
+                    0x04c4                  _U1EP13 = 0x4c4
+                    0x04c4                  _U1EP13bits = 0x4c4
+                    0x04c6                  U1EP14 = 0x4c6
+                    0x04c6                  _U1EP14 = 0x4c6
+                    0x04c6                  _U1EP14bits = 0x4c6
+                    0x04c8                  U1EP15 = 0x4c8
+                    0x04c8                  _U1EP15 = 0x4c8
+                    0x04c8                  _U1EP15bits = 0x4c8
+                    0x04cc                  U1PWMRRS = 0x4cc
+                    0x04cc                  _U1PWMRRS = 0x4cc
+                    0x04cc                  _U1PWMRRSbits = 0x4cc
+                    0x04ce                  U1PWMCON = 0x4ce
+                    0x04ce                  _U1PWMCON = 0x4ce
+                    0x04ce                  _U1PWMCONbits = 0x4ce
+                    0x04de                  ANCFG = 0x4de
+                    0x04de                  _ANCFG = 0x4de
+                    0x04de                  _ANCFGbits = 0x4de
+                    0x04e2                  ANSB = 0x4e2
+                    0x04e2                  _ANSB = 0x4e2
+                    0x04e2                  _ANSBbits = 0x4e2
+                    0x04e4                  ANSC = 0x4e4
+                    0x04e4                  _ANSC = 0x4e4
+                    0x04e4                  _ANSCbits = 0x4e4
+                    0x04e6                  ANSD = 0x4e6
+                    0x04e6                  _ANSD = 0x4e6
+                    0x04e6                  _ANSDbits = 0x4e6
+                    0x04ea                  ANSF = 0x4ea
+                    0x04ea                  _ANSF = 0x4ea
+                    0x04ea                  _ANSFbits = 0x4ea
+                    0x04ec                  ANSG = 0x4ec
+                    0x04ec                  _ANSG = 0x4ec
+                    0x04ec                  _ANSGbits = 0x4ec
+                    0x0620                  ALRMVAL = 0x620
+                    0x0620                  _ALRMVAL = 0x620
+                    0x0622                  ALCFGRPT = 0x622
+                    0x0622                  _ALCFGRPT = 0x622
+                    0x0622                  _ALCFGRPTbits = 0x622
+                    0x0624                  RTCVAL = 0x624
+                    0x0624                  _RTCVAL = 0x624
+                    0x0626                  RCFGCAL = 0x626
+                    0x0626                  _RCFGCAL = 0x626
+                    0x0626                  _RCFGCALbits = 0x626
+                    0x0630                  CMSTAT = 0x630
+                    0x0630                  _CMSTAT = 0x630
+                    0x0630                  _CMSTATbits = 0x630
+                    0x0632                  CVRCON = 0x632
+                    0x0632                  _CVRCON = 0x632
+                    0x0632                  _CVRCONbits = 0x632
+                    0x0634                  CM1CON = 0x634
+                    0x0634                  _CM1CON = 0x634
+                    0x0634                  _CM1CONbits = 0x634
+                    0x0636                  CM2CON = 0x636
+                    0x0636                  _CM2CON = 0x636
+                    0x0636                  _CM2CONbits = 0x636
+                    0x0638                  CM3CON = 0x638
+                    0x0638                  _CM3CON = 0x638
+                    0x0638                  _CM3CONbits = 0x638
+                    0x0640                  CRCCON1 = 0x640
+                    0x0640                  _CRCCON1 = 0x640
+                    0x0640                  _CRCCON1bits = 0x640
+                    0x0642                  CRCCON2 = 0x642
+                    0x0642                  _CRCCON2 = 0x642
+                    0x0642                  _CRCCON2bits = 0x642
+                    0x0644                  CRCXORL = 0x644
+                    0x0644                  _CRCXORL = 0x644
+                    0x0644                  _CRCXORLbits = 0x644
+                    0x0646                  CRCXORH = 0x646
+                    0x0646                  _CRCXORH = 0x646
+                    0x0646                  _CRCXORHbits = 0x646
+                    0x0648                  CRCDAT = 0x648
+                    0x0648                  _CRCDAT = 0x648
+                    0x0648                  CRCDAT32 = 0x648
+                    0x0648                  _CRCDAT32 = 0x648
+                    0x0648                  CRCDAT8 = 0x648
+                    0x0648                  _CRCDAT8 = 0x648
+                    0x0648                  CRCDATL = 0x648
+                    0x0648                  _CRCDATL = 0x648
+                    0x064a                  CRCDATH = 0x64a
+                    0x064a                  _CRCDATH = 0x64a
+                    0x064c                  CRCWDATL = 0x64c
+                    0x064c                  _CRCWDATL = 0x64c
+                    0x064e                  CRCWDATH = 0x64e
+                    0x064e                  _CRCWDATH = 0x64e
+                    0x0680                  RPINR0 = 0x680
+                    0x0680                  _RPINR0 = 0x680
+                    0x0680                  _RPINR0bits = 0x680
+                    0x0682                  RPINR1 = 0x682
+                    0x0682                  _RPINR1 = 0x682
+                    0x0682                  _RPINR1bits = 0x682
+                    0x0684                  RPINR2 = 0x684
+                    0x0684                  _RPINR2 = 0x684
+                    0x0684                  _RPINR2bits = 0x684
+                    0x0686                  RPINR3 = 0x686
+                    0x0686                  _RPINR3 = 0x686
+                    0x0686                  _RPINR3bits = 0x686
+                    0x0688                  RPINR4 = 0x688
+                    0x0688                  _RPINR4 = 0x688
+                    0x0688                  _RPINR4bits = 0x688
+                    0x068e                  RPINR7 = 0x68e
+                    0x068e                  _RPINR7 = 0x68e
+                    0x068e                  _RPINR7bits = 0x68e
+                    0x0690                  RPINR8 = 0x690
+                    0x0690                  _RPINR8 = 0x690
+                    0x0690                  _RPINR8bits = 0x690
+                    0x0692                  RPINR9 = 0x692
+                    0x0692                  _RPINR9 = 0x692
+                    0x0692                  _RPINR9bits = 0x692
+                    0x0694                  RPINR10 = 0x694
+                    0x0694                  _RPINR10 = 0x694
+                    0x0694                  _RPINR10bits = 0x694
+                    0x0696                  RPINR11 = 0x696
+                    0x0696                  _RPINR11 = 0x696
+                    0x0696                  _RPINR11bits = 0x696
+                    0x069e                  RPINR15 = 0x69e
+                    0x069e                  _RPINR15 = 0x69e
+                    0x069e                  _RPINR15bits = 0x69e
+                    0x06a2                  RPINR17 = 0x6a2
+                    0x06a2                  _RPINR17 = 0x6a2
+                    0x06a2                  _RPINR17bits = 0x6a2
+                    0x06a4                  RPINR18 = 0x6a4
+                    0x06a4                  _RPINR18 = 0x6a4
+                    0x06a4                  _RPINR18bits = 0x6a4
+                    0x06a6                  RPINR19 = 0x6a6
+                    0x06a6                  _RPINR19 = 0x6a6
+                    0x06a6                  _RPINR19bits = 0x6a6
+                    0x06a8                  RPINR20 = 0x6a8
+                    0x06a8                  _RPINR20 = 0x6a8
+                    0x06a8                  _RPINR20bits = 0x6a8
+                    0x06aa                  RPINR21 = 0x6aa
+                    0x06aa                  _RPINR21 = 0x6aa
+                    0x06aa                  _RPINR21bits = 0x6aa
+                    0x06ac                  RPINR22 = 0x6ac
+                    0x06ac                  _RPINR22 = 0x6ac
+                    0x06ac                  _RPINR22bits = 0x6ac
+                    0x06ae                  RPINR23 = 0x6ae
+                    0x06ae                  _RPINR23 = 0x6ae
+                    0x06ae                  _RPINR23bits = 0x6ae
+                    0x06b6                  RPINR27 = 0x6b6
+                    0x06b6                  _RPINR27 = 0x6b6
+                    0x06b6                  _RPINR27bits = 0x6b6
+                    0x06b8                  RPINR28 = 0x6b8
+                    0x06b8                  _RPINR28 = 0x6b8
+                    0x06b8                  _RPINR28bits = 0x6b8
+                    0x06ba                  RPINR29 = 0x6ba
+                    0x06ba                  _RPINR29 = 0x6ba
+                    0x06ba                  _RPINR29bits = 0x6ba
+                    0x06c0                  RPOR0 = 0x6c0
+                    0x06c0                  _RPOR0 = 0x6c0
+                    0x06c0                  _RPOR0bits = 0x6c0
+                    0x06c2                  RPOR1 = 0x6c2
+                    0x06c2                  _RPOR1 = 0x6c2
+                    0x06c2                  _RPOR1bits = 0x6c2
+                    0x06c4                  RPOR2 = 0x6c4
+                    0x06c4                  _RPOR2 = 0x6c4
+                    0x06c4                  _RPOR2bits = 0x6c4
+                    0x06c6                  RPOR3 = 0x6c6
+                    0x06c6                  _RPOR3 = 0x6c6
+                    0x06c6                  _RPOR3bits = 0x6c6
+                    0x06c8                  RPOR4 = 0x6c8
+                    0x06c8                  _RPOR4 = 0x6c8
+                    0x06c8                  _RPOR4bits = 0x6c8
+                    0x06ca                  RPOR5 = 0x6ca
+                    0x06ca                  _RPOR5 = 0x6ca
+                    0x06ca                  _RPOR5bits = 0x6ca
+                    0x06cc                  RPOR6 = 0x6cc
+                    0x06cc                  _RPOR6 = 0x6cc
+                    0x06cc                  _RPOR6bits = 0x6cc
+                    0x06ce                  RPOR7 = 0x6ce
+                    0x06ce                  _RPOR7 = 0x6ce
+                    0x06ce                  _RPOR7bits = 0x6ce
+                    0x06d0                  RPOR8 = 0x6d0
+                    0x06d0                  _RPOR8 = 0x6d0
+                    0x06d0                  _RPOR8bits = 0x6d0
+                    0x06d2                  RPOR9 = 0x6d2
+                    0x06d2                  _RPOR9 = 0x6d2
+                    0x06d2                  _RPOR9bits = 0x6d2
+                    0x06d4                  RPOR10 = 0x6d4
+                    0x06d4                  _RPOR10 = 0x6d4
+                    0x06d4                  _RPOR10bits = 0x6d4
+                    0x06d6                  RPOR11 = 0x6d6
+                    0x06d6                  _RPOR11 = 0x6d6
+                    0x06d6                  _RPOR11bits = 0x6d6
+                    0x06d8                  RPOR12 = 0x6d8
+                    0x06d8                  _RPOR12 = 0x6d8
+                    0x06d8                  _RPOR12bits = 0x6d8
+                    0x06da                  RPOR13 = 0x6da
+                    0x06da                  _RPOR13 = 0x6da
+                    0x06da                  _RPOR13bits = 0x6da
+                    0x06dc                  RPOR14 = 0x6dc
+                    0x06dc                  _RPOR14 = 0x6dc
+                    0x06dc                  _RPOR14bits = 0x6dc
+                    0x0700                  G1CMDL = 0x700
+                    0x0700                  _G1CMDL = 0x700
+                    0x0700                  _G1CMDLbits = 0x700
+                    0x0702                  G1CMDH = 0x702
+                    0x0702                  _G1CMDH = 0x702
+                    0x0702                  _G1CMDHbits = 0x702
+                    0x0704                  G1CON1 = 0x704
+                    0x0704                  _G1CON1 = 0x704
+                    0x0704                  _G1CON1bits = 0x704
+                    0x0706                  G1STAT = 0x706
+                    0x0706                  _G1STAT = 0x706
+                    0x0706                  _G1STATbits = 0x706
+                    0x0708                  G1IE = 0x708
+                    0x0708                  _G1IE = 0x708
+                    0x0708                  _G1IEbits = 0x708
+                    0x070a                  G1IR = 0x70a
+                    0x070a                  _G1IR = 0x70a
+                    0x070a                  _G1IRbits = 0x70a
+                    0x070c                  G1W1ADRL = 0x70c
+                    0x070c                  _G1W1ADRL = 0x70c
+                    0x070c                  _G1W1ADRLbits = 0x70c
+                    0x070e                  G1W1ADRH = 0x70e
+                    0x070e                  _G1W1ADRH = 0x70e
+                    0x070e                  _G1W1ADRHbits = 0x70e
+                    0x0710                  G1W2ADRL = 0x710
+                    0x0710                  _G1W2ADRL = 0x710
+                    0x0710                  _G1W2ADRLbits = 0x710
+                    0x0712                  G1W2ADRH = 0x712
+                    0x0712                  _G1W2ADRH = 0x712
+                    0x0712                  _G1W2ADRHbits = 0x712
+                    0x0714                  G1PUW = 0x714
+                    0x0714                  _G1PUW = 0x714
+                    0x0714                  _G1PUWbits = 0x714
+                    0x0716                  G1PUH = 0x716
+                    0x0716                  _G1PUH = 0x716
+                    0x0716                  _G1PUHbits = 0x716
+                    0x0718                  G1DPADRL = 0x718
+                    0x0718                  _G1DPADRL = 0x718
+                    0x0718                  _G1DPADRLbits = 0x718
+                    0x071a                  G1DPADRH = 0x71a
+                    0x071a                  _G1DPADRH = 0x71a
+                    0x071a                  _G1DPADRHbits = 0x71a
+                    0x071c                  G1DPW = 0x71c
+                    0x071c                  _G1DPW = 0x71c
+                    0x071c                  _G1DPWbits = 0x71c
+                    0x071e                  G1DPH = 0x71e
+                    0x071e                  _G1DPH = 0x71e
+                    0x071e                  _G1DPHbits = 0x71e
+                    0x0720                  G1DPWT = 0x720
+                    0x0720                  _G1DPWT = 0x720
+                    0x0720                  _G1DPWTbits = 0x720
+                    0x0722                  G1DPHT = 0x722
+                    0x0722                  _G1DPHT = 0x722
+                    0x0722                  _G1DPHTbits = 0x722
+                    0x0724                  G1CON2 = 0x724
+                    0x0724                  _G1CON2 = 0x724
+                    0x0724                  _G1CON2bits = 0x724
+                    0x0726                  G1CON3 = 0x726
+                    0x0726                  _G1CON3 = 0x726
+                    0x0726                  _G1CON3bits = 0x726
+                    0x0728                  G1ACTDA = 0x728
+                    0x0728                  _G1ACTDA = 0x728
+                    0x0728                  _G1ACTDAbits = 0x728
+                    0x072a                  G1HSYNC = 0x72a
+                    0x072a                  _G1HSYNC = 0x72a
+                    0x072a                  _G1HSYNCbits = 0x72a
+                    0x072c                  G1VSYNC = 0x72c
+                    0x072c                  _G1VSYNC = 0x72c
+                    0x072c                  _G1VSYNCbits = 0x72c
+                    0x072e                  G1DBLCON = 0x72e
+                    0x072e                  _G1DBLCON = 0x72e
+                    0x072e                  _G1DBLCONbits = 0x72e
+                    0x0730                  G1CLUT = 0x730
+                    0x0730                  _G1CLUT = 0x730
+                    0x0730                  _G1CLUTbits = 0x730
+                    0x0732                  G1CLUTWR = 0x732
+                    0x0732                  _G1CLUTWR = 0x732
+                    0x0732                  _G1CLUTWRbits = 0x732
+                    0x0734                  G1CLUTRD = 0x734
+                    0x0734                  _G1CLUTRD = 0x734
+                    0x0734                  _G1CLUTRDbits = 0x734
+                    0x0736                  G1MRGN = 0x736
+                    0x0736                  _G1MRGN = 0x736
+                    0x0736                  _G1MRGNbits = 0x736
+                    0x0738                  G1CHRX = 0x738
+                    0x0738                  _G1CHRX = 0x738
+                    0x0738                  _G1CHRXbits = 0x738
+                    0x073a                  G1CHRY = 0x73a
+                    0x073a                  _G1CHRY = 0x73a
+                    0x073a                  _G1CHRYbits = 0x73a
+                    0x073c                  G1IPU = 0x73c
+                    0x073c                  _G1IPU = 0x73c
+                    0x073c                  _G1IPUbits = 0x73c
+                    0x073e                  G1DBEN = 0x73e
+                    0x073e                  _G1DBEN = 0x73e
+                    0x073e                  _G1DBENbits = 0x73e
+                    0x0740                  RCON = 0x740
+                    0x0740                  _RCON = 0x740
+                    0x0740                  _RCONbits = 0x740
+                    0x0742                  OSCCON = 0x742
+                    0x0742                  _OSCCON = 0x742
+                    0x0742                  _OSCCONbits = 0x742
+                    0x0742                  OSCCONL = 0x742
+                    0x0742                  _OSCCONL = 0x742
+                    0x0743                  OSCCONH = 0x743
+                    0x0743                  _OSCCONH = 0x743
+                    0x0744                  CLKDIV = 0x744
+                    0x0744                  _CLKDIV = 0x744
+                    0x0744                  _CLKDIVbits = 0x744
+                    0x0746                  CLKDIV2 = 0x746
+                    0x0746                  _CLKDIV2 = 0x746
+                    0x0746                  _CLKDIV2bits = 0x746
+                    0x0748                  OSCTUN = 0x748
+                    0x0748                  _OSCTUN = 0x748
+                    0x0748                  _OSCTUNbits = 0x748
+                    0x074e                  REFOCON = 0x74e
+                    0x074e                  _REFOCON = 0x74e
+                    0x074e                  _REFOCONbits = 0x74e
+                    0x0760                  NVMCON = 0x760
+                    0x0760                  _NVMCON = 0x760
+                    0x0760                  _NVMCONbits = 0x760
+                    0x0766                  NVMKEY = 0x766
+                    0x0766                  _NVMKEY = 0x766
+                    0x0770                  PMD1 = 0x770
+                    0x0770                  _PMD1 = 0x770
+                    0x0770                  _PMD1bits = 0x770
+                    0x0772                  PMD2 = 0x772
+                    0x0772                  _PMD2 = 0x772
+                    0x0772                  _PMD2bits = 0x772
+                    0x0774                  PMD3 = 0x774
+                    0x0774                  _PMD3 = 0x774
+                    0x0774                  _PMD3bits = 0x774
+                    0x0776                  PMD4 = 0x776
+                    0x0776                  _PMD4 = 0x776
+                    0x0776                  _PMD4bits = 0x776
+                    0x0778                  PMD5 = 0x778
+                    0x0778                  _PMD5 = 0x778
+                    0x0778                  _PMD5bits = 0x778
+                    0x077a                  PMD6 = 0x77a
+                    0x077a                  _PMD6 = 0x77a
+                    0x077a                  _PMD6bits = 0x77a
+                    0x0144                  IC1 = 0x144
+                    0x0144                  _IC1 = 0x144
+                    0x014c                  IC2 = 0x14c
+                    0x014c                  _IC2 = 0x14c
+                    0x0154                  IC3 = 0x154
+                    0x0154                  _IC3 = 0x154
+                    0x015c                  IC4 = 0x15c
+                    0x015c                  _IC4 = 0x15c
+                    0x0164                  IC5 = 0x164
+                    0x0164                  _IC5 = 0x164
+                    0x016c                  IC6 = 0x16c
+                    0x016c                  _IC6 = 0x16c
+                    0x0174                  IC7 = 0x174
+                    0x0174                  _IC7 = 0x174
+                    0x017c                  IC8 = 0x17c
+                    0x017c                  _IC8 = 0x17c
+                    0x0184                  IC9 = 0x184
+                    0x0184                  _IC9 = 0x184
+                    0x0194                  OC1 = 0x194
+                    0x0194                  _OC1 = 0x194
+                    0x019e                  OC2 = 0x19e
+                    0x019e                  _OC2 = 0x19e
+                    0x01a8                  OC3 = 0x1a8
+                    0x01a8                  _OC3 = 0x1a8
+                    0x01b2                  OC4 = 0x1b2
+                    0x01b2                  _OC4 = 0x1b2
+                    0x01bc                  OC5 = 0x1bc
+                    0x01bc                  _OC5 = 0x1bc
+                    0x01c6                  OC6 = 0x1c6
+                    0x01c6                  _OC6 = 0x1c6
+                    0x01d0                  OC7 = 0x1d0
+                    0x01d0                  _OC7 = 0x1d0
+                    0x01da                  OC8 = 0x1da
+                    0x01da                  _OC8 = 0x1da
+                    0x01e4                  OC9 = 0x1e4
+                    0x01e4                  _OC9 = 0x1e4
+                    0x0240                  SPI1 = 0x240
+                    0x0240                  _SPI1 = 0x240
+                    0x0260                  SPI2 = 0x260
+                    0x0260                  _SPI2 = 0x260
+                    0x0280                  SPI3 = 0x280
+                    0x0280                  _SPI3 = 0x280
+                    0x0220                  UART1 = 0x220
+                    0x0220                  _UART1 = 0x220
+                    0x0230                  UART2 = 0x230
+                    0x0230                  _UART2 = 0x230
+                    0x0250                  UART3 = 0x250
+                    0x0250                  _UART3 = 0x250
+                    0x02b0                  UART4 = 0x2b0
+                    0x02b0                  _UART4 = 0x2b0
+START GROUP
+LOAD /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a
+LOAD /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a
+LOAD /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a
+END GROUP
+OUTPUT(dist/default/production/l1demo.X.production.elf elf32-pic30)
+LOAD jump_table
+LOAD default_isr
+LOAD data_init
+
+.debug_pubtypes
+                  0x0001f8        0x6b6
+ .debug_pubtypes
+                  0x0001f8        0x302 build/default/production/_ext/1360937237/gpu.o
+ .debug_pubtypes
+                  0x0004fa         0x99 build/default/production/_ext/1360937237/uart.o
+ .debug_pubtypes
+                  0x000593         0xad build/default/production/_ext/1360937237/audio.o
+ .debug_pubtypes
+                  0x000640         0x38 build/default/production/_ext/1360937237/gfx.o
+ .debug_pubtypes
+                  0x000678         0x52 build/default/production/_ext/1360937237/program.o
+ .debug_pubtypes
+                  0x0006ca         0x12 build/default/production/_ext/1360937237/io.o
+ .debug_pubtypes
+                  0x0006dc         0x49 build/default/production/_ext/1360937237/basic_external_functions.o
+ .debug_pubtypes
+                  0x000725         0x27 build/default/production/_ext/1360937237/main.o
+ .debug_pubtypes
+                  0x00074c         0x51 build/default/production/_ext/1360937237/editor.o
+ .debug_pubtypes
+                  0x00079d         0x48 build/default/production/_ext/1360937237/parser.o
+ .debug_pubtypes
+                  0x0007e5         0x5e build/default/production/_ext/1360937237/interpreter.o
+ .debug_pubtypes
+                  0x000843         0x2b build/default/production/_ext/1360937237/demo.o
+ .debug_pubtypes
+                  0x00086e         0x40 build/default/production/_ext/1360937237/variable.o
+
+__c30_signature
+                  0x0008ae        0x180
+ __c30_signature
+                  0x0008ae          0x6 build/default/production/_ext/1360937237/gpu.o
+ __c30_signature
+                  0x0008b4          0x6 build/default/production/_ext/1360937237/uart.o
+ __c30_signature
+                  0x0008ba          0x6 build/default/production/_ext/1360937237/audio.o
+ __c30_signature
+                  0x0008c0          0x6 build/default/production/_ext/1360937237/gfx.o
+ __c30_signature
+                  0x0008c6          0x6 build/default/production/_ext/1360937237/program.o
+ __c30_signature
+                  0x0008cc          0x6 build/default/production/_ext/1360937237/io.o
+ __c30_signature
+                  0x0008d2          0x6 build/default/production/_ext/1360937237/basic_external_functions.o
+ __c30_signature
+                  0x0008d8          0x6 build/default/production/_ext/1360937237/main.o
+ __c30_signature
+                  0x0008de          0x6 build/default/production/_ext/1360937237/editor.o
+ __c30_signature
+                  0x0008e4          0x6 build/default/production/_ext/1360937237/parser.o
+ __c30_signature
+                  0x0008ea          0x6 build/default/production/_ext/1360937237/interpreter.o
+ __c30_signature
+                  0x0008f0          0x6 build/default/production/_ext/1360937237/demo.o
+ __c30_signature
+                  0x0008f6          0x6 build/default/production/_ext/1360937237/variable.o
+ __c30_signature
+                  0x0008fc          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(crt0_extended24.o)
+ __c30_signature
+                  0x000902          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(data_init_24.o)
+ __c30_signature
+                  0x000908          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(delay32da.Meo)
+ __c30_signature
+                  0x00090e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.DA_o)
+ __c30_signature
+                  0x000914          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.DA_o)
+ __c30_signature
+                  0x00091a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_dosux.DA_lo)
+ __c30_signature
+                  0x000920          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_fprintf_doux.DA_lo)
+ __c30_signature
+                  0x000926          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__sio_printf_dosux.DA_lo)
+ __c30_signature
+                  0x00092c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(fwrite.DA_lo)
+ __c30_signature
+                  0x000932          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(isalnum.DA_lo)
+ __c30_signature
+                  0x000938          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(putc.DA_lo)
+ __c30_signature
+                  0x00093e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(putchar.DA_lo)
+ __c30_signature
+                  0x000944          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo)
+ __c30_signature
+                  0x00094a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stdout.DA_lo)
+ __c30_signature
+                  0x000950          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strlen.DA_lo)
+ __c30_signature
+                  0x000956          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtol.DA_lo)
+ __c30_signature
+                  0x00095c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.DA_lo)
+ __c30_signature
+                  0x000962          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_o.DA_lo)
+ __c30_signature
+                  0x000968          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_s.DA_lo)
+ __c30_signature
+                  0x00096e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.DA_lo)
+ __c30_signature
+                  0x000974          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.DA_lo)
+ __c30_signature
+                  0x00097a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__int_vfprintf.DA_lo)
+ __c30_signature
+                  0x000980          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_init_needed.DA_lo)
+ __c30_signature
+                  0x000986          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__out.DA_lo)
+ __c30_signature
+                  0x00098c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_int.DA_lo)
+ __c30_signature
+                  0x000992          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_ptr.DA_lo)
+ __c30_signature
+                  0x000998          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+ __c30_signature
+                  0x00099e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_close.DA_lo)
+ __c30_signature
+                  0x0009a4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(atoi.DA_lo)
+ __c30_signature
+                  0x0009aa          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(intscan.DA_lo)
+ __c30_signature
+                  0x0009b0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(lseek.DA_lo)
+ __c30_signature
+                  0x0009b6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memcpy.DA_lo)
+ __c30_signature
+                  0x0009bc          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memset.DA_lo)
+ __c30_signature
+                  0x0009c2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.DA_lo)
+ __c30_signature
+                  0x0009c8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(syscall_ret.DA_lo)
+ __c30_signature
+                  0x0009ce          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.DA_lo)
+ __c30_signature
+                  0x0009d4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.DA_lo)
+ __c30_signature
+                  0x0009da          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__errno_location.DA_lo)
+ __c30_signature
+                  0x0009e0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__init_stdio.DA_lo)
+ __c30_signature
+                  0x0009e6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_file_needed.DA_lo)
+ __c30_signature
+                  0x0009ec          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.DA_lo)
+ __c30_signature
+                  0x0009f2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.DA_lo)
+ __c30_signature
+                  0x0009f8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.DA_lo)
+ __c30_signature
+                  0x0009fe          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.DA_lo)
+ __c30_signature
+                  0x000a04          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(closeda.Melo)
+ __c30_signature
+                  0x000a0a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.DA_o)
+ __c30_signature
+                  0x000a10          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(funpack.DA_o)
+ __c30_signature
+                  0x000a16          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.DA_o)
+ __c30_signature
+                  0x000a1c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.lDA_o)
+ __c30_signature
+                  0x000a22          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.lDA_o)
+ __c30_signature
+                  0x000a28          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.DA_o)
+
+__xc_reference_data
+
+.data               0x0800        0xbe0
+ .data              0x0800        0xbe0 build/default/production/_ext/1360937237/main.o
+                    0x0800                  _font
+
+.bss                0x13e0        0x2bc
+ .bss               0x13e0        0x2bc build/default/production/_ext/1360937237/variable.o
+                    0x13e0                  _variables
+
+.data               0x169c        0x354
+ .data              0x169c        0x24a build/default/production/_ext/1360937237/audio.o
+                    0x169c                  _sine
+                    0x179c                  _square
+                    0x189c                  _triangle
+ .data              0x18e6        0x10a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(intscan.DA_lo)
+
+.bss                0x19f0         0xae
+ .bss               0x19f0         0x5c build/default/production/_ext/1360937237/interpreter.o
+ .bss               0x1a4c         0x52 build/default/production/_ext/1360937237/editor.o
+                    0x1a4c                  _line
+                    0x1a9c                  _cursor
+                    0x1a9d                  _editor_state
+
+.data               0x1a9e         0xf6
+ .data              0x1a9e         0x50 build/default/production/_ext/1360937237/parser.o
+                    0x1a9e                  _keywords
+ .data              0x1aee         0x44 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stderr.DA_lo)
+                    0x1aee                  __stderr
+                    0x1af0                  ___stderr_used
+ .data              0x1b32         0x44 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stdout.DA_lo)
+                    0x1b32                  __stdout
+                    0x1b34                  ___stdout_used
+ .data              0x1b76         0x1e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.DA_lo)
+
+.bss                0x1b94         0x2c
+ .bss               0x1b94         0x16 build/default/production/_ext/1360937237/audio.o
+                    0x1b94                  _c1f
+                    0x1b95                  _fltr
+ .bss               0x1baa          0xc build/default/production/_ext/1360937237/program.o
+                    0x1baa                  _program
+                    0x1bae                  _progsize
+                    0x1bb2                  _proglen
+ .bss               0x1bb6          0xa build/default/production/_ext/1360937237/gfx.o
+
+.data               0x1bc0          0x8
+ .data              0x1bc0          0x8 build/default/production/_ext/1360937237/gfx.o
+
+.bss                0x1bc8          0x4
+ .bss               0x1bc8          0x4 build/default/production/_ext/1360937237/main.o
+                    0x1bc8                  _debug_level
+                    0x1bca                  _system_state
+
+.data               0x1bcc          0x6
+ .data              0x1bcc          0x4 build/default/production/_ext/1360937237/demo.o
+                    0x1bcc                  _demo_timeout
+ .data              0x1bd0          0x2 build/default/production/_ext/1360937237/gpu.o
+
+.bss                0x1bd2          0x2
+ .bss               0x1bd2          0x2 build/default/production/_ext/1360937237/gpu.o
+
+.data               0x1bd4          0x2
+ .data              0x1bd4          0x2 build/default/production/_ext/1360937237/interpreter.o
+
+.bss                0x1bd6          0x6
+ .bss               0x1bd6          0x2 build/default/production/_ext/1360937237/demo.o
+                    0x1bd6                  _demo_index
+ .bss               0x1bd8          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__errno_location.DA_lo)
+                    0x1bd8                  ___errno_val
+ .bss               0x1bda          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.DA_lo)
+                    0x1bda                  ___stdin_used
+
+FONTS               0x17bf8        0xc08
+ FONTS              0x17bf8        0xc08 build/default/production/_ext/1360937237/gpu.o
+                    0x17bf8                  _FontStart
+
+DISPLAY             0x4ff8      0x12c00
+ DISPLAY            0x4ff8      0x12c00 build/default/production/_ext/1360937237/gpu.o
+                    0x4ff8                  _GFXDisplayBuffer
+
+.ivt._GFX1Interrupt
+                  0x0000dc          0x2
+ .ivt._GFX1Interrupt
+                  0x0000dc          0x2 build/default/production/_ext/1360937237/gpu.o
+
+.ivt._T1Interrupt
+                  0x00001a          0x2
+ .ivt._T1Interrupt
+                  0x00001a          0x2 build/default/production/_ext/1360937237/audio.o
+
+.config_JTAGEN    0x02abfe          0x2
+ .config_JTAGEN
+                  0x02abfe          0x2 build/default/production/_ext/1360937237/main.o
+
+.config_IESO      0x02abfc          0x2
+ .config_IESO     0x02abfc          0x2 build/default/production/_ext/1360937237/main.o
+
+.config_WPEND     0x02abfa          0x2
+ .config_WPEND    0x02abfa          0x2 build/default/production/_ext/1360937237/main.o
+
+.const              0x9c8a        0x462 load address 0x001c8a  
+ .const             0x9c8a        0x36a build/default/production/_ext/1360937237/demo.o
+                    0x9c8a                  _demo
+ .const             0x9ff4         0x7a build/default/production/_ext/1360937237/parser.o
+ .const             0xa06e         0x38 build/default/production/_ext/1360937237/interpreter.o
+ .const             0xa0a6         0x2c build/default/production/_ext/1360937237/main.o
+ .const             0xa0d2          0xc build/default/production/_ext/1360937237/editor.o
+ .const             0xa0de          0x8 build/default/production/_ext/1360937237/variable.o
+ .const             0xa0e6          0x6 build/default/production/_ext/1360937237/program.o
+
+.dinit            0x0020ec       0x1372
+ .dinit           0x0020ec       0x1372 data_init
+
+.text             0x00345e       0x2df6
+ .text            0x00345e        0xe9a build/default/production/_ext/1360937237/interpreter.o
+                  0x00354a                  _interpreter_infix2postfix
+                  0x003752                  _interpreter_postfix2num
+                  0x004040                  _interpreter_expr
+                  0x00405c                  _interpreter_if_handler
+                  0x004088                  _interpreter_goto_handler
+                  0x0040b2                  _interpreter_print_handler
+                  0x0040ea                  _interpreter_let_handler
+                  0x00413a                  _interpreter_gosub_handler
+                  0x004168                  _interpreter_ret_handler
+                  0x004190                  _interpreter_prints_handler
+                  0x004202                  _interpreter_debug_handler
+                  0x00422a                  _interpreter_breakpoint_handler
+                  0x004254                  _interpreter_run
+                  0x0042ea                  _interpreter_run_handler
+ .text            0x0042f8        0x624 build/default/production/_ext/1360937237/gpu.o
+                  0x0042f8                  _gpu_vsync
+                  0x00430a                  _gpu_init
+                  0x004446                  _gpu_flush
+                  0x00447a                  _gpu_set_fb
+                  0x00448e                  _gpu_flip_fb
+                  0x00450a                  _gpu_clear_fb
+                  0x00451e                  _gpu_config_clut
+                  0x004526                  _gpu_clut_set
+                  0x00454e                  _chr_init
+                  0x0045da                  _chr_print
+                  0x004658                  _chr_fg_color
+                  0x004668                  _chr_bg_color
+                  0x004678                  _rcc_set_fb_dest
+                  0x00469a                  _rcc_set_fb_src
+                  0x0046bc                  _rcc_color
+                  0x0046cc                  _rcc_rec
+                  0x004760                  _rcc_blit
+                  0x004830                  _rcc_scroll
+                  0x0048be                  _rcc_pixel
+ .text            0x00491c        0x5e0 build/default/production/_ext/1360937237/program.o
+                  0x00491c                  _program_is_code
+                  0x004982                  _program_init
+                  0x0049ea                  _program_move_code
+                  0x004afc                  _program_insert_line
+                  0x004dc8                  _program_dump
+                  0x004e20                  _program_add_line
+                  0x004e6c                  _program_get_line
+ .text            0x004efc        0x4bc build/default/production/_ext/1360937237/gfx.o
+                  0x004efc                  _gfx_singlebuffer
+                  0x004f2a                  _screen_putch
+                  0x004fe0                  _font_load
+                  0x005036                  _sprite_clear
+                  0x005060                  _sprite_blit
+                  0x005082                  _gfx_clear_screen
+                  0x0050a2                  _gfx_flip
+                  0x005112                  _gfx_drawpixel
+                  0x00522e                  _gfx_getpixel
+                  0x005284                  _set_bw
+                  0x00530a                  _gfx_init
+ .text            0x0053b8        0x400 build/default/production/_ext/1360937237/parser.o
+                  0x0053b8                  _parser_find_keyword
+                  0x0054c6                  _parser_get_token
+                  0x00556e                  _parser_handle_list
+                  0x0056d0                  _parser_parse_text
+                  0x005728                  _parser_parse_line
+ .text            0x0057b8        0x3f2 build/default/production/_ext/1360937237/variable.o
+                  0x0057b8                  _variable_init
+                  0x0057ec                  _variable_create
+                  0x005a1c                  _variable_get
+                  0x005b28                  _variable_dump
+ .text            0x005baa        0x2c0 build/default/production/_ext/1360937237/editor.o
+                  0x005baa                  _editor_list
+                  0x005d18                  _editor_run
+ .text            0x005e6a        0x1e0 build/default/production/_ext/1360937237/basic_external_functions.o
+                  0x005e6a                  _find_separator
+                  0x005eb2                  _draw_dot
+                  0x005f80                  _color_handler
+ .text            0x00604a         0xc2 build/default/production/_ext/1360937237/uart.o
+                  0x00607c                  _uart_init
+                  0x0060b4                  _uart_tx
+                  0x0060cc                  _uart_rx
+                  0x0060e0                  _uart_rx_available
+                  0x0060f2                  _uart_puts
+ .text            0x00610c         0x7c build/default/production/_ext/1360937237/main.o
+                  0x00610c                  _main
+ .text            0x006188         0x6a build/default/production/_ext/1360937237/demo.o
+                  0x006188                  _demo_disable
+                  0x006194                  _demo_has_byte
+                  0x0061d0                  _demo_get_byte
+ .text            0x0061f2         0x46 build/default/production/_ext/1360937237/io.o
+                  0x0061f2                  _write
+ .text            0x006238         0x1c build/default/production/_ext/1360937237/audio.o
+                  0x006238                  _audio_init
+
+.init.delay32     0x006254         0x1c
+ .init.delay32    0x006254         0x1c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(delay32da.Meo)
+                  0x006254                  ___delay32
